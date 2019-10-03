@@ -1,0 +1,49 @@
+// Core variables and mixins
+
+@import "components/vars";
+
+@import "bootstrap/normalize";
+@import "bootstrap/grid";
+
+@import "components/body";
+
+
+@import "components/header";
+
+
+.layout{
+  	flex: 1 0 auto;
+}
+
+.container-fluid{
+	max-width: 1312px;
+	position: relative;
+	width: 100%;
+}
+
+
+.page-content{
+	>.container-fluid{
+		max-width: 1088px;
+	}
+}
+
+
+
+
+
+
+
+@import "components/workarea";
+
+@import "components/footer";
+
+
+
+
+@import "components/media";
+
+
+
+
+
