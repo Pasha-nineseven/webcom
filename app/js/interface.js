@@ -3,9 +3,82 @@ $(document).ready(function() {
 
 	ymaps.ready(initializeContactsMap);
 
-	// $("body").on("click", ".test", function(e){
-	// 	e.preventDefault();
-	// })
+	//main-products-slider
+    if ($('.speaker-slider').length>0) {
+        var $gallery = $('.speaker-slider');
+
+        $gallery.slick({
+            speed: 250,
+            swipe: true,
+            swipeToSlide: true,
+            touchThreshold: 10,
+            arrows:true,
+            dots:true,
+            useTransform:true,
+            accessibility: false,
+            infinite: false,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            // responsive: [
+            //     {
+            //       breakpoint: 850,
+            //       settings: {
+            //         slidesToShow: 5,
+            //         slidesToScroll: 1,
+            //       }
+            //     },
+            //     {
+            //       breakpoint: 700,
+            //       settings: {
+            //         slidesToShow: 4,
+            //         slidesToScroll: 1,
+            //       }
+            //     },
+            //     {
+            //       breakpoint: 600,
+            //       settings: {
+            //         slidesToShow: 3,
+            //         slidesToScroll: 1,
+            //       }
+            //     },
+            //     {
+            //       breakpoint: 500,
+            //       settings: {
+            //         slidesToShow: 2,
+            //         slidesToScroll: 1,
+            //       }
+            //     },
+            // ]
+        });
+    };
+
+    //POPUP-INLINE
+    // $(".js-popup-inline").fancybox({
+    //     speed : 330,
+    //     transitionEffect: "slide", 
+    //     animationEffect: "zoom-in-out", 
+    //     infobar: false,
+    //     clickOutside : 'close',
+    //     buttons: [
+    //         "close"
+    //     ],
+    // });
+    // $("body").on("click", ".js-popup-close", function(e){
+    //     e.preventDefault();
+    //     parent.jQuery.fancybox.getInstance().close();
+    // });
+
+    //POPUP-VIDEO
+    $(".js-video-link").fancybox({
+        speed : 330,
+        transitionEffect: "slide", 
+        animationEffect: "zoom-in-out", 
+        infobar: false,
+         clickOutside : 'close',
+        buttons: [
+            "close"
+        ],
+    });
 
 });
 
