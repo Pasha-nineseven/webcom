@@ -3,6 +3,39 @@ $(document).ready(function() {
 
 	ymaps.ready(initializeContactsMap);
 
+    //COURSES-PANEL
+        // Create the measurement node
+        var scrollDiv = document.createElement("div");
+        scrollDiv.className = "scrollbar-measure";
+        //console.log(ifHasScroll);
+    $('body').on('click','.js-courses-link', function(e){
+        e.preventDefault();
+        document.body.appendChild(scrollDiv);
+        // Get the scrollbar width
+        var scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
+        $('.courses-panel__bg').addClass('is-active').animate({opacity: 1}, 200);
+        $('.courses-panel').addClass('is-active');
+        //scroll-detect
+        var ifHasScroll = $('body').hasVerticalScrollBar();
+        if (ifHasScroll) {
+            $('body').addClass('fixed');
+            $('body').css('padding-right',scrollbarWidth);
+            $('.page-header').css('padding-right',scrollbarWidth);
+        }
+    });
+    $('body').on('click','.js-courses-panel__bg', function(e){
+        document.body.removeChild(scrollDiv);
+        setTimeout(function (){
+            $('body').removeAttr("style");
+            $('.page-header').removeAttr("style");
+            $( 'body' ).removeClass('fixed');
+        }, 400);
+        $('.courses-panel').removeClass('is-active');
+        
+        $('.courses-panel__bg').removeClass('is-active').animate({opacity: 0}, 200);
+    });
+
+
 	//main-products-slider
     if ($('.speaker-slider').length>0) {
         var $gallery = $('.speaker-slider');
@@ -89,6 +122,10 @@ $(document).ready(function() {
         });
     }
 
+
+
+
+    
 });
 
 
@@ -130,6 +167,13 @@ function initializeContactsMap() {
         myMap.geoObjects.add(myPlacemark);
     }
 }
+
+
+(function($) {
+    $.fn.hasVerticalScrollBar = function() {
+        return this.get(0) ? parseInt( this.get(0).scrollHeight ) > parseInt( this.innerHeight() ) : false;
+    };
+})(jQuery);
 
 // links pages
 // $('body').append(

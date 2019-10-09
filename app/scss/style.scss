@@ -17,6 +17,10 @@ ymaps[class$="-copyright"] {
     display: none;
 }
 
+body.fixed {
+    overflow: hidden;
+}
+
 .btn{
 	display: inline-block;
 	color: #fff;
@@ -132,6 +136,15 @@ a.breadcumbs__item:after{
 	height: 112px;
 	display: inline-block;
 	background: url(../img/svg/video.svg) no-repeat;
+}
+
+
+.scrollbar-measure {
+	width: 100px;
+	height: 100px;
+	overflow: scroll;
+	position: absolute;
+	top: -9999px;
 }
 
 
