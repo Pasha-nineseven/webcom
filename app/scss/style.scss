@@ -32,12 +32,13 @@ ymaps[class$="-copyright"] {
   	flex: 1 0 auto;
   	background: #E5E5E5;
   	position: relative;
+  	    padding-top: 169px;
 }
 .layout--white-sqheme{
 	background: #fff;
 	&:before{
 		content: "";
-		height: 700px;
+		height: 450px;
 		width: 100%;
 		position: absolute;
 		top: 0;

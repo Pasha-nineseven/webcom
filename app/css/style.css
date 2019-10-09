@@ -3355,7 +3355,147 @@ textarea, input {
   color: transparent; }
 
 .page-header {
-  margin-bottom: 64px; }
+  padding-top: 40px;
+  margin-bottom: 64px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  left: 0;
+  top: 0; }
+
+.logo {
+  display: inline-block;
+  margin-top: 5px;
+  width: 273px;
+  height: 50px;
+  background: url(../img/svg/logo.svg) no-repeat; }
+
+.page-header__in {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.page-header__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-left: 64px; }
+
+.top-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px; }
+
+.top-nav_link {
+  color: #000;
+  margin-right: 40px; }
+  .top-nav_link:last-child {
+    margin-right: 0; }
+
+.top-links {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px; }
+
+.phone-link {
+  background: rgba(60, 60, 60, 0.1);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  margin-right: 1px;
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  position: relative; }
+  .phone-link:before {
+    content: "";
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: url(../img/svg/phone.svg) no-repeat;
+    position: absolute;
+    top: 14px;
+    left: 10px; }
+
+.office-link {
+  background: rgba(60, 60, 60, 0.1);
+  display: inline-block;
+  color: #000;
+  padding: 21px 22px; }
+
+.courses-link {
+  background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000;
+  padding: 21px 21px 21px 25px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px; }
+
+.courses-link__count {
+  padding-left: 8px;
+  margin-left: 8px;
+  border-left: 1px solid #C4C4C4; }
+
+.burger-icon {
+  display: block;
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  width: 32px;
+  height: 3px;
+  background: #FF7700;
+  -webkit-box-shadow: 0px 4px 7px rgba(156, 73, 0, 0.2);
+          box-shadow: 0px 4px 7px rgba(156, 73, 0, 0.2);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-left: 18px;
+  border-radius: 20px; }
+  .burger-icon:before, .burger-icon:after {
+    display: block;
+    width: 32px;
+    height: 3px;
+    background: #FF7700;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    position: absolute;
+    border-radius: 20px;
+    content: ""; }
+  .burger-icon:before {
+    top: -8px; }
+  .burger-icon:after {
+    top: 8px; }
 
 .workarea {
   line-height: 1.8; }
@@ -3458,13 +3598,14 @@ ymaps[class$="-copyright"] {
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
   background: #E5E5E5;
-  position: relative; }
+  position: relative;
+  padding-top: 169px; }
 
 .layout--white-sqheme {
   background: #fff; }
   .layout--white-sqheme:before {
     content: "";
-    height: 700px;
+    height: 450px;
     width: 100%;
     position: absolute;
     top: 0;
@@ -3549,6 +3690,9 @@ a.breadcumbs__item:after {
   display: inline-block;
   background: url(../img/svg/video.svg) no-repeat; }
 
+.speaker {
+  padding-bottom: 40px; }
+
 .speaker-wrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3561,13 +3705,12 @@ a.breadcumbs__item:after {
   min-width: 528px;
   margin-right: 144px; }
 
-.speaker-img__in {
+.speaker-img__in img {
+  display: block;
+  max-width: 100%;
+  height: auto;
   -webkit-box-shadow: 0px 5.62137px 38.5466px #B8BDBD;
           box-shadow: 0px 5.62137px 38.5466px #B8BDBD; }
-  .speaker-img__in img {
-    display: block;
-    max-width: 100%;
-    height: auto; }
 
 .speaker-position {
   font-size: 16px;

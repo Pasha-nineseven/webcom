@@ -80,6 +80,15 @@ $(document).ready(function() {
         ],
     });
 
+    if ($('.speaker-img').length>0) {
+        var sidebar = new StickySidebar('.speaker-img__in', {
+            containerSelector: '.speaker-wrap',
+            innerWrapperSelector: '.speaker-img',
+            topSpacing: 20,
+            bottomSpacing: 20
+        });
+    }
+
 });
 
 
