@@ -148,8 +148,14 @@ a.breadcumbs__item:after{
 }
 
 
+.fancybox-container{
+	z-index: 20;
+}
+
 //PAGES
 @import "pages/speaker";
+
+@import "pages/course";
 
 
 
