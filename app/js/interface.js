@@ -21,6 +21,7 @@ $(document).ready(function() {
             $('body').addClass('fixed');
             $('body').css('padding-right',scrollbarWidth);
             $('.page-header').css('padding-right',scrollbarWidth);
+            $('.course-nav').css('padding-right',scrollbarWidth);
         }
     });
     $('body').on('click','.js-courses-panel__bg', function(e){
@@ -28,6 +29,7 @@ $(document).ready(function() {
         setTimeout(function (){
             $('body').removeAttr("style");
             $('.page-header').removeAttr("style");
+            $('.course-nav').removeAttr("style");
             $( 'body' ).removeClass('fixed');
         }, 400);
         $('.courses-panel').removeClass('is-active');
@@ -127,12 +129,78 @@ $(document).ready(function() {
 
     $('body').on('click','.js-what__info', function(e){
         e.preventDefault();
-        alert(1);
+        $(this).parents('.what__item').find('.what__add').addClass('active');
     });
+    $(document).click(function (e){
+        var div = $(".what__item");
+        if (!div.is(e.target)
+            && div.has(e.target).length === 0) {
+            $(".what__add").removeClass('active');
+        }
+    });
+
+
+
+
+    //teacher-slider
+    if ($('.teacher-slider').length>0) {
+        var $gallery = $('.teacher-slider');
+
+        $gallery.slick({
+            speed: 250,
+            swipe: true,
+            swipeToSlide: true,
+            touchThreshold: 10,
+            arrows:true,
+            dots:false,
+            useTransform:true,
+            accessibility: false,
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            // responsive: [
+            //     {
+            //       breakpoint: 850,
+            //       settings: {
+            //         slidesToShow: 5,
+            //         slidesToScroll: 1,
+            //       }
+            //     },
+            //     {
+            //       breakpoint: 700,
+            //       settings: {
+            //         slidesToShow: 4,
+            //         slidesToScroll: 1,
+            //       }
+            //     },
+            //     {
+            //       breakpoint: 600,
+            //       settings: {
+            //         slidesToShow: 3,
+            //         slidesToScroll: 1,
+            //       }
+            //     },
+            //     {
+            //       breakpoint: 500,
+            //       settings: {
+            //         slidesToShow: 2,
+            //         slidesToScroll: 1,
+            //       }
+            //     },
+            // ]
+        });
+    };
 });
 
 
 
+$(window).scroll(function(){
+    var header = $('.page-header'),
+    scroll = $(window).scrollTop();
+
+    if (scroll >= 100) header.addClass('fixed');
+    else header.removeClass('fixed');
+});
 
 $(window).resize(function () {
 
