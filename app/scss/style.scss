@@ -30,6 +30,11 @@ body.fixed {
 	box-shadow: 0px 7px 14px rgba(171, 90, 15, 0.3), inset 0px 2px 24px rgba(255, 206, 111, 0.6);
 	border-radius: 8px;
 	padding: 11px 25px;
+	border: 0; 
+}
+.dnone{
+	height: 0;
+	overflow: hidden;
 }
 
 .layout{
@@ -62,7 +67,7 @@ body.fixed {
 
 
 .container-fluid{
-	max-width: 1360px;
+	max-width: 1342px;
 	position: relative;
 	width: 100%;
 }
@@ -216,6 +221,144 @@ a.breadcumbs__item:after{
 	}
 }
 
+
+
+
+.accordeon{
+	
+}
+
+.accordeon__item{
+	position: relative;
+	background: #fff;
+	border-top: 2px solid #F4F5F5;
+	//padding: 24px 0;
+	&:last-child{
+		border-bottom: 2px solid #F4F5F5;
+	}
+	&.active{
+		.accordeon__link{
+			//color: #0088CC;
+			&:after{
+				transform:rotate(180deg);
+				//background: url(../img/svg/faq_select_arrow-h.svg) center no-repeat;		
+				//background-size: cover;
+			}
+		}
+	}
+}
+
+.accordeon__info{
+	display: none;
+    // padding: 14px 40px 14px 16px;
+    position: relative;
+    //font-size: 17px;
+    // p{
+    // 	margin-bottom: 16px;
+    // 	&:last-child{
+    // 		margin-bottom: 0;
+    // 	}
+    // }
+}
+
+.accordeon__link{
+	display: block;
+	padding: 24px 30px 24px 0px;
+	color: #0A9DDC;
+	position: relative;
+	&:after{
+		content: "";
+		width: 15px;
+		height: 9px;
+		background: url(../img/svg/faq_select_arrow.svg) center no-repeat;	
+		background-size: cover;
+		position: absolute;
+		right: 8px;
+    	top: 38px;
+		transition:all 0.3s ease;
+	}
+}
+
+
+.subscription{
+    background: #fff;
+    .checkbox-item{
+		max-width: 530px;
+		margin: 0 auto 40px;
+		text-align: left;
+	}
+	.socials{
+		margin: 0 auto 24px;
+	}
+	.socials__item{
+		width: 40px;
+		height: 40px;
+	}
+}
+
+.subscription__wrap{
+    background: linear-gradient(207.5deg, #DCFBFF 0%, #FFFFFF 100%);
+    padding: 96px 0;
+    text-align: center;
+}
+
+
+.subscription__add{
+    max-width: 705px;
+    line-height: 1.2;
+    margin: 0 auto 30px;
+    font-size: 24px;
+}
+
+.subscription-form{
+	max-width: 466px;
+	margin: 0 auto 26px;
+	position: relative;
+	.btn{
+		font-size: 16px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding: 10px 18px;
+	}
+	input[type="text"],
+	input[type="email"],
+	input[type="password"]{
+		background: #fff;
+		border: 2px solid #BCE9F8;
+		    padding: 6px 156px 6px 10px;
+	}
+
+}
+
+.socials{
+	display: flex;
+	justify-content:center;
+}
+.socials__item{
+	margin-right: 24px;
+	&:last-child{
+		margin-right: 0;
+	}
+	&.fb{
+		background: url(../img/svg/fb.svg) no-repeat;
+	}
+	&.inst{
+		background: url(../img/svg/inst.svg) no-repeat;
+	}
+	&.vk{
+		background: url(../img/svg/vk.svg) no-repeat;
+	}
+	&.youtube{
+		background: url(../img/svg/youtube.svg) no-repeat;
+	}
+}
+
+.subscription__more{
+	max-width: 440px;
+	margin: 0 auto;
+	line-height: 1.2;
+}
 
 //PAGES
 @import "pages/speaker";

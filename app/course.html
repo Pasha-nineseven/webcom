@@ -77,7 +77,7 @@
 									<div class="course-top__item">
 										<div class="course-top__title">Форма обучения</div>
 										<div class="course-top__txt">
-											Дистанционная и очная
+											Дистанционная<br> и очная
 										</div>
 									</div>
 								</div>
@@ -289,33 +289,49 @@
 							<h2>Удобный кабинет слушателя,<br> где вы сможете:</h2>
 							<div class="course-cabinet-wrap">
 								<div class="course-cabinet-list">
-									<a href="#" class="course-cabinet__item active">
+									<a href="#" class="course-cabinet__item js-course-cabinet__item active" data-course="1">
 										<div class="course-cabinet__title">
 											Просматривать видеозаписи занятий
 										</div>
 										Видеозаписи занятий вашего курса круглосуточно доступны на протяжении всего периода обучения
 									</a>
-									<a href="#" class="course-cabinet__item">
+									<a href="#" class="course-cabinet__item js-course-cabinet__item" data-course="2">
 										<div class="course-cabinet__title">
 											Общаться со спикерами и одногруппниками
 										</div>
 										Для каждой группы создается форум, где можно общаться с одногруппниками и задавать вопросы спикерам
 									</a>
-									<a href="#" class="course-cabinet__item">
+									<a href="#" class="course-cabinet__item js-course-cabinet__item" data-course="3">
 										<div class="course-cabinet__title">
 											Выполнять домашние задания и тесты
 										</div>
 										Для закрепления материала предлагаются домашние задания и тесты, которые можно выполнять в удобное для вас время
 									</a>
-									<a href="#" class="course-cabinet__item">
+									<a href="#" class="course-cabinet__item js-course-cabinet__item" data-course="4">
 										<div class="course-cabinet__title">
 											Скачивать дополнительные материалы
 										</div>
 										Сохраняйте для себя презентации спикеров, инструкции, чек-листы и дополнительные текстовые материалы
 									</a>
 								</div>
-								<div class="course-cabinet-slider">
-									slider
+								<div class="course-cabinet-slider-wrap">
+									<div class="course-cabinet-slider" id="cabinet-slider1">
+										<div class="course-cabinet-slider__item" style="background-image: url(img/content/cabinet1.jpg);"></div>
+										<div class="course-cabinet-slider__item" style="background-image: url(img/content/video-bg1.jpg);"></div>
+										<div class="course-cabinet-slider__item" style="background-image: url(img/content/cabinet1.jpg);"></div>
+										<div class="course-cabinet-slider__item" style="background-image: url(img/content/video-bg1.jpg);"></div>
+									</div>
+									<div class="course-cabinet-slider dnone" id="cabinet-slider2">
+										<div class="course-cabinet-slider__item" style="background-image: url(img/content/video-bg1.jpg);"></div>
+										<div class="course-cabinet-slider__item" style="background-image: url(img/content/cabinet1.jpg);"></div>
+									</div>
+									<div class="course-cabinet-slider dnone" id="cabinet-slider3">
+										<div class="course-cabinet-slider__item" style="background-image: url(img/content/cabinet1.jpg);"></div>
+										<div class="course-cabinet-slider__item" style="background-image: url(img/content/video-bg1.jpg);"></div>
+									</div>
+									<div class="course-cabinet-slider dnone" id="cabinet-slider4">
+										<div class="course-cabinet-slider__item" style="background-image: url(img/content/video-bg1.jpg);"></div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -368,7 +384,7 @@
 						<div class="course-docs-top">
 							<div class="container-fluid">
 								<div class="course-docs__pre">
-									<h2>После обучения вы сможете</h2>
+									<h2>Выпускные документы</h2>
 									После окончания курса все слушатели получают документы о прохождении обучения: Диплом или Сертификат Академии Webcom, а также справку об обучении государственного образца. Какой именно документ (диплом или сертификат) получит выпускник, зависит от его результатов обучения.
 									<div class="course-docs-top__img">
 										<img src="img/content/hat.png" alt="">
@@ -452,7 +468,7 @@
 					</div>
 					<div class="teacher">
 						<div class="container-fluid">
-							<h3>Познакомьтесь со своими преподавателями</h3>
+							<h2>Познакомьтесь со своими преподавателями</h2>
 							<div class="teacher-slider">
 								<div class="teacher-slider__item">
 									<div class="teacher-slider__in">
@@ -597,6 +613,313 @@
 					<div class="programm">
 						<div class="container-fluid">
 							<h2>Программа</h2>
+							<div class="programm__add">
+								Программа составлена экспертами комплексного курса интернет-маркетинга
+							</div>
+
+							<div class="programm__wrap">
+								<div class="accordeon">
+									<div class="accordeon__item">
+										<a href="#" class="accordeon__link">
+											1. Механизм работы поисковых сетей
+										</a>
+										<div class="accordeon__info">
+											<ul>
+												<li>Типизация посадочных страниц</li>
+												<li>Структура и наполнение страниц и сайта</li>
+												<li>Влияние стуктуры на поведенческие факторы</li>
+												<li>Почему поисковые системы не индексируют документы</li>
+											</ul>
+										</div>
+									</div>
+									<div class="accordeon__item">
+										<a href="#" class="accordeon__link">
+											2. Модуль HTML и CMS
+										</a>
+										<div class="accordeon__info">
+											<ul>
+												<li>Типизация посадочных страниц</li>
+												<li>Структура и наполнение страниц и сайта</li>
+												<li>Влияние стуктуры на поведенческие факторы</li>
+												<li>Почему поисковые системы не индексируют документы</li>
+											</ul>
+										</div>
+									</div>
+									<div class="accordeon__item">
+										<a href="#" class="accordeon__link">
+											3. Настройка панели вебмастеров
+										</a>
+										<div class="accordeon__info">
+											<ul>
+												<li>Типизация посадочных страниц</li>
+												<li>Структура и наполнение страниц и сайта</li>
+												<li>Влияние стуктуры на поведенческие факторы</li>
+												<li>Почему поисковые системы не индексируют документы</li>
+											</ul>
+										</div>
+									</div>
+									<div class="accordeon__item">
+										<a href="#" class="accordeon__link">
+											4. Установка систем веб-статистикиS
+										</a>
+										<div class="accordeon__info">
+											<ul>
+												<li>Типизация посадочных страниц</li>
+												<li>Структура и наполнение страниц и сайта</li>
+												<li>Влияние стуктуры на поведенческие факторы</li>
+												<li>Почему поисковые системы не индексируют документы</li>
+											</ul>
+										</div>
+									</div>
+									<div class="accordeon__item">
+										<a href="#" class="accordeon__link">
+											5. Подбор семантического ядра и распределение запросов по страницам
+										</a>
+										<div class="accordeon__info">
+											<ul>
+												<li>Типизация посадочных страниц</li>
+												<li>Структура и наполнение страниц и сайта</li>
+												<li>Влияние стуктуры на поведенческие факторы</li>
+												<li>Почему поисковые системы не индексируют документы</li>
+											</ul>
+										</div>
+									</div>
+									<div class="accordeon__item">
+										<a href="#" class="accordeon__link">
+											6. Оптимизация домена и документа (хостовый, документарный, поведенческий факторы)
+										</a>
+										<div class="accordeon__info">
+											<ul>
+												<li>Типизация посадочных страниц</li>
+												<li>Структура и наполнение страниц и сайта</li>
+												<li>Влияние стуктуры на поведенческие факторы</li>
+												<li>Почему поисковые системы не индексируют документы</li>
+											</ul>
+										</div>
+									</div>
+									<div class="accordeon__item">
+										<a href="#" class="accordeon__link">
+											7. Базовая техническая оптимизация (оптимизация сервера)
+										</a>
+										<div class="accordeon__info">
+											<ul>
+												<li>Типизация посадочных страниц</li>
+												<li>Структура и наполнение страниц и сайта</li>
+												<li>Влияние стуктуры на поведенческие факторы</li>
+												<li>Почему поисковые системы не индексируют документы</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="programm__download">
+									<a href="img/svg/logo.svg" class="programm-link" download></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cost">
+						<div class="container-fluid">
+							<h2>Стоимость занятий</h2>
+							<div class="cost__table">
+								Таблица с ценами
+							</div>
+							<div class="cost-counting">
+								<h2>Успейте записаться</h2>
+								<div class="cost-counting__add">
+									До старта курса осталось:
+								</div>
+								<div class="timer" data-finish="2019-10-15 00:00:00">
+									<div class="timer_section">
+										<div class="timer_item days_1">0</div>
+										<div class="timer_item days_2">0</div>
+										<div class="timer_section_desc">дней</div>
+									</div>
+									<div class="timer_delimetr">:</div>
+									<div class="timer_section">
+										<div class="timer_item hours_1">0</div>
+										<div class="timer_item hours_2">0</div>
+										<div class="timer_section_desc">часов</div>
+									</div>
+									<div class="timer_delimetr">:</div>
+									<div class="timer_section">
+										<div class="timer_item minutes_1">0</div>
+										<div class="timer_item minutes_2">0</div>
+										<div class="timer_section_desc">минут</div>
+									</div>
+									<div class="timer_delimetr">:</div>
+									<div class="timer_section">
+										<div class="timer_item seconds_1">0</div>
+										<div class="timer_item seconds_2">0</div>
+										<div class="timer_section_desc">секунд</div>
+									</div>
+								</div>
+							</div>
+							<div class="letter">
+								<div class="letter__info">
+									<div class="letter__title">
+										Не знаете, как убедить<br> директора отправить вас<br> на обучение?
+									</div>
+									<div class="letter__txt">
+										Мы уже подумали об этом и составили шаблон письма, в котором указаны все преимущества и условия обучения сотрудника
+									</div>
+								</div>
+								<div class="letter__download">
+									<a href="img/svg/logo.svg" class="btn" download>Скачать шаблон письма</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="warranty">
+						<div class="container-fluid">
+							<h2>Гарантии</h2>
+							<div class="warranty__list">
+								<div class="warranty__item">
+									<div class="warranty__icon">
+										<img src="img/svg/warranty1.svg" alt="">
+									</div>
+									<div class="warranty__txt">
+										Не понравится первое занятие — мы<br> вернем деньги
+									</div>
+								</div>
+								<div class="warranty__item">
+									<div class="warranty__icon">
+										<img src="img/svg/warranty2.svg" alt="">
+									</div>
+									<div class="warranty__txt">
+										Пропустите занятие — сможете<br> посмотреть видео
+									</div>
+								</div>
+								<div class="warranty__item">
+									<div class="warranty__icon">
+										<img src="img/svg/warranty3.svg" alt="">
+									</div>
+									<div class="warranty__txt">
+										Консультация спикеров на протяжении<br> всего срока
+									</div>
+								</div>
+								<div class="warranty__item">
+									<div class="warranty__icon">
+										<img src="img/svg/warranty4.svg" alt="">
+									</div>
+									<div class="warranty__txt">
+										Работающие инструменты<br> для практиков
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="jobs">
+						<div class="container-fluid">
+							<h2>Наши выпускники работают</h2>
+							<div class="jobs-slider">
+								<div class="jobs-slider__item">
+									<img src="img/content/jobs1.png" alt="">
+								</div>
+								<div class="jobs-slider__item">
+									<img src="img/content/jobs2.png" alt="">
+								</div>
+								<div class="jobs-slider__item">
+									<img src="img/content/jobs3.png" alt="">
+								</div>
+								<div class="jobs-slider__item">
+									<img src="img/content/jobs4.png" alt="">
+								</div>
+								<div class="jobs-slider__item">
+									<img src="img/content/jobs5.png" alt="">
+								</div>
+								<div class="jobs-slider__item">
+									<img src="img/content/jobs6.png" alt="">
+								</div>
+								<div class="jobs-slider__item">
+									<img src="img/content/jobs7.png" alt="">
+								</div>
+								<div class="jobs-slider__item">
+									<img src="img/content/jobs8.png" alt="">
+								</div>
+								<div class="jobs-slider__item">
+									<img src="img/content/jobs1.png" alt="">
+								</div>
+								<div class="jobs-slider__item">
+									<img src="img/content/jobs4.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="subscription">
+						<div class="container-fluid">
+							<div class="subscription__wrap">
+								<h2>Будьте в курсе</h2>
+								<div class="subscription__add">
+									В нашей рассылке – анонсы курсов и мероприятий, новости интернет-маркетинга, подборки статей и видеороликов.<br> Присоединяйтесь!
+								</div>
+								<form action="#" method="post">
+									<div class="subscription-form">
+										<input type="text">
+										<input type="submit" value="Подписаться" class="btn">
+									</div>
+									<div class="checkbox-item">
+										<input type="checkbox" id="checkbox1" name="checkbox" checked>
+										<label for="checkbox1">
+											Подписываясь на рассылку, вы подтверждаете и принимаете условия <a href="#" target="_blank">
+												Соглашения об обработке персональных данных</a>
+										</label>
+									</div>
+								</form>
+								<div class="socials">
+									<a href="#" class="socials__item fb"></a>
+									<a href="#" class="socials__item inst"></a>
+									<a href="#" class="socials__item vk"></a>
+									<a href="#" class="socials__item youtube"></a>
+								</div>
+								<div class="subscription__more">
+									Хотите еще больше полезного? Подписывайтесь на наш Youtube-канал и группы в соцсетях
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="question">
+						<div class="container-fluid">
+							<h2>Часто задаваемые вопросы</h2>
+							<div class="question__add">
+								Мы с радостью поможем разобраться вам и ответим на любой из вопросов. Рекомендуем сперва ознакомиться с ответами на наиболее частые из них.
+							</div>
+							<div class="accordeon">
+								<div class="accordeon__item">
+									<a href="#" class="accordeon__link">
+										1. Можно ли по ходу курса задавать вопросы спикерам?
+									</a>
+									<div class="accordeon__info">
+										Во время прохождения обучения вам могут быть предложены к выполнению домашние задания, тесты, практические работы. Их выполнение поможет вам закрепить и попробовать на практике все темы, которые вы изучите. Кроме того оценки за домашние задания влияют на то, какой выпускной документ вы получите: <a href="#">Диплом или Сертификат</a>.
+									</div>
+								</div>
+								<div class="accordeon__item">
+									<a href="#" class="accordeon__link">
+										2. Обязательно ли выполнение домашних заданий?
+									</a>
+									<div class="accordeon__info">
+										Во время прохождения обучения вам могут быть предложены к выполнению домашние задания, тесты, практические работы. Их выполнение поможет вам закрепить и попробовать на практике все темы, которые вы изучите. Кроме того оценки за домашние задания влияют на то, какой выпускной документ вы получите: <a href="#">Диплом или Сертификат</a>.
+									</div>
+								</div>
+								<div class="accordeon__item">
+									<a href="#" class="accordeon__link">
+										3. Когда начинаются занятия?
+									</a>
+									<div class="accordeon__info">
+										Во время прохождения обучения вам могут быть предложены к выполнению домашние задания, тесты, практические работы. Их выполнение поможет вам закрепить и попробовать на практике все темы, которые вы изучите. Кроме того оценки за домашние задания влияют на то, какой выпускной документ вы получите: <a href="#">Диплом или Сертификат</a>.
+									</div>
+								</div>
+								<div class="accordeon__item">
+									<a href="#" class="accordeon__link">
+										4. Предоставляете ли вы тестовый сайт для обучения?
+									</a>
+									<div class="accordeon__info">
+										Во время прохождения обучения вам могут быть предложены к выполнению домашние задания, тесты, практические работы. Их выполнение поможет вам закрепить и попробовать на практике все темы, которые вы изучите. Кроме того оценки за домашние задания влияют на то, какой выпускной документ вы получите: <a href="#">Диплом или Сертификат</a>.
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				<!--end CONTENT-PART -->

@@ -140,6 +140,40 @@ $(document).ready(function() {
     });
 
 
+    //course-cabinet-slider
+    if ($('.course-cabinet-slider').length>0) {
+        var $gallery = $('.course-cabinet-slider');
+
+        $gallery.slick({
+            speed: 250,
+            swipe: true,
+            swipeToSlide: true,
+            touchThreshold: 10,
+            arrows:true,
+            dots:true,
+            useTransform:true,
+            accessibility: false,
+            infinite: false,
+            fade:true,
+            // slidesToShow: 1,
+            // slidesToScroll: 1,
+        });
+
+        //CABINET-SLIDER-TOGGLE
+        $('body').on('click','.js-course-cabinet__item', function(e){
+            e.preventDefault();
+            $('.course-cabinet__item').removeClass('active');
+            $(this).addClass('active');
+            var course = $(this).data('course');
+            $(".course-cabinet-slider").addClass('dnone');
+            $("#cabinet-slider"+course).removeClass('dnone');
+
+            $gallery.slick('setPosition');
+        });
+    };
+
+
+
 
 
     //teacher-slider
@@ -157,6 +191,71 @@ $(document).ready(function() {
             accessibility: false,
             infinite: false,
             slidesToShow: 3,
+            slidesToScroll: 1,
+            // responsive: [
+            //     {
+            //       breakpoint: 850,
+            //       settings: {
+            //         slidesToShow: 5,
+            //         slidesToScroll: 1,
+            //       }
+            //     },
+            //     {
+            //       breakpoint: 700,
+            //       settings: {
+            //         slidesToShow: 4,
+            //         slidesToScroll: 1,
+            //       }
+            //     },
+            //     {
+            //       breakpoint: 600,
+            //       settings: {
+            //         slidesToShow: 3,
+            //         slidesToScroll: 1,
+            //       }
+            //     },
+            //     {
+            //       breakpoint: 500,
+            //       settings: {
+            //         slidesToShow: 2,
+            //         slidesToScroll: 1,
+            //       }
+            //     },
+            // ]
+        });
+    };
+
+
+
+    //ACCORDEON
+    $("body").on("click", ".accordeon__link", function(e){
+        e.preventDefault();
+        $(this).parents('.accordeon__item').toggleClass('active');
+        $(this).next('.accordeon__info').slideToggle();
+    });
+
+
+
+    var time = $(".timer").attr("data-finish");
+        timer(time);
+
+
+
+    //main-products-slider
+    if ($('.jobs-slider').length>0) {
+        var $gallery = $('.jobs-slider');
+
+        $gallery.slick({
+            speed: 250,
+            swipe: true,
+            swipeToSlide: true,
+            touchThreshold: 10,
+            arrows:true,
+            dots:false,
+            useTransform:true,
+            accessibility: false,
+            infinite: false,
+            slidesToShow: 8,
             slidesToScroll: 1,
             // responsive: [
             //     {
@@ -238,6 +337,64 @@ function initializeContactsMap() {
         myMap.geoObjects.add(myPlacemark);
     }
 }
+
+
+function timer(f) {
+    var date = new Date(f);
+    var f_time = Date.parse(date);
+
+    //console.log(f_time);
+
+    function timer_go() {
+        var n_time = Date.now();
+        var diff = f_time - n_time;
+        if(diff <= 0) return false;
+        var left = diff % 1000;
+
+        //секунды
+        diff = Math.floor(diff / 1000);
+        var s = diff % 60;
+        if(s < 10) {
+            $(".seconds_1").html(0);
+            $(".seconds_2").html(s);
+        }else {
+            $(".seconds_1").html(Math.floor(s / 10));
+            $(".seconds_2").html(s % 10);
+        }
+        //минуты
+        diff = Math.floor(diff / 60);
+        var m = diff % 60;
+        if(m < 10) {
+            $(".minutes_1").html(0);
+            $(".minutes_2").html(m);
+        }else {
+            $(".minutes_1").html(Math.floor(m / 10));
+            $(".minutes_2").html(m % 10);
+        }
+        //часы
+        diff = Math.floor(diff / 60);
+        var h = diff % 24;
+        if(h < 10) {
+            $(".hours_1").html(0);
+            $(".hours_2").html(h);
+        }else {
+            $(".hours_1").html(Math.floor(h / 10));
+            $(".hours_2").html(h % 10);
+        }
+        //дни
+        var d = Math.floor(diff / 24);
+        if(d < 10) {
+            $(".days_1").html(0);
+            $(".days_2").html(d);
+        }else {
+            $(".days_1").html(Math.floor(d / 10));
+            $(".days_2").html(d % 10);
+        }
+        setTimeout(timer_go, left);
+    }
+    setTimeout(timer_go, 0);
+}
+
 
 
 (function($) {
