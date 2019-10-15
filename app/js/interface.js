@@ -116,11 +116,15 @@ $(document).ready(function() {
     });
 
     if ($('.speaker-img').length>0) {
-        var sidebar = new StickySidebar('.speaker-img__in', {
-            containerSelector: '.speaker-wrap',
-            innerWrapperSelector: '.speaker-img',
-            topSpacing: 20,
-            bottomSpacing: 20
+        // var sidebar = new StickySidebar('.speaker-img__in', {
+        //     containerSelector: '.speaker-wrap',
+        //     innerWrapperSelector: '.speaker-img',
+        //     topSpacing: 20,
+        //     bottomSpacing: 20
+        // });
+        $(".speaker-img__in").stick_in_parent({
+            parent :  ".speaker-wrap " ,
+            offset_top: 20,
         });
     }
 
