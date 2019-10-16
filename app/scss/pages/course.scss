@@ -695,6 +695,10 @@
 			}
 		}
 	}
+	.slick-arrow {
+	    top: 240px;
+	    margin-top: 0;
+	}
 }
 .teacher-slider__item{
 	padding: 0 16px;
@@ -1233,4 +1237,43 @@ a.get-bonus-add__item{
 		height: 24px;
 		background: url(../img/svg/more.svg) no-repeat;
 	}
+}
+
+.results{
+	padding: 84px 0;
+	background: #fff; 
+}
+.results__top{
+	max-width: 863px;
+	margin-bottom: 50px;
+}
+
+.results__list{
+	display: flex;
+	justify-content: space-between;
+}
+
+.results__item{
+	width: 128px;
+	height: 128px;
+	background: linear-gradient(225deg, #DCFBFF 0%, #FFFFFF 100%);
+	border-radius: 50%;
+	position: relative;
+	font-size: 48px;
+	line-height: 48px;
+	color: #0A9DDC;
+	font-weight: 900;
+	align-items: center;
+    display: flex;
+}
+
+.results__txt{
+	color: #000;
+	font-size: 16px;
+	line-height: 18px;
+	position: absolute;
+}
+
+.results__icon{
+	position: absolute;
 }
