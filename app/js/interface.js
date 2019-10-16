@@ -245,7 +245,7 @@ $(document).ready(function() {
 
 
 
-    //main-products-slider
+    //JOBS-slider
     if ($('.jobs-slider').length>0) {
         var $gallery = $('.jobs-slider');
 
@@ -291,6 +291,139 @@ $(document).ready(function() {
             //       }
             //     },
             // ]
+        });
+    };
+
+
+
+
+    //ABOUT-slider
+    if ($('.about-slider').length>0) {
+        var $about_status = $('.about-pagingInfo'),
+            $about_gallery = $('.about-slider');
+
+        $about_gallery.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+            var i = (currentSlide ? currentSlide : 0) + 1;
+            $about_status.text(i + '/' + slick.slideCount);
+        });
+
+        $about_gallery.slick({
+            speed: 250,
+            swipe: true,
+            swipeToSlide: true,
+            touchThreshold: 10,
+            arrows:true,
+            dots:false,
+            useTransform:true,
+            accessibility: false,
+            infinite: false,
+            fade:true,
+            // responsive: [
+            //     {
+            //       breakpoint: 850,
+            //       settings: {
+            //         slidesToShow: 5,
+            //         slidesToScroll: 1,
+            //       }
+            //     },
+            //     {
+            //       breakpoint: 700,
+            //       settings: {
+            //         slidesToShow: 4,
+            //         slidesToScroll: 1,
+            //       }
+            //     },
+            //     {
+            //       breakpoint: 600,
+            //       settings: {
+            //         slidesToShow: 3,
+            //         slidesToScroll: 1,
+            //       }
+            //     },
+            //     {
+            //       breakpoint: 500,
+            //       settings: {
+            //         slidesToShow: 2,
+            //         slidesToScroll: 1,
+            //       }
+            //     },
+            // ]
+        });
+    };
+
+    //ABOUT-YOUTUBE-slider
+    if ($('.about-youtube-slider').length>0) {
+        var $status = $('.about-youtube-pagingInfo'),
+            $about_youtube_gallery = $('.about-youtube-slider');
+
+        $about_youtube_gallery.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+            var i = (currentSlide ? currentSlide : 0) + 1;
+            $status.text(i + '/' + slick.slideCount);
+        });
+
+        $about_youtube_gallery.slick({
+            speed: 250,
+            swipe: true,
+            swipeToSlide: true,
+            touchThreshold: 10,
+            arrows:true,
+            dots:false,
+            useTransform:true,
+            accessibility: false,
+            infinite: false,
+            fade:true,
+            // responsive: [
+            //     {
+            //       breakpoint: 850,
+            //       settings: {
+            //         slidesToShow: 5,
+            //         slidesToScroll: 1,
+            //       }
+            //     },
+            //     {
+            //       breakpoint: 700,
+            //       settings: {
+            //         slidesToShow: 4,
+            //         slidesToScroll: 1,
+            //       }
+            //     },
+            //     {
+            //       breakpoint: 600,
+            //       settings: {
+            //         slidesToShow: 3,
+            //         slidesToScroll: 1,
+            //       }
+            //     },
+            //     {
+            //       breakpoint: 500,
+            //       settings: {
+            //         slidesToShow: 2,
+            //         slidesToScroll: 1,
+            //       }
+            //     },
+            // ]
+        });
+    };
+
+
+
+    //GET-cabinet-slider
+    if ($('.get-slider').length>0) {
+        var $gallery = $('.get-slider');
+
+        $gallery.slick({
+            speed: 250,
+            swipe: true,
+            swipeToSlide: true,
+            touchThreshold: 10,
+            arrows:true,
+            dots:true,
+            useTransform:true,
+            accessibility: false,
+            infinite: false,
+            fade:true,
+            // slidesToShow: 1,
+            // slidesToScroll: 1,
         });
     };
 });
