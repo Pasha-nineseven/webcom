@@ -20,8 +20,32 @@
 		<div class="layout">
 			<header class="page-header">
 				<div class="container-fluid">
-					page-header
-					<span></span>
+					<div class="page-header__in">
+						<a href="#" class="logo"></a>
+						<div class="page-header__wrap">
+							<nav class="top-nav">
+								<a href="#" class="top-nav_link">О центре</a>
+								<a href="#" class="top-nav_link">Спикеры</a>
+								<a href="#" class="top-nav_link">Как оплатить</a>
+								<a href="#" class="top-nav_link">Отзывы</a>
+							</nav>
+							<div class="top-links">
+								<a href="tel:+375298888888" class="phone-link"></a>
+								<a href="#" class="office-link">Личный кабинет</a>
+								<a href="#" class="courses-link js-courses-link">
+									<span class="courses-link__txt">Курсы</span>
+									<span class="courses-link__count">8</span>
+									<span class="courses-link__burger">
+										<span class="burger-icon"></span>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="courses-panel__bg js-courses-panel__bg"></div>
+				<div class="courses-panel">
+					Список курсов
 				</div>
 			</header>
 			<main class="page-content workarea">
@@ -58,25 +82,25 @@
 				<!--end CONTENT-PART -->
 				</div>
 			</main>
-		</div><!-- END LAYOUT-->
-		<div class="contacts">
-			<div class="container-fluid">
-				<div class="contacts__info">
-					<h2>Наши контакты</h2>
-					<div class="contacts__phone">+375 44 711 11 97</div>
-					<div class="contacts__phone">+375 17 331 63 42</div>
-					<div class="contacts__add">
-						Республика Беларусь, Минск,<br> ул. Скрыганова, д. 6А, пом. 9, 3 этаж 
+			<div class="contacts">
+				<div class="container-fluid">
+					<div class="contacts__info">
+						<h2>Наши контакты</h2>
+						<div class="contacts__phone">+375 44 711 11 97</div>
+						<div class="contacts__phone">+375 17 331 63 42</div>
+						<div class="contacts__add">
+							Республика Беларусь, Минск,<br> ул. Скрыганова, д. 6А, пом. 9, 3 этаж 
+						</div>
+						<a href="mailto:info@webcom-academy.by " class="contacts__mail">info@webcom-academy.by</a>
+						<a href="http://www.youtube.com/embed/Xzk_U9E9jQU?&autoplay=1" class="contacts__howTo js-video-link">
+							Как добраться, видео-руководство
+						</a>
+						<a href="#" class="btn">Написать нам</a>
 					</div>
-					<a href="mailto:info@webcom-academy.by " class="contacts__mail">info@webcom-academy.by</a>
-					<a href="http://www.youtube.com/embed/Xzk_U9E9jQU?&autoplay=1" class="contacts__howTo js-video-link">
-						Как добраться, видео-руководство
-					</a>
-					<a href="#" class="btn">Написать нам</a>
 				</div>
+				<div id="contacts-map"></div>
 			</div>
-			<div id="contacts-map"></div>
-		</div>
+		</div><!-- END LAYOUT-->
 		<footer class="page-footer">
 			<div class="container-fluid">
 				footer

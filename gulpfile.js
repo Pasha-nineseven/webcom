@@ -33,6 +33,7 @@ gulp.task('scripts', function(){
         'app/libs/fancybox/jquery.fancybox.js',
         'app/libs/slick/slick.min.js',
         'app/libs/sticky/sticky.js',
+        'app/libs/tooltip/tooltipster.bundle.min.js',
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())

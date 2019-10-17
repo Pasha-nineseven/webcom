@@ -10,6 +10,9 @@
 	min-height: 613px;
 	position: relative;
 	background: #F4F5F5;
+	&.white-sqheme{
+		background: #fff;
+	}
 }
 
 #contacts-map{

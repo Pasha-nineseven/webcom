@@ -426,6 +426,15 @@ $(document).ready(function() {
             // slidesToScroll: 1,
         });
     };
+
+
+    //TOOLTIP
+    if ($('.tooltip').length>0) {
+        $('.tooltip').tooltipster({
+            animation: 'fade',
+            delay: 100,
+        });
+    };
 });
 
 
@@ -520,9 +529,16 @@ function timer(f) {
         }
         //дни
         var d = Math.floor(diff / 24);
+        // console.log(d);
+        // if (d <= 1) {
+        //     $(".days_1").addClass('disable');
+        // }else{
+        //     $(".days_1").removeClass('disable');
+        // }
         if(d < 10) {
             $(".days_1").html(0);
             $(".days_2").html(d);
+             $(".days_1").addClass('disable');
         }else {
             $(".days_1").html(Math.floor(d / 10));
             $(".days_2").html(d % 10);
@@ -550,8 +566,9 @@ $('body').append(
 		#pages li { margin: 5px 0; } \
 	</style> \
 	<ol id="pages"> \
-		<li><a href="index.html">Index</a></li> \
-		<li><a href="spiker.html">speaker</a></li> \
         <li><a href="course.html">course</a></li> \
+        <li><a href="spikeri_list_1.html">spikeri_list_1</a></li> \
+        <li><a href="spiker.html">speaker</a></li> \
+        <li><a href="index.html">Index</a></li> \
 	</ol> \
 </div>');
