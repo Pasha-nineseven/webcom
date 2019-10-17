@@ -74,12 +74,16 @@ body.fixed {
 	.page-content{
 		>.container-fluid{
 			max-width: 1342px;
+			padding-right: 16px;
+    		padding-left: 16px;
 		}
 	}
 	.page-title,
 	.breadcumbs{
 		.container-fluid{
 			max-width: 1342px;
+			padding-right: 16px;
+    		padding-left: 16px;
 		}
 	}
 }

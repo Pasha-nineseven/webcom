@@ -3761,11 +3761,15 @@ body.fixed {
     background: linear-gradient(180deg, #DCFBFF 0%, rgba(255, 255, 255, 0) 100%); }
 
 .layout--full .page-content > .container-fluid {
-  max-width: 1342px; }
+  max-width: 1342px;
+  padding-right: 16px;
+  padding-left: 16px; }
 
 .layout--full .page-title .container-fluid,
 .layout--full .breadcumbs .container-fluid {
-  max-width: 1342px; }
+  max-width: 1342px;
+  padding-right: 16px;
+  padding-left: 16px; }
 
 .container-fluid {
   max-width: 1342px;
