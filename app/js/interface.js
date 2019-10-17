@@ -568,6 +568,7 @@ $('body').append(
 	<ol id="pages"> \
         <li><a href="course.html">course</a></li> \
         <li><a href="spikeri_list_1.html">spikeri_list_1</a></li> \
+        <li><a href="spikeri_list_2.html">spikeri_list_2</a></li> \
         <li><a href="spiker.html">speaker</a></li> \
         <li><a href="index.html">Index</a></li> \
 	</ol> \
