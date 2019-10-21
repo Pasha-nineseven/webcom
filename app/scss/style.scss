@@ -101,6 +101,7 @@ body.fixed {
 	>.container-fluid{
 		max-width: 1088px;
 		padding: 0;
+		position: static;
 	}
 }
 .page-title,
@@ -411,6 +412,10 @@ a.breadcumbs__item:after{
 }
 .socials__item{
 	margin-right: 24px;
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background-size: contain!important;
 	&:last-child{
 		margin-right: 0;
 	}
@@ -554,6 +559,7 @@ a.breadcumbs__item:after{
 	line-height: 1.2;
 	margin-bottom: 10px;
 	font-weight: 800;
+	color: #000;
 }
 .speaker-list-horizontal__position{
 	color: #FF7700;
@@ -581,6 +587,86 @@ a.breadcumbs__item:after{
 }
 
 
+.center-photo{
+	position: relative;
+	h2{
+		position: relative;
+		z-index: 2;
+	}
+	&:before{
+		content: "";
+		display: block;
+		width: 565px;
+		height: 565px;
+		background: #DCFBFF;
+		border-radius: 50%;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		top: 50%;
+	}
+}
+
+
+
+.contact{
+	display: flex;
+	margin-bottom: 60px;
+	position: relative;
+	z-index: 3;
+	.socials {
+	    justify-content: flex-start;
+	}
+	.socials__item{
+		margin-right: 19px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+.contact__items{
+	display: flex;
+	margin-right: -112px;
+}
+.contact__item{
+	width: 50%;
+	padding-right: 112px;
+}
+
+.contact__img{
+	width: 304px;
+	height: 304px;
+	box-shadow: 0px 5.62137px 38.5466px #B8BDBD;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+
+
+.contact-information{
+	width: 416px;
+	margin-left: 112px;
+}
+
+
+
+.requisites{
+	padding: 95px 0;
+}
+.requisites__list{
+	display: flex;
+}
+
+.requisites__item{
+	width: 50%;
+}
+
+.requisites__title{
+	font-weight: 800;
+	margin-bottom: 20px;
+}
 
 //PAGES
 @import "pages/speaker";
