@@ -3,6 +3,12 @@ $(document).ready(function() {
 
 	ymaps.ready(initializeContactsMap);
 
+    var header = $('.page-header'),
+    scroll = $(window).scrollTop();
+
+    if (scroll >= 100) header.addClass('fixed');
+    else header.removeClass('fixed');
+
     //COURSES-PANEL
         // Create the measurement node
         var scrollDiv = document.createElement("div");
@@ -443,6 +449,46 @@ $(document).ready(function() {
         var id = $(this).attr('href');
         $('html,body').animate({scrollTop: $(id).offset().top}, 500);
     });
+
+
+    //reviews-top-slider
+    if ($('.reviews-top-slider').length>0) {
+        var $gallery = $('.reviews-top-slider');
+
+        $gallery.slick({
+            speed: 250,
+            swipe: true,
+            swipeToSlide: true,
+            touchThreshold: 10,
+            arrows:true,
+            dots:true,
+            useTransform:true,
+            accessibility: false,
+            infinite: false,
+            fade:true,
+            // slidesToShow: 1,
+            // slidesToScroll: 1,
+        });
+    };
+
+    //reviews-video__slider
+    if ($('.reviews-video__slider').length>0) {
+        var $gallery = $('.reviews-video__slider');
+
+        $gallery.slick({
+            speed: 250,
+            swipe: true,
+            swipeToSlide: true,
+            touchThreshold: 10,
+            arrows:true,
+            dots:false,
+            useTransform:true,
+            accessibility: false,
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+        });
+    };
 });
 
 
@@ -578,6 +624,8 @@ $('body').append(
         <li><a href="spikeri_list_1.html">spikeri_list_1</a></li> \
         <li><a href="spikeri_list_2.html">spikeri_list_2</a></li> \
         <li><a href="contact.html">contact</a></li> \
+        <li><a href="otzivi.html">otzivi</a></li> \
+        <li><a href="kyrs_otzivi.html">kyrs_otzivi</a></li> \
         <li><a href="spiker.html">speaker</a></li> \
         <li><a href="index.html">Index</a></li> \
 	</ol> \
