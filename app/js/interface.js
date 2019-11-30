@@ -489,6 +489,26 @@ $(document).ready(function() {
             slidesToScroll: 1,
         });
     };
+
+
+    //reviews-slider
+    if ($('.reviews-slider').length>0) {
+        var $gallery = $('.reviews-slider');
+
+        $gallery.slick({
+            speed: 250,
+            swipe: true,
+            swipeToSlide: true,
+            touchThreshold: 10,
+            arrows:true,
+            dots:false,
+            useTransform:true,
+            accessibility: false,
+            infinite: false,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+        });
+    };
 });
 
 
@@ -628,5 +648,6 @@ $('body').append(
         <li><a href="kyrs_otzivi.html">kyrs_otzivi</a></li> \
         <li><a href="spiker.html">speaker</a></li> \
         <li><a href="index.html">Index</a></li> \
+        <li><a href="kak_oplatit.html">kak_oplatit</a></li> \
 	</ol> \
 </div>');
