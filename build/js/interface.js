@@ -435,14 +435,6 @@ $(document).ready(function() {
             delay: 100,
         });
     };
-
-
-
-    $(document).on('click', '.js-anchor-link', function(e){
-        e.preventDefault();
-        var id = $(this).attr('href');
-        $('html,body').animate({scrollTop: $(id).offset().top}, 500);
-    });
 });
 
 

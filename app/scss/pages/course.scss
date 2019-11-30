@@ -684,6 +684,7 @@
 	}
 	.slick-list{
 		margin: 0 -16px; 
+		padding-bottom: 30px;
 		
 	}
 	.slick-track{
@@ -701,13 +702,21 @@
 	}
 }
 .teacher-slider__item{
-	padding: 0 16px;
+	padding: 0 10px 0 0;
 	height: 100%;
+	&:hover{
+		.teacher-slider__in{
+			background: #fff;
+			box-shadow: 0px 2px 7px rgba(131, 186, 193, 0.5);
+		}
+		
+	}
 }
 .teacher-slider__in{
 	height: 100%;
 	position: relative;
-	padding-bottom: 30px;
+	padding:16px 16px 30px 16px;
+	transition: all 0.3s ease;
 }
 
 .teacher-slider__img{
@@ -716,12 +725,15 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	margin-bottom: 30px;
+	display: block;
 }
 .teacher-slider__title{
 	font-weight: 900;
 	font-size: 24px;
 	line-height: 1.2;
 	margin-bottom: 15px;
+	display: block;
+	color: #000;
 }
 .teacher-slider__txt{
     color: #3C3C3C;
@@ -737,6 +749,7 @@
 	bottom: 0;
 	left: 0;
 	width: 100%;
+	    padding: 10px 16px;
 }
 
 .teacher__more{
@@ -840,6 +853,19 @@
 	background: url(../img/svg/programm.svg) no-repeat; 
 }
 
+
+.programm-add{
+	background: #F4F5F5;
+	display: flex;
+	margin-bottom: 2px;
+}
+.programm-add__item{
+	padding: 8px 30px;
+	border-right: 2px solid #fff;
+	&:last-child{
+		border-right: 0;
+	}
+}
 
 
 .cost{
