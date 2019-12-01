@@ -3,6 +3,12 @@ $(document).ready(function() {
 
 	ymaps.ready(initializeContactsMap);
 
+    var header = $('.page-header'),
+    scroll = $(window).scrollTop();
+
+    if (scroll >= 100) header.addClass('fixed');
+    else header.removeClass('fixed');
+
     //COURSES-PANEL
         // Create the measurement node
         var scrollDiv = document.createElement("div");
@@ -435,6 +441,87 @@ $(document).ready(function() {
             delay: 100,
         });
     };
+
+
+
+    $(document).on('click', '.js-anchor-link', function(e){
+        e.preventDefault();
+        var id = $(this).attr('href');
+        $('html,body').animate({scrollTop: $(id).offset().top}, 500);
+    });
+
+
+    //reviews-top-slider
+    if ($('.reviews-top-slider').length>0) {
+        var $gallery = $('.reviews-top-slider');
+
+        $gallery.slick({
+            speed: 250,
+            swipe: true,
+            swipeToSlide: true,
+            touchThreshold: 10,
+            arrows:true,
+            dots:true,
+            useTransform:true,
+            accessibility: false,
+            infinite: false,
+            fade:true,
+            // slidesToShow: 1,
+            // slidesToScroll: 1,
+        });
+    };
+
+    //reviews-video__slider
+    if ($('.reviews-video__slider').length>0) {
+        var $gallery = $('.reviews-video__slider');
+
+        $gallery.slick({
+            speed: 250,
+            swipe: true,
+            swipeToSlide: true,
+            touchThreshold: 10,
+            arrows:true,
+            dots:false,
+            useTransform:true,
+            accessibility: false,
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+        });
+    };
+
+
+    //reviews-slider
+    if ($('.reviews-slider').length>0) {
+        var $gallery = $('.reviews-slider');
+
+        $gallery.slick({
+            speed: 250,
+            swipe: true,
+            swipeToSlide: true,
+            touchThreshold: 10,
+            arrows:true,
+            dots:false,
+            useTransform:true,
+            accessibility: false,
+            infinite: false,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+        });
+    };
+
+
+
+    $('body').on('click','.js-contract-add-show', function(e){
+        e.preventDefault();
+        $(this).hide();
+        $('.contract-add').addClass('active');
+    });
+    $('body').on('click','.js-show-more-link', function(e){
+        e.preventDefault();
+        $(this).hide();
+        $(this).prev('.page-footer__hidden').addClass('active');
+    });
 });
 
 
@@ -570,7 +657,11 @@ $('body').append(
         <li><a href="spikeri_list_1.html">spikeri_list_1</a></li> \
         <li><a href="spikeri_list_2.html">spikeri_list_2</a></li> \
         <li><a href="contact.html">contact</a></li> \
+        <li><a href="otzivi.html">otzivi</a></li> \
+        <li><a href="kyrs_otzivi.html">kyrs_otzivi</a></li> \
         <li><a href="spiker.html">speaker</a></li> \
         <li><a href="index.html">Index</a></li> \
+        <li><a href="kak_oplatit.html">kak_oplatit</a></li> \
+        <li><a href="korp_obuchenie.html">korp_obuchenie</a></li> \
 	</ol> \
 </div>');

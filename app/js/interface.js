@@ -509,6 +509,19 @@ $(document).ready(function() {
             slidesToScroll: 1,
         });
     };
+
+
+
+    $('body').on('click','.js-contract-add-show', function(e){
+        e.preventDefault();
+        $(this).hide();
+        $('.contract-add').addClass('active');
+    });
+    $('body').on('click','.js-show-more-link', function(e){
+        e.preventDefault();
+        $(this).hide();
+        $(this).prev('.page-footer__hidden').addClass('active');
+    });
 });
 
 
@@ -649,5 +662,6 @@ $('body').append(
         <li><a href="spiker.html">speaker</a></li> \
         <li><a href="index.html">Index</a></li> \
         <li><a href="kak_oplatit.html">kak_oplatit</a></li> \
+        <li><a href="korp_obuchenie.html">korp_obuchenie</a></li> \
 	</ol> \
 </div>');

@@ -1,7 +1,18 @@
 .page-footer{
 	flex-shrink: 0;
-	padding: 80px 0 90px;
+	padding: 80px 0 40px;
 	// background: #fff;
+	.socials {
+	    justify-content: flex-start;
+	}
+	.socials__item{
+		margin-right: 19px;
+		width: 32px;
+    	height: 32px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
 }
 
 
@@ -72,4 +83,75 @@
     	top: -4px;
 		background: url(../img/svg/howto.svg) no-repeat;
 	}
+}
+
+
+.page-footer__wrap{
+	display: flex;
+	margin-right: -43px;
+}
+.page-footer__item{
+	padding-right: 43px;
+	width: 20%;
+}
+.page-footer__title{
+	font-weight: 800;
+	margin-bottom: 24px;
+
+}
+
+.page-footer__link{
+	display: block;
+	margin-bottom: 22px;
+	font-size: 16px;
+	color: #0A9DDC;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+.page-footer__hidden{
+	display: none;
+	&.active{
+		display: block;
+	}
+}
+
+.show-more-link{
+    display: block;
+    font-size: 16px;
+    border-top: 1px solid #D5DCDC;
+    padding-top: 16px;
+    color: #0A9DDC;
+    padding-left: 32px;
+    position: relative;
+	&:before{
+		content: "";
+		display: inline-block;
+	    width: 24px;
+	    height: 19px;
+	    position: absolute;
+	    left: 0;
+	    bottom: 0;
+	    background: url(../img/svg/more-link.svg) center/contain no-repeat;
+	}
+}
+
+.page-footer__links{
+	padding-bottom: 25px;
+}
+
+.page-footer__logo{
+	margin: 41px 0 23px;
+	img{
+		display: block;
+	}
+}
+.copyright{
+	font-size: 16px;
+	margin-bottom: 24px;
+}
+
+.all-right{
+	margin-bottom: 24px;
+	font-size: 16px;
 }
