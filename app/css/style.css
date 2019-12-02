@@ -3374,14 +3374,14 @@ textarea, input {
     .page-header.fixed .office-link {
       color: #000 !important;
       text-shadow: none !important; }
-    .page-header.fixed .phone-link:before {
+    .page-header.fixed .phone-link-toggle:before {
       background: url(../img/svg/phone-fix.svg) no-repeat;
       top: 10px; }
     .page-header.fixed .office-link,
     .page-header.fixed .courses-link {
       padding-top: 17px !important;
       padding-bottom: 17px !important; }
-    .page-header.fixed .phone-link {
+    .page-header.fixed .phone-link-toggle {
       width: 64px;
       height: 56px;
       background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#E8FCFF)) !important;
@@ -3390,6 +3390,8 @@ textarea, input {
       margin-right: 0;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0; }
+      .page-header.fixed .phone-link-toggle.active {
+        background: #DCFBFF !important; }
     .page-header.fixed .courses-link {
       background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#E8FCFF));
       background: linear-gradient(180deg, #FFFFFF 0%, #E8FCFF 100%);
@@ -3400,6 +3402,11 @@ textarea, input {
       border-bottom-right-radius: 0; }
     .page-header.fixed .office-link {
       background: #fff; }
+    .page-header.fixed .phone-list {
+      border-radius: 0; }
+
+.layout--page .phone-link-toggle {
+  background: rgba(255, 255, 255, 0.1); }
 
 .logo {
   display: inline-block;
@@ -3462,15 +3469,20 @@ textarea, input {
   font-size: 16px; }
 
 .phone-link {
+  display: inline-block;
+  position: relative; }
+
+.phone-link-toggle {
   background: rgba(60, 60, 60, 0.1);
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   margin-right: 1px;
-  display: inline-block;
+  display: block;
   width: 64px;
   height: 64px;
-  position: relative; }
-  .phone-link:before {
+  position: relative;
+  z-index: 2; }
+  .phone-link-toggle:before {
     content: "";
     display: inline-block;
     width: 48px;
@@ -3479,6 +3491,26 @@ textarea, input {
     position: absolute;
     top: 14px;
     left: 10px; }
+  .phone-link-toggle:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 9px 0 9px;
+    border-color: #DCFBFF transparent transparent transparent;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    opacity: 0; }
+  .phone-link-toggle.active {
+    background: #DCFBFF; }
+    .phone-link-toggle.active:before {
+      background: url(../img/svg/phone-fix.svg) no-repeat; }
+    .phone-link-toggle.active:after {
+      opacity: 1; }
 
 .office-link {
   background: rgba(60, 60, 60, 0.1);
@@ -3583,6 +3615,32 @@ textarea, input {
     -webkit-transform: translate(0%);
         -ms-transform: translate(0%);
             transform: translate(0%); }
+
+.phone-list {
+  background: #fff;
+  -webkit-box-shadow: 0px 3px 14px rgba(131, 186, 193, 0.5);
+          box-shadow: 0px 3px 14px rgba(131, 186, 193, 0.5);
+  width: 411px;
+  padding: 26px 70px 30px 37px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: none;
+  border-radius: 8px; }
+
+.phone-list__title {
+  font-size: 16px;
+  margin-bottom: 10px; }
+
+.phone-call {
+  display: block;
+  font-weight: 800;
+  font-size: 24px;
+  color: #3C3C3C;
+  margin-bottom: 8px;
+  margin-left: -14px; }
+  .phone-call:last-child {
+    margin-bottom: 0; }
 
 .workarea {
   line-height: 1.8; }
@@ -3796,9 +3854,6 @@ body.fixed {
 
 .layout--page .office-link {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background: rgba(255, 255, 255, 0.1); }
-
-.layout--page .phone-link {
   background: rgba(255, 255, 255, 0.1); }
 
 .layout--page .page-content {

@@ -16,7 +16,7 @@
             text-shadow:none!important;
             
         }
-        .phone-link:before {
+        .phone-link-toggle:before {
             background: url(../img/svg/phone-fix.svg) no-repeat;
                 top: 10px;
         }
@@ -25,7 +25,7 @@
             padding-top: 17px!important;
             padding-bottom: 17px!important;
         }
-        .phone-link{
+        .phone-link-toggle{
             width: 64px;
             height: 56px;
             background: linear-gradient(180deg, #FFFFFF 0%, #E8FCFF 100%)!important;
@@ -33,6 +33,9 @@
             margin-right: 0;
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
+            &.active{
+                background: #DCFBFF!important;
+            }
         }
 
         .courses-link{
@@ -46,6 +49,15 @@
         .office-link{
             background: #fff;
         }
+        .phone-list{
+            border-radius: 0;
+        }
+    }
+}
+
+.layout--page{
+    .phone-link-toggle{
+     background: rgba(255, 255, 255, 0.1);
     }
 }
 
@@ -90,14 +102,19 @@
 }
 
 .phone-link{
+    display: inline-block;
+    position: relative;
+}
+.phone-link-toggle{
     background: rgba(60,60,60,0.1); 
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     margin-right: 1px;
-    display: inline-block;
+    display: block;
     width: 64px;
     height: 64px;
     position: relative;
+    z-index: 2;
     &:before{
         content: "";
         display: inline-block;
@@ -108,7 +125,31 @@
         top: 14px;
         left: 10px;  
     }
+    &:after{
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 9px 9px 0 9px;
+        border-color: #DCFBFF transparent transparent transparent;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform:translateX(-50%);
+        opacity: 0;
+    }
+    &.active{
+        background: #DCFBFF;
+        &:before{
+            background: url(../img/svg/phone-fix.svg) no-repeat;
+            //top: 10px;
+        }
+        &:after{
+            opacity: 1;
+        }
+    }
 }
+
 .office-link{
     background: rgba(60,60,60,0.1); 
     display: inline-block;
@@ -212,3 +253,29 @@
 
 }
 
+.phone-list{
+    background: #fff;
+    box-shadow: 0px 3px 14px rgba(131, 186, 193, 0.5);
+    width: 411px;
+    padding: 26px 70px 30px 37px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    border-radius: 8px;
+}
+.phone-list__title{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.phone-call{
+    display: block;
+    font-weight: 800;
+    font-size: 24px;
+    color: #3C3C3C;
+    margin-bottom: 8px;
+    margin-left: -14px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
