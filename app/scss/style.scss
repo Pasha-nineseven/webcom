@@ -163,9 +163,9 @@ body.fixed {
 	&+.consultation{
 		    margin-top: -85px;
 	}
-	&+.subscription{
-		padding-top: 0;
-	}
+	// &+.subscription{
+	// 	padding-top: 0;
+	// }
 }
 .page-title,
 .breadcumbs{
@@ -176,6 +176,10 @@ body.fixed {
 }
 
 .slick-slider{
+	z-index: 1;
+}
+.checkbox-item{
+	position: relative;
 	z-index: 1;
 }
 
@@ -484,6 +488,9 @@ a.breadcumbs__item:after{
 		width: 40px;
 		height: 40px;
 	}
+	&+.about{
+		padding-top: 0;
+	}
 }
 
 .subscription__wrap{
@@ -509,7 +516,7 @@ a.breadcumbs__item:after{
 		position: absolute;
 		right: 0;
 		top: 0;
-		padding: 10px 18px;
+		padding: 13px 18px;
 	}
 	input[type="text"],
 	input[type="email"],
@@ -1091,6 +1098,9 @@ padding: 35px 0 0;
 	padding: 170px 0 50px;
 	position: relative;
 	color: #fff;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
     &:before {
 	    content: "";
 	    display: block;
@@ -1123,6 +1133,9 @@ padding: 35px 0 0;
 }
 .page-top__add{
 	font-size: 16px;
+}
+.page-top__add--lg{
+	padding-bottom: 127px;
 }
 .reviews-top{
 	padding: 48px 0 90px;
@@ -2003,6 +2016,79 @@ padding: 35px 0 0;
 	top: -36px;
 	margin-bottom: -36px;
 	padding: 40px 72px 21px;
+}
+
+.conference{
+	    padding: 96px 0 58px;
+	h2{
+		    margin-bottom: 44px;
+	}
+}
+.conference__list{
+	    margin-bottom: 71px;
+}
+
+.conference__item{
+	margin-bottom: 40px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	padding: 235px 112px 40px;
+	position: relative;
+	font-size: 16px;
+	box-shadow: 0px 5.62137px 38.5466px #B8BDBD;
+	line-height: 1.38;
+	&:last-child{
+		margin-bottom: 0;
+	}
+	// &:before{
+	// 	content: "";
+	// 	display: block;
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	position: absolute;
+	// 	left: 0;
+	// 	top: 0;
+	// 	background: #3C3C3C;
+	// 	opacity: 0.2;
+	// }
+	// &:after{
+	// 	content: "";
+	// 	display: block;
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	position: absolute;
+	// 	left: 0;
+	// 	top: 0;
+	// 	background: linear-gradient(90deg, #E55D87 0%, #5FC3E4 100%);
+	// 	opacity: 0.7;
+	// }
+	h3{
+		margin-bottom: 13px;
+	}
+	p{
+		margin-bottom: 11px;
+	}
+}
+
+.conf-more{
+	color: #fff;
+    position: relative;
+    padding-left: 33px;
+    display: inline-block;
+    margin-top: 22px;
+	&:before{
+		content: "";
+		display: inline-block;
+		width: 25px;
+		height: 25px;
+		background: url(../img/svg/conf-more.svg) center/contain no-repeat;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
 }
 
 //PAGES

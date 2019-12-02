@@ -679,5 +679,6 @@ $('body').append(
         <li><a href="index.html">Index</a></li> \
         <li><a href="kak_oplatit.html">kak_oplatit</a></li> \
         <li><a href="korp_obuchenie.html">korp_obuchenie</a></li> \
+        <li><a href="meropriatia.html">meropriatia</a></li> \
 	</ol> \
 </div>');

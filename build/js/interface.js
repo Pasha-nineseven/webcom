@@ -44,6 +44,22 @@ $(document).ready(function() {
     });
 
 
+    //PHONE-TOGGLE
+    $('body').on('click','.js-phone-link-toggle', function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $('.phone-list').slideToggle(150);
+    });
+    $(document).click(function (e){
+        var div = $(".phone-link");
+        if (!div.is(e.target)
+            && div.has(e.target).length === 0) {
+            $(".phone-link-toggle").removeClass('active');
+            $('.phone-list').slideUp(150);
+        }
+    });
+
+
 	//main-products-slider
     if ($('.speaker-slider').length>0) {
         var $gallery = $('.speaker-slider');
@@ -663,5 +679,6 @@ $('body').append(
         <li><a href="index.html">Index</a></li> \
         <li><a href="kak_oplatit.html">kak_oplatit</a></li> \
         <li><a href="korp_obuchenie.html">korp_obuchenie</a></li> \
+        <li><a href="meropriatia.html">meropriatia</a></li> \
 	</ol> \
 </div>');
