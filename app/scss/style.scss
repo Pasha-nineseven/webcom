@@ -422,6 +422,9 @@ a.breadcumbs__item:after{
     background: #fff;
         padding: 96px 0;
     h2{
+    	margin: 0;
+		font-weight: 800;
+		line-height: 1.2;
     	font-size: 48px;
     	margin-bottom: 20px;
     }
@@ -937,6 +940,7 @@ a.breadcumbs__item:after{
 }
 .requisites__list{
 	display: flex;
+	flex-wrap:wrap;
 }
 
 .requisites__item{
@@ -1281,6 +1285,7 @@ padding: 35px 0 0;
 }
 .reviews__icon {
     width: 136px;
+    min-width: 136px;
     height: 136px;
     border-radius: 50%;
     background-size: cover;
@@ -2428,6 +2433,7 @@ padding: 35px 0 0;
 .latest{
 	background: #fff;
 	padding-top: 53px;
+	overflow: hidden;
 }
 
 .latest__img {
@@ -2483,8 +2489,12 @@ padding: 35px 0 0;
 .img-multiple{
 	display: flex;
 	margin-right: -19px;
-
-	
+	flex-wrap:wrap;
+}
+.img-multiple--4{
+	.img-multiple__item{
+		width: 25%;
+	}
 }
 .img-multiple__item{
 	padding-right: 19px;
