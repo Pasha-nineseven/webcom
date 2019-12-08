@@ -538,6 +538,25 @@ $(document).ready(function() {
         $(this).hide();
         $(this).prev('.page-footer__hidden').addClass('active');
     });
+
+    //latest-slider
+    if ($('.latest__slider').length>0) {
+        var $gallery = $('.latest__slider');
+
+        $gallery.slick({
+            speed: 250,
+            swipe: true,
+            swipeToSlide: true,
+            touchThreshold: 10,
+            arrows:true,
+            dots:false,
+            useTransform:true,
+            accessibility: false,
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+        });
+    };
 });
 
 
@@ -680,5 +699,6 @@ $('body').append(
         <li><a href="kak_oplatit.html">kak_oplatit</a></li> \
         <li><a href="korp_obuchenie.html">korp_obuchenie</a></li> \
         <li><a href="meropriatia.html">meropriatia</a></li> \
+        <li><a href="statja_page.html">statja_page</a></li> \
 	</ol> \
 </div>');

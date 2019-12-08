@@ -1905,6 +1905,7 @@ padding: 35px 0 0;
 .selecting{
 	padding: 33px 0 46px;
 	text-align: center;
+	background: #F4F5F5; 
 	h4{
 		color: #FF7700;
 		margin: 0;
@@ -2317,6 +2318,201 @@ padding: 35px 0 0;
 .theme__txt{
 	margin-bottom: 29px;
 }
+.article{
+	background: #fff;
+	padding:  48px
+}
+
+.img-wrap{
+	margin: 0 -15px 23px;
+	    padding-top: 20px;
+	img{
+		display: block;
+		max-width: 100%;
+	}
+	figcaption{
+		padding: 10px 15px 0;
+	}
+}
+
+.img-wrap--video{
+	position: relative;
+}
+
+.promotion{
+	background: linear-gradient(191.23deg, #DCFBFF 0%, #FFFFFF 100%);
+	text-align: center;
+	padding: 30px 30px 40px;
+	margin-bottom: 96px;
+	h4{
+		color: #FF7700;
+		margin-bottom: 11px;
+	}
+}
+.promotion__txt{
+	margin-bottom: 24px;
+}
+
+
+.marketing{
+	position: relative;
+	background: #4F50FF;
+	padding: 60px 0;
+	color: #fff;
+	&:before{
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: linear-gradient(180deg, #231F21 0%, rgba(35, 31, 32, 0) 100%);
+		opacity: 0.5; 
+	}
+	&:after{
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: linear-gradient(137.94deg, rgba(255, 119, 0, 0) 0%, #FF7700 100%);
+		opacity: 0.3;
+	}
+	h3{
+	    margin: 0;
+	    margin-bottom: 31px;
+	    font-weight: 800;
+	    font-size: 30px;
+	    line-height: 1.2;
+	}
+	.container-fluid{
+		max-width: 1088px;
+		padding: 0;
+	}
+	.btn{
+		    padding: 13px 62px;
+    font-size: 18px;
+	}
+}
+.marketing__inner{
+	max-width: 665px;
+	position: relative;
+	z-index: 1;
+}
+
+
+.marketing__img{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	    z-index: 1;
+	img{
+		display: block;
+	}
+}
+
+.latest__title{
+	max-width: 1088px;
+	margin: 0 auto;
+	h2{
+		margin: 0;
+		margin-bottom: 50px;
+		font-weight: 800;
+		font-size: 40px;
+		line-height: 1.2;
+	}
+}
+.latest{
+	background: #fff;
+	padding-top: 53px;
+}
+
+.latest__img {
+    height: 416px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 23px;
+    display: block;
+}
+
+.latest__top{
+	color: #0A9DDC;
+	font-weight: 800;
+	margin-bottom: 15px;
+	display: block;
+}
+
+
+.latest__txt{
+	color: #3C3C3C;
+	font-size: 16px;
+	opacity: 0.6;
+}
+
+.latest__slider{
+	display: none;
+	&.slick-initialized{
+		display: block;
+	}
+	.slick-list{
+		margin: 0 -16px;
+	}
+	.slick-arrow{
+		margin-top: 0;
+    	top: 170px;
+	}
+	// .slick-dots {
+	//     position: absolute;
+	//     bottom: -40px;
+	// }
+	// .slick-slide{
+	// 	>div{
+	// 		height: 300px;
+	// 	}
+	// }
+}
+.latest__item{
+	padding: 0 16px;
+}
+
+
+.img-multiple{
+	display: flex;
+	margin-right: -19px;
+
+	
+}
+.img-multiple__item{
+	padding-right: 19px;
+	
+	img{
+		max-width: 100%;
+		display: block;
+	}
+}
+.img-multiple-wrap{
+	margin-bottom: 20px;
+	figcaption{
+		min-width: 100%;
+		padding: 9px 0 0 0;
+	}
+}
+.share{
+	border-top: 2px solid #F4F5F5;
+	padding-top: 32px;
+	    display: flex;
+    align-items: center;
+}
+
+.share__msg{
+	font-size: 16px;
+	margin-right: 10px;
+}
+
 
 //PAGES
 @import "pages/speaker";
