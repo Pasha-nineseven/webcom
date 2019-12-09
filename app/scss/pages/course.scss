@@ -312,6 +312,8 @@
 	    padding: 100px 0 59px 0;
 	h2{
 		margin-bottom: 0;
+		position: relative;
+		z-index: 1;
 	}
 }
 .training__img{
@@ -1476,6 +1478,7 @@ a.get-bonus-add__item{
 
 .about-slider__img{
 	width: 192px;
+	min-width: 192px;
 	height: 192px;
 	border-radius: 50%;
 	background-size: cover;

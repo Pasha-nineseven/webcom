@@ -2252,6 +2252,7 @@ padding: 35px 0 0;
 	position: absolute;
 	bottom: 0;
 	left: 0;
+	padding-right: 20px;
 }
 
 .webinar__info{
@@ -2318,6 +2319,10 @@ padding: 35px 0 0;
 	position: absolute;
 	right: 50px;
 	top: -64px;
+	img{
+		display: block;
+		max-width: 100%;
+	}
 }
 
 .theme__txt{
@@ -2416,6 +2421,7 @@ padding: 35px 0 0;
 	    z-index: 1;
 	img{
 		display: block;
+		max-width: 100%;
 	}
 }
 

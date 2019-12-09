@@ -43,6 +43,42 @@
 	.contact__items{
 		margin-right: -20px;
 	}
+	.about-slider__rev {
+	    padding: 20px;
+	    font-size: 16px;
+	}
+	.webinar__top:before {
+	    background-size: contain;
+	    width: 64px;
+	    height: 50px;
+	    left: -15px;
+	}
+	.webinar__top {
+	    font-size: 20px;
+	}
+	.webinar__list{
+		margin-right: -20px;
+	}
+	.webinar__item{
+		padding-right: 20px;
+	}
+	.webinar__list--single,
+	.webinar__list--two{
+	    max-width: 100%;
+	    margin-right: 0;
+	}
+	.webinar__list--single .webinar__add {
+	    margin-left: 30px;
+	    padding-left: 50px;
+	}
+	.webinar__img {
+	    width: 100px;
+	    min-width: 100px;
+	    height: 100px;
+	}
+	.webinar__list--single .webinar__person {
+	    margin-left: 20px;
+	}
 }
 
 @media screen and (max-width: 1200px){
@@ -108,6 +144,21 @@
 	.page-header.fixed .logo {
 	    margin-top: 0;
 	    height: 44px;
+	}
+	.course-nav__link--sign{
+		font-size: 16px;
+	}
+	.course-nav__link {
+	    padding: 3px 5px;
+	    line-height: 1;
+	}
+	.theme__img {
+	    right: 10px;
+	    top: -10px;
+	    width: 250px;
+	}
+	.theme__in {
+	    padding: 31px 250px 33px 20px;
 	}
 }
 @media screen and (max-width: 1150px){
@@ -208,8 +259,58 @@
 	.cost,
 	.warranty,
 	.results,
-	.question{
+	.question,
+	.individual,
+	.selecting,
+	.card,
+	.reviews-video,
+	.reviews,
+	.training,
+	.why,
+	.course-cabinet,
+	.programm{
 	    padding: 40px 0;
+	}
+	.get-top{
+		padding: 40px;
+	}
+	.get-bonus {
+	    padding: 40px;
+	}
+	.docs-add{
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.letter {
+	    padding: 40px 20px;
+	}
+	.consultation__inner{
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.card-benefits__inner {
+	    top: -15px;
+	    margin-bottom: 0;
+	    padding: 40px 30px;
+	}
+	.methods__item--corporative {
+	    padding: 40px 30px 40px;
+	}
+	.methods{
+		padding-bottom: 40px;
+	}
+	.methods__item + .methods__accord {
+	    margin-top: 40px;
+	}
+	.speaker-slider {
+	    margin-bottom: 40px;
+	}
+	.contract {
+	    padding: 40px 20px;
+	}
+	.consultation--corp .consultation__inner{
+		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 	.conference__list {
 		margin-bottom: 40px;
@@ -244,8 +345,40 @@
 	.contact{
 		margin-bottom: 40px;
 	}
+	.reviews-slider-wrap + .more-reviews {
+	    margin-top: 40px;
+	    padding-bottom: 0;
+	}
+	.center-photo{
+		padding-bottom: 40px;
+	}
 	.contacts-address {
 	    padding: 0;
+	}
+	.about-slider-wrap {
+	    margin-right: 10px;
+	}
+	.about-youtube-slider-wrap {
+	    margin-left: 10px;
+	}
+	.about-youtube-slider-wrap,
+	.about-slider-wrap{
+		padding-bottom: 25px;
+	}
+	.about-slider__img{
+		width: 130px;
+		min-width: 130px;
+		height: 130px;
+	}
+	.about-slider__person {
+	    width: 180px;
+	    margin-right: 10px;
+	}
+	.about-slider__item {
+	    padding-bottom: 35px;
+	}
+	.theme__in {
+	    padding: 40px 250px 40px 20px;
 	}
 }
 
@@ -300,9 +433,63 @@
 	    background-size: contain;
 	    width: 88px;
 	    height: 74px;
+	    left: 0;
 	}
 	.blockquote-wrap {
 	    padding: 30px 55px;
+	}
+	.course-nav__link,
+	.course-nav__link--sign {
+	    font-size: 14px;
+	}
+	.marketing__img {
+	    width: 450px;
+	}
+	.webinar__info {
+	    width: 100%;
+	    min-width: 100%;
+	    margin-bottom: 15px;
+	}
+	.webinar__add {
+	    padding-right: 0;
+	    flex-wrap: wrap;
+	    position: static;
+	}
+	.webinar__item{
+		padding-bottom: 0;
+	}
+	.webinar__person-wrap {
+	    margin-left: 0;
+	    flex-wrap: wrap;
+	}
+	.webinar__list--single .webinar__person {
+	    margin-left: 0;
+	    min-width: 100%;
+	    order: 1;
+	    margin-bottom: 15px;
+	    border-top: 1px solid #F4F5F5;
+    	padding-top: 10px;
+	}
+	.webinar__list--single{
+		.webinar__img{
+			order: 2;
+		}
+	}
+	.webinar__list--single .webinar__date, .webinar__list--single .webinar__time {
+	    font-size: 16px;
+	}
+	.webinar__list--single .webinar__date span {
+	    font-size: 40px;
+	}
+	.webinar__list--single .webinar__time-top{
+		margin-bottom: 12px;
+	}
+	.webinar__list--single .webinar__add {
+	    margin-left: 20px;
+	    padding-left: 20px;
+	}
+	.webinar__list--single .webinar__top {
+	    font-size: 20px;
 	}
 }
 
@@ -331,11 +518,92 @@
 	.logo {
 	    width: 175px;
 	}
+	.about-slider__person {
+	    width: 100%;
+	    margin-right: 0;
+	}
+	.about-slider{
+		padding-top: 70px;
+	}
+	.about-slider__item{
+		flex-wrap: wrap;
+	}
+	.about-slider__rev{
+		margin-top: 20px;
+	}
+	.about-slider__arr{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 850px){
+	.latest__slider .slick-list {
+	    margin: 0 -8px;
+	}
+	.latest__item{
+		padding: 0 8px;
+	}
 }
 
 @media screen and (max-width: 767px){
 	.workarea {
 	    line-height: 1.3;
+	    h1{
+	    	font-size: 40px
+	    }
+	    h2{
+	    	font-size: 32px;
+	    }
+	    h3{
+	    	font-size: 28px;
+	    }
+	    table{
+	    	font-size: 16px;
+	    }
+	    th{
+	    	padding: 4px 10px;
+	    }
+	    td{
+	    	padding: 4px 10px;
+	    }
+	    blockquote {
+		    font-size: 20px;
+		    padding-bottom: 10px;
+		}
+	}
+	.page-top .page-title h1,
+	.page-title h1{
+		font-size: 40px;
+	}
+	.latest__title h2,
+	.subscription h2,
+	.contacts__info h2,
+	.webinar h2,
+	.about h2,
+	.individual h2,
+	.card h2,
+	.card-benefits h2,
+	.consultation--corp h2,
+	.consultation h2,
+	.requisites h2{
+		font-size: 32px;
+		margin-bottom: 25px;
+	}
+	.conference h2{
+		margin-bottom: 25px;
+	}
+	.marketing h3{
+		font-size: 28px;
+	}
+	.blockquote-wrap {
+	    padding: 10px 20px 10px 15px;
+	    margin-bottom: 0;
+	}
+	.blockquote-wrap:before {
+		width: 58px;
+		height: 48px;
+		left: -5px;
+		top: -4px;
 	}
 	.requisites__item {
 	    padding-right: 0;
@@ -355,13 +623,152 @@
 	    padding-right: 0;
 	    width: 100%;
 	}
+	.img-wrap{
+		padding-top: 0;
+	}
+	.contacts {
+	    min-height: auto;
+	}
+	.contacts__info{
+		width: 100%;
+		padding: 40px 0;
+	}
+	#contacts-map {
+	    position: relative;
+	    width: 100%;
+	    height: 300px;
+	}
+	.contacts__howTo,
+	.contacts__mail,
+	.contacts__add{
+		margin-bottom: 20px;
+	}
+	.contacts__phone{
+		margin-bottom: 20px;
+		&+.contacts__phone{
+			margin-bottom: 20px;
+		}
+	}
+	.contacts__add{
+		br{
+			display: none;
+		}
+	}
+	.img-multiple{
+		margin-right: -8px;
+	}
+	.img-multiple__item {
+	    padding-right: 8px;
+	    margin-bottom: 8px;
+	}
+	.latest {
+	    padding-top: 40px;
+	}
+	.marketing,
+	.promotion{
+		padding: 40px 16px;
+	}
+	a.breadcumbs__item:after{
+		margin: 0 7px;
+	}
+	.breadcumbs__wrap{
+		font-size: 14px;
+	}
+	.page-top__add--lg {
+	    padding-bottom: 20px;
+	}
+	.conference__item {
+	    padding: 40px;
+	}
+	.about-wrap {
+	    padding-top: 0;
+	    flex-wrap: wrap;
+	}
+	.about-slider-wrap {
+	    margin-right: 0;
+	    width: 100%;
+	}
+	.about-youtube-slider-wrap {
+	    margin-left: 0;
+	    width: 100%;
+	}
+	.all-reviews,
+	.all-youtube-video{
+	    position: static;
+	}
+	.about-youtube-slider-wrap,
+	.about-slider-wrap {
+	    padding-bottom: 0;
+	}
+	.webinar__list {
+	    margin-right: 0;
+	    flex-wrap: wrap;
+	}
+	.webinar__list--three .webinar__item,
+	.webinar__list--two .webinar__item{
+	    width: 100%;
+	    padding-right: 0;
+	    margin-bottom: 40px;
+	    &:last-child{
+	    	margin-bottom: 0;
+	    }
+	}
+	.webinar__txt {
+	    margin-bottom: 15px;
+	}
+	.webinar__list--single .webinar__item {
+	    flex-wrap: wrap;
+	}
+	.webinar__list--single .webinar__add {
+	    margin-left: 0;
+	    padding-left: 0;
+	    &:before{
+	    	display: none;
+	    }
+	}
+	.webinar__list--single .webinar__add {
+	    width: 400px;
+	    min-width: auto;
+	}
+	.webinar__info {
+	    padding-right: 0;
+	    width: auto;
+	    min-width: auto;
+	}
+	.webinar__add {
+	    flex-direction: column;
+	    max-width: 400px;
+	}
+	.theme__in {
+	    padding: 140px 20px 40px 20px;
+	}
+	.theme__img {
+	    right: 50%;
+	    transform: translateX(50%);
+	    top: -45px;
+	}
 }
 
 
 @media screen and (max-width: 600px){
 	.img-multiple--4 .img-multiple__item {
 	    width: 50%;
-	    margin-bottom: 20px;
+	}
+	.share{
+		flex-wrap:wrap;
+	}
+	.share__msg{
+		margin-right: 0;
+		margin-bottom: 10px;
+		width: 100%;
+	}
+	.webinar__add,
+	.webinar__list--single .webinar__add {
+	    width: 100%;
+	    max-width: 100%;
+	}
+	.conference__item {
+	    padding: 20px;
 	}
 }
 @media screen and (max-width: 400px){
