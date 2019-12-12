@@ -730,5 +730,7 @@ $('body').append(
         <li><a href="korp_obuchenie.html">korp_obuchenie</a></li> \
         <li><a href="meropriatia.html">meropriatia</a></li> \
         <li><a href="statja_page.html">statja_page</a></li> \
+        <li><a href="news_list.html">news_list</a></li> \
+        <li><a href="statji_list.html">statji_list</a></li> \
 	</ol> \
 </div>');
