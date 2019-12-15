@@ -587,6 +587,57 @@ $(document).ready(function() {
             ]
         });
     };
+
+
+
+    //speakers-slider
+    if ($('.speakers-slider').length>0) {
+        var $gallery = $('.speakers-slider');
+
+        $gallery.slick({
+            speed: 250,
+            swipe: true,
+            swipeToSlide: true,
+            touchThreshold: 10,
+            arrows:true,
+            dots:false,
+            useTransform:true,
+            accessibility: false,
+            infinite: false,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+             responsive: [
+                {
+                  breakpoint: 768,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                  }
+                },
+                // {
+                //   breakpoint: 700,
+                //   settings: {
+                //     slidesToShow: 4,
+                //     slidesToScroll: 1,
+                //   }
+                // },
+                {
+                  breakpoint: 600,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                  }
+                },
+                // {
+                //   breakpoint: 500,
+                //   settings: {
+                //     slidesToShow: 2,
+                //     slidesToScroll: 1,
+                //   }
+                // },
+            ]
+        });
+    };
 });
 
 
@@ -732,5 +783,6 @@ $('body').append(
         <li><a href="statja_page.html">statja_page</a></li> \
         <li><a href="news_list.html">news_list</a></li> \
         <li><a href="statji_list.html">statji_list</a></li> \
+        <li><a href="kyrsi_list.html">kyrsi_list</a></li> \
 	</ol> \
 </div>');
