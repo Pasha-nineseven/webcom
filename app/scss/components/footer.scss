@@ -20,6 +20,9 @@
 .contacts{
 	min-height: 613px;
 	position: relative;
+	&.grey-sqheme{
+		border-top: 2px solid #fff;
+	}
 }
 
 #contacts-map{
@@ -29,9 +32,15 @@
 	right: 0;
 	top: 0;
 }
+.grey-sqheme{
+	#contacts-map{
+		border-left: 2px solid #fff;
+	}
+}
 .contacts__info{
 	width: 50%;
 	padding: 100px 40px 20px 0;
+
 	h2{
 		margin: 0;
 		margin-bottom: 33px;
@@ -141,7 +150,7 @@
 }
 
 .page-footer__logo{
-	margin: 41px 0 23px;
+	margin: 28px 0 23px;
 	img{
 		display: block;
 		max-width: 100%;

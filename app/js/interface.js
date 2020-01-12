@@ -137,6 +137,34 @@ $(document).ready(function() {
         ],
     });
 
+    //POPUP-IMG
+    $(".js-gallery").fancybox({
+        speed : 330,
+        transitionEffect: "slide", 
+        animationEffect: "zoom-in-out", 
+        //toolbar  : false,
+        infobar: false,
+        idleTime: false,
+        // onActivate: function(){
+        //     alert(1);
+        //     $(".fancybox-caption").clone().appendTo(".fancybox-content"); 
+        // },
+        beforeShow: function(){
+            $('.page-header').css('padding-right','17px');
+            $('.course-nav').css('padding-right','17px');
+        },
+        afterClose: function() {
+            $('.page-header').css('padding-right','0');
+            $('.course-nav').css('padding-right','0');
+        },
+        buttons: [
+            "close"
+        ],
+        image : {
+            protect : true,
+        },
+    });
+
     if ($('.speaker-img').length>0) {
         // var sidebar = new StickySidebar('.speaker-img__in', {
         //     containerSelector: '.speaker-wrap',
@@ -163,6 +191,10 @@ $(document).ready(function() {
             && div.has(e.target).length === 0) {
             $(".what__add").removeClass('active');
         }
+    });
+     $('body').on('click','.js-what__close', function(e){
+        e.preventDefault();
+        $(this).parents('.what__item').find('.what__add').removeClass('active');
     });
 
 
@@ -638,6 +670,71 @@ $(document).ready(function() {
             ]
         });
     };
+
+    //TABS
+    $(".tab_content").hide(); 
+    $(".tabs li:first").addClass("active").show();
+    $(".tab_content:first").show();
+    //TABS On Click Event
+    $(".tabs li").click(function() {
+         $(".tabs li a").removeClass("active");
+        $(this).find('a').addClass("active");
+        $(".tab_content").hide();
+        var activeTab = $(this).find("a").attr("href");
+        $(activeTab).fadeIn();
+        return false;
+    });
+
+
+
+    //timetable-slider
+    if ($('.timetable-slider').length>0) {
+        var $gallery = $('.timetable-slider');
+
+        $gallery.slick({
+            speed: 250,
+            swipe: true,
+            swipeToSlide: true,
+            touchThreshold: 10,
+            arrows:true,
+            dots:false,
+            useTransform:true,
+            accessibility: false,
+            infinite: false,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            // responsive: [
+            //     {
+            //       breakpoint: 850,
+            //       settings: {
+            //         slidesToShow: 5,
+            //         slidesToScroll: 1,
+            //       }
+            //     },
+            //     {
+            //       breakpoint: 700,
+            //       settings: {
+            //         slidesToShow: 4,
+            //         slidesToScroll: 1,
+            //       }
+            //     },
+            //     {
+            //       breakpoint: 600,
+            //       settings: {
+            //         slidesToShow: 3,
+            //         slidesToScroll: 1,
+            //       }
+            //     },
+            //     {
+            //       breakpoint: 500,
+            //       settings: {
+            //         slidesToShow: 2,
+            //         slidesToScroll: 1,
+            //       }
+            //     },
+            // ]
+        });
+    };
 });
 
 
@@ -771,12 +868,11 @@ $('body').append(
 	<ol id="pages"> \
         <li><a href="course.html">course</a></li> \
         <li><a href="spikeri_list_1.html">spikeri_list_1</a></li> \
-        <li><a href="spikeri_list_2.html">spikeri_list_2</a></li> \
         <li><a href="contact.html">contact</a></li> \
         <li><a href="otzivi.html">otzivi</a></li> \
         <li><a href="kyrs_otzivi.html">kyrs_otzivi</a></li> \
         <li><a href="spiker.html">speaker</a></li> \
-        <li><a href="index.html">Index</a></li> \
+        <li><a href="test.html">Test</a></li> \
         <li><a href="kak_oplatit.html">kak_oplatit</a></li> \
         <li><a href="korp_obuchenie.html">korp_obuchenie</a></li> \
         <li><a href="meropriatia.html">meropriatia</a></li> \
@@ -784,5 +880,7 @@ $('body').append(
         <li><a href="news_list.html">news_list</a></li> \
         <li><a href="statji_list.html">statji_list</a></li> \
         <li><a href="kyrsi_list.html">kyrsi_list</a></li> \
+        <li><a href="page404.html">page404</a></li> \
+        <li><a href="index.html">Index</a></li> \
 	</ol> \
 </div>');

@@ -26,7 +26,7 @@
 	position: relative;
 	padding-bottom: 106px;
 	font-size: 16px;
-	height: 100vh;
+	// height: 100vh;
 	&:before{
 		content: "";
 		display: block;
@@ -55,20 +55,22 @@
 }
 
 .course-top__add{
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
     padding-bottom: 25px;
        margin-bottom: 27px;
     line-height: 1.34;
 }
 
 .course-top__items{
-	margin: 0 -28px;
+	//margin: 0 -45px;
+	margin-right: -90px;
 	display: flex;
 }
 .course-top__item{
-	padding: 0 28px;
+	//padding: 0 45px;
 	width: 33.333%;
 	line-height: 1.34;
+	margin-right: 50px;
 }
 
 .course-top__title{
@@ -172,7 +174,7 @@
 }
 
 .who__icon{
-	height: 144px;
+	height: 165px;
 	display: flex;
 	align-items:center;
 	position: relative;
@@ -195,7 +197,7 @@
 		background: linear-gradient(225deg, #DCFBFF 0%, #FFFFFF 100%);
 		position: absolute;
 		left: -34px;
-    	top: 25px;
+    	top: 45px;
 		z-index: 1;
 	}
 }
@@ -244,6 +246,18 @@
 		display: block;
 	}
 }
+
+.what__close{
+	position: absolute;
+    left: 6px;
+    bottom: 6px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../img/svg/close.svg) no-repeat;
+    background-size: cover;
+}
+
 
 .target{
 	position: absolute;
@@ -487,16 +501,26 @@
 		left: 0;
 		bottom: -30px;
 	}
+	.slick-slide{
+		>div{
+			height: 436px;
+			border-radius: 16px;
+			overflow: hidden;
+			overflow: hidden;
+    		border: 8px solid #fff; 
+    		box-shadow: 0px 7px 24px #DCE9EB;
+		}
+	}
 }
 
 .course-cabinet-slider__item{
-	height: 436px;
+	height: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	border-radius: 16px;
-	border: 8px solid #fff;
-	    border-bottom: 0;
+	// border-radius: 16px;
+	// border: 8px solid #fff;
+	//     border-bottom: 0;
     //box-shadow: 0px 7px 24px #DCE9EB;
     
 }
@@ -539,7 +563,7 @@
 		background: url(../img/svg/after-bg.svg) no-repeat;
 		position: absolute;
 		top: 32px;
-		left: 29px;
+		left: 40px;
 	}
 }
 .after__txt{
@@ -589,6 +613,7 @@
 	background-position: center;
 	margin-bottom: 32px;
 	box-shadow: 0px 10px 23px #B8BDBD;
+	display: block;
 }
 
 .course-docs__title{
@@ -970,10 +995,10 @@
     	display: block;
     	width: 348px;
     	height: 342px;
-    	background: url(../img/svg/mail.svg) no-repeat;
+    	background: url(../img/content/mail.png) no-repeat;
     	position: absolute;
-    	    top: -35px;
-    	left: -17px;
+    	top: -23px;
+    	left: -15px;
     }
     .btn{
 		position: relative;
@@ -1038,6 +1063,12 @@
 	h2{
 		text-align: center;
 		margin-bottom: 31px;
+	}
+	&+.subscription{
+		padding-top: 0;
+		&+.question{
+			padding-top: 0;
+		}
 	}
 }
 
@@ -1158,6 +1189,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.get-top__number--plus{
+	text-indent: 35px;
 }
 
 .get-top__txt{
@@ -1306,6 +1340,9 @@ a.get-bonus-add__item{
 	margin-top: -7px;
     margin-left: 3px;
 }
+.results__number--large{
+	margin-left: -33px;
+}
 
 .results__item{
 	width: 128px;
@@ -1333,17 +1370,40 @@ a.get-bonus-add__item{
 
 .results__icon{
     position: absolute;
-    right: -2px;
-    top: -15px;
-    height: 66px;
+    right: 2px;
+    top: -13px;
+    height: 84px;
+    line-height: 84px;
+    vertical-align: middle;
     img{
-    	display: block;
-    	max-height: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		max-height: 100%;
     }
+}
+.results__icon--expert{
+	top: -16px;
+    right: -22px;
+}
+.results__icon--seminar{
+	top: -9px;
+    right: -14px;
+}
+.results__icon--group{
+    top: -21px;
+    right: 0px;
+}
+.results__icon--graduate{
+	top: -30px;
+    right: 0px;
+}
+.results__number--hours{
+	top: -12px;
+    right: -17px;
 }
 
 .about{
-	padding: 90px 0 64px;
+	padding: 90px 0 48px;
 	background: #fff;
 	h2{
 		 margin: 0;
@@ -1413,14 +1473,14 @@ a.get-bonus-add__item{
 .about-slider-wrap{
 	width: 50%;
 	position: relative;
-	padding-bottom: 54px;
+	padding-bottom: 48px;
 	margin-right: 28px;
 }
 .about-youtube-slider-wrap{
 	width: 50%;
 	margin-left: 100px;
 	position: relative;
-	padding-bottom: 54px;
+	padding-bottom: 48px;
 	min-width: 0px;
 }
 
@@ -1440,7 +1500,7 @@ a.get-bonus-add__item{
 	border: 4px solid #F4F5F5;
 	    line-height: 1.35;
     padding: 28px 25px 38px;
-	    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 20px 22px -15px rgba(0, 0, 0, 0.1);
 	position: relative;
 	margin-top: 67px;
 }
@@ -1540,19 +1600,22 @@ a.get-bonus-add__item{
 	}
 	.slick-next{
 		right: 16px;
+		background-position: center;
 	}
 	.slick-prev{
 		left:auto;
 		right: 130px;
+		background-position: center;
 	}
 }
 
 .about-pagingInfo{
     position: absolute;
-    top: 18px;
+    top: 24px;
     letter-spacing: 5px;
     right: 59px;
     z-index: 4;
+    line-height: 1;
 }
 
 
@@ -1573,23 +1636,36 @@ a.get-bonus-add__item{
 	}
 	.slick-next{
 		right: 0;
+		background-position: center;
 	}
 	.slick-prev{
 		left:auto;
 		right: 113px;
+		background-position: center;
+	}
+	.slick-list{
+		box-shadow: 0px 5.62137px 38.5466px #B8BDBD;
+	}
+	.slick-slide{
+		>div{
+			height: 238px;
+		}
 	}
 }
 .about-youtube-pagingInfo{
 	position: absolute;
-    top: 18px;
+    top: 24px;
     letter-spacing: 5px;
     right: 41px;
     z-index: 4;
+    line-height: 1;
 }
 
 .about-youtube-slider__item{
 	.video-item{
-		height: 239px;
+		    height: 238px;
+    	min-height: 238px;
+    	margin-bottom: 0;
 	}
 }
 
@@ -1609,6 +1685,9 @@ a.get-bonus-add__item{
     align-items: stretch; 
     &:last-child{
     	border-bottom: 0;
+    	.cost-table__in{
+    		padding-bottom: 43px;
+    	}
     }
     &:hover{
     	.tooltip{
