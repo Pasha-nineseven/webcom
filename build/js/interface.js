@@ -735,6 +735,42 @@ $(document).ready(function() {
             // ]
         });
     };
+
+
+    //speakers-slider
+    if ($('.our-projects__slider').length>0) {
+        var $gallery = $('.our-projects__slider');
+
+        $gallery.slick({
+            speed: 250,
+            swipe: true,
+            swipeToSlide: true,
+            touchThreshold: 10,
+            arrows:true,
+            dots:false,
+            useTransform:true,
+            accessibility: false,
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            //  responsive: [
+            //     {
+            //       breakpoint: 768,
+            //       settings: {
+            //         slidesToShow: 3,
+            //         slidesToScroll: 1,
+            //       }
+            //     },
+            //     {
+            //       breakpoint: 600,
+            //       settings: {
+            //         slidesToShow: 2,
+            //         slidesToScroll: 1,
+            //       }
+            //     },
+            // ]
+        });
+    };
 });
 
 
@@ -882,5 +918,7 @@ $('body').append(
         <li><a href="kyrsi_list.html">kyrsi_list</a></li> \
         <li><a href="page404.html">page404</a></li> \
         <li><a href="index.html">Index</a></li> \
+        <li><a href="about.html">About</a></li> \
+        <li><a href="arenda.html">Arenda</a></li> \
 	</ol> \
 </div>');

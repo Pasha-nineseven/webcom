@@ -1318,7 +1318,8 @@ a.get-bonus-add__item{
 
 
 .results{
-	padding: 89px 0 41px;
+	// padding: 89px 0 41px;
+	padding: 80px 0;
 	background: #fff; 
 	h2{
 		margin-bottom: 22px;
@@ -1411,6 +1412,12 @@ a.get-bonus-add__item{
 	    font-size: 40px;
 	    line-height: 1.2;
 		margin-bottom: 37px;
+	}
+	&.grey-sqheme{
+		.slick-prev,
+		.slick-next{
+			background-color: transparent;
+		}
 	}
 }
 .about__top{
