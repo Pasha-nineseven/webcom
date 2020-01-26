@@ -11,37 +11,46 @@ $(document).ready(function() {
 
     //COURSES-PANEL
         // Create the measurement node
-        var scrollDiv = document.createElement("div");
-        scrollDiv.className = "scrollbar-measure";
+        // var scrollDiv = document.createElement("div");
+        // scrollDiv.className = "scrollbar-measure";
         //console.log(ifHasScroll);
     $('body').on('click','.js-courses-link', function(e){
         e.preventDefault();
-        document.body.appendChild(scrollDiv);
+        //document.body.appendChild(scrollDiv);
         // Get the scrollbar width
-        var scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
-        $('.courses-panel__bg').addClass('is-active').animate({opacity: 1}, 200);
-        $('.courses-panel').addClass('is-active');
+        // var scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
+        //$('.courses-panel__bg').addClass('is-active').animate({opacity: 1}, 200);
+        $('.courses-panel').slideToggle(150);
+        $(this).toggleClass('active');
         //scroll-detect
-        var ifHasScroll = $('body').hasVerticalScrollBar();
-        if (ifHasScroll) {
-            $('body').addClass('fixed');
-            $('body').css('padding-right',scrollbarWidth);
-            $('.page-header').css('padding-right',scrollbarWidth);
-            $('.course-nav').css('padding-right',scrollbarWidth);
+        // var ifHasScroll = $('body').hasVerticalScrollBar();
+        // if (ifHasScroll) {
+        //     $('body').addClass('fixed');
+        //     $('body').css('padding-right',scrollbarWidth);
+        //     $('.page-header').css('padding-right',scrollbarWidth);
+        //     $('.course-nav').css('padding-right',scrollbarWidth);
+        // }
+    });
+    $(document).click(function (e){
+        var div = $(".courses-link");
+        if (!div.is(e.target)
+            && div.has(e.target).length === 0) {
+            $(".courses-toggle-link").removeClass('active');
+            $('.courses-panel').slideUp(150);
         }
     });
-    $('body').on('click','.js-courses-panel__bg', function(e){
-        document.body.removeChild(scrollDiv);
-        setTimeout(function (){
-            $('body').removeAttr("style");
-            $('.page-header').removeAttr("style");
-            $('.course-nav').removeAttr("style");
-            $( 'body' ).removeClass('fixed');
-        }, 400);
-        $('.courses-panel').removeClass('is-active');
+    // $('body').on('click','.js-courses-panel__bg', function(e){
+    //     document.body.removeChild(scrollDiv);
+    //     setTimeout(function (){
+    //         $('body').removeAttr("style");
+    //         $('.page-header').removeAttr("style");
+    //         $('.course-nav').removeAttr("style");
+    //         $( 'body' ).removeClass('fixed');
+    //     }, 400);
+    //     $('.courses-panel').removeClass('is-active');
         
-        $('.courses-panel__bg').removeClass('is-active').animate({opacity: 0}, 200);
-    });
+    //     $('.courses-panel__bg').removeClass('is-active').animate({opacity: 0}, 200);
+    // });
 
 
     //PHONE-TOGGLE
@@ -56,6 +65,34 @@ $(document).ready(function() {
             && div.has(e.target).length === 0) {
             $(".phone-link-toggle").removeClass('active');
             $('.phone-list').slideUp(150);
+        }
+    });
+
+    //CABINET-TOGGLE
+    $('body').on('click','.js-office-link-toggle', function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $('.cabinet-list').slideToggle(150);
+    });
+    $(document).click(function (e){
+        var div = $(".office-link");
+        if (!div.is(e.target)
+            && div.has(e.target).length === 0) {
+            $(".office-link-toggle").removeClass('active');
+            $('.cabinet-list').slideUp(150);
+        }
+    });
+
+    //offers-add-TOGGLE
+    $('body').on('click','.js-offers-add-more__link', function(e){
+        e.preventDefault();
+        $(this).parents('.offers-add-more').find('.offers-add-more__info').fadeToggle(150);
+    });
+    $(document).click(function (e){
+        var div = $(".offers-add-more");
+        if (!div.is(e.target)
+            && div.has(e.target).length === 0) {
+            $('.offers-add-more__info').fadeOut(150);
         }
     });
 

@@ -38,21 +38,108 @@
 										<a href="tel:+375173316342" class="phone-call">+375 17 331 63 42</a>
 									</div>
 								</div>
-								<a href="#" class="office-link">Личный кабинет</a>
-								<a href="#" class="courses-link js-courses-link">
-									<span class="courses-link__txt">Курсы</span>
-									<span class="courses-link__count">8</span>
-									<span class="courses-link__burger">
-										<span class="burger-icon"></span>
-									</span>
-								</a>
+								<div class="office-link">
+									<a href="#" class="office-link-toggle js-office-link-toggle">
+										Личный кабинет
+									</a>
+									<div class="cabinet-list">
+										<a href="#" class="cabinet-list__item">Item 1</a>
+										<a href="#" class="cabinet-list__item">Item 2</a>
+										<a href="#" class="cabinet-list__item">Item 3</a>
+									</div>
+								</div>
+								<div class="courses-link">
+									<a href="#" class="courses-toggle-link js-courses-link">
+										<span class="courses-link__txt">Курсы</span>
+										<span class="courses-link__count">8</span>
+										<span class="courses-link__burger">
+											<span class="burger-icon"></span>
+										</span>
+									</a>
+									<div class="courses-panel">
+										<div class="courses-panel__item">
+											<h4><a href="#">SEO</a></h4>
+											<div class="timetable-slider__item bg-violet-sec">
+												<a href="#" class="timetable-slider__inner">
+													<div class="timetable-slider__img">
+														<img src="img/content/timetable1.png" alt="">
+													</div>
+													<div class="timetable-slider__title">
+														Интернет-маркетинг: продвижение бизнеса в интернете
+													</div>
+													<div class="timetable-slider__info">
+														<div class="timetable-slider__time">21 января − 18 июня 2019</div>
+														<div class="timetable-slider__time">20 занятий по 2 часа</div>
+													</div>
+													<div class="timetable-slider__price">
+														от <span>200</span> руб.
+													</div>
+													<span class="timetable-slider__more">Подробнее о курсе</span>
+												</a>
+											</div>
+											<div class="timetable-slider__item bg-violet">
+												<a href="#" class="timetable-slider__inner">
+													<div class="timetable-slider__img">
+														<img src="img/content/timetable2.png" alt="">
+													</div>
+													<div class="timetable-slider__title">
+														Интенсивный курс SEO выходного дня - «SEO за 16 часов»
+													</div>
+													<div class="timetable-slider__info">
+														<div class="timetable-slider__time">21 января − 18 июня 2019</div>
+														<div class="timetable-slider__time">20 занятий по 2 часа</div>
+													</div>
+													<div class="timetable-slider__price">
+														от <span>200</span> руб.
+													</div>
+													<span class="timetable-slider__more">Подробнее о курсе</span>
+												</a>
+											</div>
+										</div>
+										<div class="courses-panel__item">
+											<h4><a href="#">Контекстная реклама</a></h4>
+											<div class="timetable-slider__item bg-orange">
+												<a href="#" class="timetable-slider__inner">
+													<div class="timetable-slider__img">
+														<img src="img/content/timetable4.png" alt="">
+													</div>
+													<div class="timetable-slider__title">
+														Специалист по продуктам Google
+													</div>
+													<div class="timetable-slider__info">
+														<div class="timetable-slider__time">21 января − 18 июня 2019</div>
+														<div class="timetable-slider__time">20 занятий по 2 часа</div>
+													</div>
+													<div class="timetable-slider__price">
+														от <span>200</span> руб.
+													</div>
+													<span class="timetable-slider__more">Подробнее о курсе</span>
+												</a>
+											</div>
+											<div class="timetable-slider__item bg-blue">
+												<a href="#" class="timetable-slider__inner">
+													<div class="timetable-slider__img">
+														<img src="img/content/timetable3.png" alt="">
+													</div>
+													<div class="timetable-slider__title">
+														Сертифицированный специалист по контекстной рекламе
+													</div>
+													<div class="timetable-slider__info">
+														<div class="timetable-slider__time">21 января − 18 июня 2019</div>
+														<div class="timetable-slider__time">20 занятий по 2 часа</div>
+													</div>
+													<div class="timetable-slider__price">
+														от <span>200</span> руб.
+													</div>
+													<span class="timetable-slider__more">Подробнее о курсе</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="courses-panel__bg js-courses-panel__bg"></div>
-				<div class="courses-panel">
-					Список курсов
 				</div>
 			</header>
 			
@@ -212,27 +299,31 @@
 			<div class="container-fluid">
 				<div class="page-footer__wrap">
 					<div class="page-footer__item">
-						<div class="page-footer__title">Контакты</div>
-						<div class="page-footer__logo">
-							<img src="img/svg/webcom_logo_footer.svg" alt="">
-						</div>
-						<div class="copyright">
-							&copy; 2007-2009
-							<br>Webcom-academy.by
-						</div>
-						<div class="all-right">
-							Все права защищены
-						</div>
+						<div class="page-footer__title"><a href="#">Контакты</a></div>
+						<div class="page-footer__inner">
+							<div class="page-footer__logo">
+								<img src="img/svg/webcom_logo_footer.svg" alt="">
+							</div>
+							<div class="page-footer__info">
+								<div class="copyright">
+									&copy; 2007-2009
+									<br>Webcom-academy.by
+								</div>
+								<div class="all-right">
+									Все права защищены
+								</div>
+							</div>
 
-						<div class="socials">
-							<a href="#" class="socials__item fb"></a>
-							<a href="#" class="socials__item inst"></a>
-							<a href="#" class="socials__item vk"></a>
-							<a href="#" class="socials__item youtube"></a>
+							<div class="socials">
+								<a href="#" class="socials__item fb"></a>
+								<a href="#" class="socials__item inst"></a>
+								<a href="#" class="socials__item vk"></a>
+								<a href="#" class="socials__item youtube"></a>
+							</div>
 						</div>
 					</div>
 					<div class="page-footer__item">
-						<div class="page-footer__title">Услуги</div>
+						<div class="page-footer__title"><a href="#">Услуги</a></div>
 						<div class="page-footer__links">
 							<a href="#" class="page-footer__link">
 								Корпоративное и индивидуальное обучение
@@ -246,7 +337,7 @@
 						</div>
 					</div>
 					<div class="page-footer__item">
-						<div class="page-footer__title">Мероприятия</div>
+						<div class="page-footer__title"><a href="#">Мероприятия</a></div>
 							<div class="page-footer__links">
 							<a href="#" class="page-footer__link">
 								Digital GO!-2019: как это было
@@ -272,7 +363,7 @@
 						<a href="#" class="show-more-link js-show-more-link">Показать больше</a>
 					</div>
 					<div class="page-footer__item">
-						<div class="page-footer__title">Это интересно</div>
+						<div class="page-footer__title"><a href="#">Это интересно</a></div>
 							<div class="page-footer__links">
 							<a href="#" class="page-footer__link">
 								Хайп, провокации и digital. Международный форум «PR-пятница» пройдёт в Минске
@@ -298,7 +389,7 @@
 						<a href="#" class="show-more-link js-show-more-link">Показать больше</a>
 					</div>
 					<div class="page-footer__item">
-						<div class="page-footer__title">Новости</div>
+						<div class="page-footer__title"><a href="#">Новости</a></div>
 						<div class="page-footer__links">
 							<a href="#" class="page-footer__link">
 								Первая конференция по личному брендингу состоится в Минске в начале июня
