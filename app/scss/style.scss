@@ -30,7 +30,14 @@ body.fixed {
 	box-shadow: 0px 7px 14px rgba(171, 90, 15, 0.3), inset 0px 2px 24px rgba(255, 206, 111, 0.6);
 	border-radius: 8px;
 	padding: 11px 25px;
-	border: 0; 
+	border: 0;
+	transition: all 0.3s ease; 
+	&:hover{
+		background: linear-gradient(180deg, #FF8A00 0%, #FF5C00 100%);
+	}
+	&:active{
+		background: linear-gradient(180deg, #FF9900 0%, #FF6B00 100%);
+	}
 }
 .btn-alt{
 	display: inline-block;
@@ -115,6 +122,11 @@ body.fixed {
 	.top-nav_link,
 	.office-link{
 		color: #fff;
+	}
+	.top-nav_link{
+		&:hover{
+			    color: #0A9DDC;
+		}
 	}
 	.office-link{
 		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -373,6 +385,11 @@ a.breadcumbs__item:after{
 	background: #FFFFFF;
 	box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.2);
 	border-radius: 50%;
+	border: 2px solid transparent;
+	transition: all 0.3s ease;
+	&:hover{
+		border: 2px solid #FF7700;
+	}
 }
 .slick-prev{
 	left: -20px;
@@ -380,7 +397,7 @@ a.breadcumbs__item:after{
 }
 .slick-next{
 	right: -20px;
-	background: #fff url(../img/svg/next.svg) 31px center no-repeat;
+	background: #fff url(../img/svg/next.svg) 29px center no-repeat;
 }
 .slick-dots{
 	margin-bottom: 0!important;
@@ -401,8 +418,12 @@ a.breadcumbs__item:after{
 		border-radius: 50%;
 		background: #0A9DDC;
 		border: 2px solid transparent;
-		    box-sizing: content-box;
-		    cursor: pointer;
+	    box-sizing: content-box;
+	    cursor: pointer;
+	    transition: background 0.3s ease;
+	    &:hover{
+	    	background: #FF7700;
+	    }
 		button{
 			display: none;
 		}
@@ -597,7 +618,7 @@ a.breadcumbs__item:after{
 		position: absolute;
 		right: 0;
 		top: 0;
-		padding: 14px 18px;
+		padding: 13px 18px;
 	}
 	input[type="text"],
 	input[type="email"],
@@ -608,6 +629,10 @@ a.breadcumbs__item:after{
 		width: 100%;
 		border-top-right-radius: 8px;
 		border-bottom-right-radius: 8px;
+		transition:all 0.3s ease;
+		&:focus{
+			border: 2px solid #0A9DDC;
+		}
 	}
 	label{
 		line-height: 1.4;

@@ -553,6 +553,9 @@
 	.courses-panel .timetable-slider__item {
 	    width: 270px;
 	}
+	.subscription-form .btn {
+	    padding: 10px 18px 11px;
+	}
 }
 
 @media screen and (max-width: 900px){
@@ -896,6 +899,59 @@
 	.page-header__wrap{
 		display: none;
 	}
+	.date {
+	    font-size: 14px;
+	}
+	.subscription{
+		padding-bottom: 0;
+		.container-fluid{
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	.contacts.grey-sqheme {
+	    border-top: 0;
+	}
+	.subscription .checkbox-item {
+	    max-width: 100%;
+	    left: 0;
+	    // padding: 0 20px;
+	}
+	.subscription-form {
+	    max-width: 100%;
+	    margin: 0 auto 20px;
+	    // padding: 0 20px;
+	}
+
+	.subscription__wrap {
+	    text-align: left;
+	    padding: 30px 20px;
+	}
+	.subscription .socials{
+		justify-content: flex-start;
+		margin-bottom: 20px;
+	}
+	.subscription__more {
+	    max-width: 100%;
+	}
+	.menu-mobile-btn{
+		display: inline-block;
+	}
+	.logo{
+		margin-top: 0;
+	}
+	.page-header__in {
+	    justify-content: space-between;
+	}
+	.page-header{
+		padding: 8px 0;
+		&.fixed{
+			padding: 8px 0;
+			.logo{
+				height: 40px;
+			}
+		}
+	}
 }
 
 
@@ -919,6 +975,9 @@
 	    blockquote {
 		    font-size: 14px;
 		}
+	}
+	.page-top .page-title h1, .page-title h1 {
+	    font-size: 28px;
 	}
 	.img-multiple--4 .img-multiple__item {
 	    width: 50%;
@@ -972,6 +1031,60 @@
     		margin-bottom: 0;
     	}
     }
+    .marketing h3 {
+	    font-size: 22px;
+	}
+	.btn{
+		padding: 7px 13px;
+		font-size: 14px;
+	}
+	.marketing .btn{
+		padding: 7px 13px;
+		font-size: 14px;
+	}
+	.video-link {
+	    width: 75px;
+	    height: 75px;
+	    background-size: cover;
+	}
+	.latest__slider {
+	    padding: 0 37px;
+	}
+	.latest__img {
+	    height: 220px;
+	}
+	.slick-arrow{
+		width: 13px;
+		height: 23px;
+		border: 0!important;
+		border-radius: 0;
+		box-shadow:none;
+	}
+	.slick-prev {
+	    left: 0px;
+	    background: url(../img/svg/prev-min.svg) center no-repeat;
+	}
+	.slick-next {
+	    right: 0px;
+	    background: url(../img/svg/next-min.svg) center no-repeat;
+	}
+	.latest__slider .slick-arrow {
+	    top: 95px;
+	}
+	.workarea blockquote:before {
+	    width: 38px;
+	    height: 34px;
+	    background-size: contain;
+	    bottom: -20px;
+	    right: -20px;
+	}
+	.blockquote-wrap:before {
+	    width: 38px;
+	    height: 34px;
+	    background-size: contain;
+	    left: -8px;
+	    top: 1px;
+	}
 }
 @media screen and (max-width: 400px){
 	.img-multiple--4 .img-multiple__item {

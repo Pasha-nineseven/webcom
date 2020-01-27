@@ -52,6 +52,13 @@ $(document).ready(function() {
     //     $('.courses-panel__bg').removeClass('is-active').animate({opacity: 0}, 200);
     // });
 
+    //MOBILE-MENU
+    $('body').on('click','.js-menu-mobile-btn', function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+        //$('.menu-mobile').slideToggle();
+    });
+
 
     //PHONE-TOGGLE
     $('body').on('click','.js-phone-link-toggle', function(e){
