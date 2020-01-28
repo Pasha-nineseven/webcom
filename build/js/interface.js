@@ -56,7 +56,8 @@ $(document).ready(function() {
     $('body').on('click','.js-menu-mobile-btn', function(e){
         e.preventDefault();
         $(this).toggleClass('active');
-        //$('.menu-mobile').slideToggle();
+        $('.mobile-menu').fadeToggle(150);
+        $('body').toggleClass('fixed');
     });
 
 

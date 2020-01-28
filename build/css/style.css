@@ -3748,7 +3748,9 @@ textarea, input {
       opacity: 1; }
 
 .menu-mobile-btn {
-  display: none; }
+  display: none;
+  position: relative;
+  z-index: 10; }
   .menu-mobile-btn.active .burger-icon {
     background-color: transparent;
     -webkit-box-shadow: none;
@@ -3756,11 +3758,13 @@ textarea, input {
     .menu-mobile-btn.active .burger-icon:before {
       -webkit-transform: translateY(10px) rotate(45deg);
           -ms-transform: translateY(10px) rotate(45deg);
-              transform: translateY(10px) rotate(45deg); }
+              transform: translateY(10px) rotate(45deg);
+      background: #fff; }
     .menu-mobile-btn.active .burger-icon:after {
       -webkit-transform: translateY(-10px) rotate(-45deg);
           -ms-transform: translateY(-10px) rotate(-45deg);
-              transform: translateY(-10px) rotate(-45deg); }
+              transform: translateY(-10px) rotate(-45deg);
+      background: #fff; }
 
 .burger-icon {
   display: block;
@@ -3785,6 +3789,122 @@ textarea, input {
     top: -10px; }
   .burger-icon:after {
     top: 10px; }
+
+.mobile-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #3C3C3C;
+  opacity: 0.97;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  z-index: 5;
+  padding: 15px;
+  min-height: 100vh;
+  overflow-y: auto;
+  padding-bottom: 60px;
+  display: none; }
+  .mobile-menu .mobile-menu-courses__item h4 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px; }
+    .mobile-menu .mobile-menu-courses__item h4 a {
+      color: #fff; }
+  .mobile-menu .timetable-slider__item {
+    padding-right: 0;
+    height: auto;
+    margin-bottom: 15px; }
+    .mobile-menu .timetable-slider__item:last-child {
+      margin-bottom: 0; }
+  .mobile-menu .mobile-menu-courses__item {
+    margin-bottom: 24px; }
+  .mobile-menu .timetable-slider__title {
+    font-size: 14px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    min-height: inherit; }
+  .mobile-menu .timetable-slider__price,
+  .mobile-menu .timetable-slider__more,
+  .mobile-menu .timetable-slider__info {
+    font-size: 12px; }
+  .mobile-menu .timetable-slider__inner {
+    padding: 16px; }
+  .mobile-menu .timetable-slider__img {
+    top: 0; }
+    .mobile-menu .timetable-slider__img img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%; }
+
+.mobile-menu__top {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  height: 40px;
+  margin-bottom: 24px;
+  position: relative; }
+
+.mobile-menu__list {
+  text-align: center;
+  margin-bottom: 24px; }
+
+.mobile-menu__link {
+  display: block;
+  color: #fff;
+  font-weight: 800;
+  font-size: 18px;
+  margin-bottom: 24px; }
+  .mobile-menu__link:last-child {
+    margin-bottom: 0; }
+
+.mobile-menu__phone {
+  display: inline-block;
+  width: 20px;
+  height: 21px;
+  background: url(../img/svg/mobile.svg) no-repeat;
+  margin-top: 4px; }
+
+.mobile-menu__cabinet {
+  display: inline-block;
+  width: 20px;
+  height: 21px;
+  background: url(../img/svg/mobile-cab.svg) no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-top: -6px; }
+
+.mobile-menu-courses__title {
+  color: #fff;
+  font-weight: 800;
+  font-size: 18px;
+  margin-bottom: 24px;
+  text-align: center;
+  overflow: hidden; }
+  .mobile-menu-courses__title span {
+    position: relative; }
+    .mobile-menu-courses__title span:after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 300%;
+      right: -webkit-calc(100% + 15px);
+      right: calc(100% + 15px);
+      background: rgba(255, 255, 255, 0.1);
+      position: absolute;
+      top: 50%; }
+    .mobile-menu-courses__title span:before {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 300%;
+      left: -webkit-calc(100% + 15px);
+      left: calc(100% + 15px);
+      background: rgba(255, 255, 255, 0.1);
+      position: absolute;
+      top: 50%; }
 
 .workarea {
   line-height: 1.8; }
@@ -7001,7 +7121,8 @@ a.breadcumbs__item:after {
             box-shadow: none;
     width: 22px;
     height: 40px;
-    margin-top: -20px; }
+    margin-top: -20px;
+    border: 0 !important; }
   .timetable-slider .slick-prev {
     background: url(../img/svg/prev.svg) center no-repeat;
     left: 0; }
@@ -10639,7 +10760,23 @@ a.get-bonus-add__item {
   .courses-panel .timetable-slider__item {
     width: 270px; }
   .subscription-form .btn {
-    padding: 10px 18px 11px; } }
+    padding: 10px 18px 11px; }
+  .news__item {
+    width: 50%; }
+  .news-top__list {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .news-top__item {
+    width: 100%; }
+  .news-top__item--complex .news__img {
+    min-height: 200px; }
+  .speaker-img {
+    width: 300px;
+    min-width: 300px; }
+  .speaker-img__in {
+    width: 100% !important;
+    position: static !important; } }
 
 @media screen and (max-width: 900px) {
   .top-nav,
@@ -10975,7 +11112,16 @@ a.get-bonus-add__item {
     .page-header.fixed {
       padding: 8px 0; }
       .page-header.fixed .logo {
-        height: 40px; } }
+        height: 40px; }
+  .news__title {
+    padding: 15px; }
+  .news__list {
+    margin: 0 -8px; }
+  .news__item {
+    padding: 0 8px;
+    margin-bottom: 20px; }
+  .news__txt {
+    padding: 0 15px; } }
 
 @media screen and (max-width: 600px) {
   .workarea h1 {
@@ -11077,7 +11223,29 @@ a.get-bonus-add__item {
     height: 34px;
     background-size: contain;
     left: -8px;
-    top: 1px; } }
+    top: 1px; }
+  .news__list {
+    margin: 0; }
+  .news__item {
+    padding: 0;
+    width: 100%; }
+  .paging__item {
+    margin-right: 15px;
+    font-size: 16px; }
+    .paging__item:last-child {
+      margin-right: 0; }
+  .paging__item--prev {
+    margin-right: 20px; }
+  .paging__item--next {
+    margin-left: 20px; }
+  .news-top__item--complex .news__img {
+    width: 100%;
+    height: auto; }
+  .news-top__item--lg .news__title {
+    font-size: 18px; }
+  .news-top__item--lg .news__img {
+    height: auto;
+    min-height: 200px; } }
 
 @media screen and (max-width: 400px) {
   .img-multiple--4 .img-multiple__item {
