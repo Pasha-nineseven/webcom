@@ -6904,7 +6904,8 @@ a.breadcumbs__item:after {
 .way__item {
   width: 25%;
   min-height: 287px;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .way__item.way__item--lg {
     width: 50%; }
     .way__item.way__item--lg .way__add {
@@ -9923,7 +9924,8 @@ a.get-bonus-add__item {
             box-shadow: none;
     border-radius: 0;
     margin: 0;
-    top: 19px; }
+    top: 19px;
+    border: 0 !important; }
   .about-slider .slick-next {
     right: 16px;
     background-position: center; }
@@ -9953,7 +9955,8 @@ a.get-bonus-add__item {
             box-shadow: none;
     border-radius: 0;
     margin: 0;
-    top: 19px; }
+    top: 19px;
+    border: 0 !important; }
   .about-youtube-slider .slick-next {
     right: 0;
     background-position: center; }
@@ -10431,11 +10434,16 @@ a.get-bonus-add__item {
   .contacts-address__item:first-child {
     padding-right: 40px; }
   .consultation__inner {
-    padding: 30px 110px 30px 20px; }
+    padding: 30px 310px 30px 20px; }
   .consultation__icon {
     right: 0px;
     top: -35px;
     width: 155px; }
+  .career__img {
+    right: 45px;
+    width: 220px; }
+    .career__img img {
+      max-width: 100%; }
   .requisites__item {
     padding-right: 20px; }
   .speaker-slider__img {
@@ -10567,9 +10575,6 @@ a.get-bonus-add__item {
     padding-bottom: 40px; }
   .letter {
     padding: 40px 20px; }
-  .consultation__inner {
-    padding-top: 40px;
-    padding-bottom: 40px; }
   .card-benefits__inner {
     top: -15px;
     margin-bottom: 0;
@@ -10643,7 +10648,13 @@ a.get-bonus-add__item {
   .methods__item .who__list {
     margin: 0 -30px 0 0; }
   .methods__item .who__item {
-    padding: 0 30px 0 0; } }
+    padding: 0 30px 0 0; }
+  .about-note {
+    padding-left: 20px; }
+  .about-add {
+    width: 40%; }
+  .about-note {
+    width: 60%; } }
 
 @media screen and (max-width: 1023px) {
   body {
@@ -10778,7 +10789,55 @@ a.get-bonus-add__item {
     width: 100% !important;
     position: static !important; }
   .programms__inner {
-    padding: 0 20px; } }
+    padding: 0 20px; }
+  .why__list {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .questions-top__list {
+    padding-top: 0;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .why__item,
+  .questions-top__item {
+    width: 33.333%;
+    margin-bottom: 20px; }
+  .way__link {
+    padding: 15px 15px 95px 15px; }
+  .career__txt,
+  .career__add {
+    font-size: 18px; }
+  .career__img {
+    right: 0px; }
+  .career__in {
+    padding: 30px 220px 30px 25px; }
+  .way__title,
+  .way__add,
+  .videolibrary__info,
+  .videolibrary__title,
+  .guarantees__title {
+    font-size: 18px; }
+  .videolibrary__num {
+    font-size: 58px;
+    line-height: 53px; }
+  .guarantees__item {
+    padding-right: 30px;
+    margin-bottom: 40px; }
+  .guarantees__list {
+    margin-right: -30px; }
+  .questions-title {
+    margin-bottom: 30px; }
+  .questions-main__item {
+    padding-right: 40px;
+    margin-bottom: 30px; }
+  .questions-main__list {
+    margin-right: -40px; }
+  .questions,
+  .guarantees {
+    padding: 40px 0; }
+  .speaker-list__item {
+    width: 33.33%; } }
 
 @media screen and (max-width: 900px) {
   .top-nav,
@@ -10823,7 +10882,23 @@ a.get-bonus-add__item {
     font-size: 14px; }
   .courses-panel .timetable-slider__more {
     padding: 3px 8px;
-    font-size: 14px; } }
+    font-size: 14px; }
+  .about-add {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 20px; }
+  .about-note {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 0; }
+  .about__top {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .way__item {
+    width: 33.333%; }
+  .way__item.way__item--lg {
+    width: 100%; } }
 
 @media screen and (max-width: 850px) {
   .latest__slider .slick-list {
@@ -10851,6 +10926,9 @@ a.get-bonus-add__item {
     .workarea blockquote {
       font-size: 20px;
       padding-bottom: 10px; }
+  .workarea h2.h1,
+  .questions-main h2 span {
+    font-size: 32px; }
   .page-top .page-title h1,
   .page-title h1 {
     font-size: 40px; }
@@ -10987,10 +11065,12 @@ a.get-bonus-add__item {
             flex-direction: column;
     max-width: 400px; }
   .theme__in,
-  .page-content .consultation__inner {
+  .page-content .consultation__inner,
+  .consultation__inner {
     padding: 140px 20px 40px 20px; }
   .theme__img,
-  .page-content .consultation__icon {
+  .page-content .consultation__icon,
+  .consultation__icon {
     right: 50%;
     -webkit-transform: translateX(50%);
         -ms-transform: translateX(50%);
@@ -11164,7 +11244,67 @@ a.get-bonus-add__item {
     padding: 30px 0; }
   .recruitment {
     margin-top: 20px;
-    padding-top: 20px; } }
+    padding-top: 20px; }
+  .career__in {
+    padding: 155px 20px 40px 20px; }
+  .career__img {
+    right: 50%;
+    -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+            transform: translateX(50%);
+    top: 8px;
+    width: 140px; }
+  .career h2 {
+    font-size: 28px; }
+  .why__item,
+  .questions-top__item,
+  .questions-main__item {
+    width: 50%; }
+  .questions-main__list {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .way__item {
+    width: 50%; }
+  .all-youtube-video {
+    margin-top: 30px; }
+  .videolibrary__list {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-transform: translateX(50px);
+        -ms-transform: translateX(50px);
+            transform: translateX(50px); }
+  .videolibrary__item {
+    width: auto;
+    margin-bottom: 20px; }
+    .videolibrary__item:last-child {
+      margin-bottom: 0; }
+  .speaker-list__item {
+    width: 50%; }
+  .speaker-filter {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .speaker-filter__links {
+    margin-left: 0;
+    width: 100%;
+    border: 0;
+    margin-top: 10px; }
+  .tabs {
+    border: 2px solid #fff;
+    border-radius: 8px; }
+  .speaker-list-horizontal-img {
+    max-width: 300px;
+    min-width: 300px; }
+  .speaker-list-horizontal__title,
+  .speaker-list-horizontal__position,
+  .speaker-list-horizontal__txt,
+  .speaker-list-horizontal__courses,
+  .speaker-list-horizontal__courses h5,
+  .speaker-list__info {
+    font-size: 14px; } }
 
 @media screen and (max-width: 600px) {
   .workarea h1 {
@@ -11179,6 +11319,9 @@ a.get-bonus-add__item {
     font-size: 14px; }
   .workarea blockquote {
     font-size: 14px; }
+  .workarea h2.h1,
+  .questions-main h2 span {
+    font-size: 24px; }
   .page-top .page-title h1,
   .page-title h1 {
     font-size: 28px; }
@@ -11301,7 +11444,77 @@ a.get-bonus-add__item {
   .speakers-slider .slick-list {
     margin: 0 -8px; }
   .speakers-slider .slick-arrow {
-    top: 110px; } }
+    top: 110px; }
+  .timetable,
+  .why-page {
+    padding: 35px 0; }
+  .why__item,
+  .questions-top__item,
+  .questions-main__item,
+  .guarantees__item {
+    width: 100%; }
+  .questions-main h2 {
+    margin-bottom: 20px; }
+  .way__item {
+    width: 100%;
+    min-height: 150px; }
+  .index-way {
+    padding-bottom: 30px; }
+  .questions-top__item {
+    padding: 0; }
+  .questions-top__txt {
+    padding-left: 0; }
+  .about-note__inner {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .about-note__txt {
+    width: 100%;
+    padding-top: 10px; }
+  .about-note__rate {
+    margin-right: 0;
+    top: 10px; }
+  .questions-top__img:before {
+    left: -20px;
+    top: 0px; }
+  .way__title,
+  .way__add,
+  .videolibrary__info,
+  .videolibrary__title,
+  .guarantees__title {
+    font-size: 14px; }
+  .about-youtube-pagingInfo {
+    top: 25px;
+    right: 45px; }
+  .about-pagingInfo {
+    top: 25px;
+    right: 60px; }
+  .videolibrary {
+    padding: 40px 20px; }
+  .videolibrary__list {
+    padding-right: 20px; }
+  .speaker-list__item {
+    width: 100%; }
+  .speaker-list-horizontal-img {
+    max-width: 100%;
+    min-width: 100%;
+    height: 248px;
+    margin: 0; }
+  .speaker-filter__links ul {
+    font-size: 14px; }
+  .speaker-filter__link {
+    padding: 4px 7px; }
+  .speaker-list-horizontal__item {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin: 0; }
+  .speaker-list-horizontal__info {
+    margin-left: 20px; } }
 
 @media screen and (max-width: 400px) {
   .img-multiple--4 .img-multiple__item {
