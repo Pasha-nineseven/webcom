@@ -651,6 +651,12 @@
 	.speaker-list__item {
 	    width: 33.33%;
 	}
+	.reviews-top__info {
+	    padding-left: 40px;
+	}
+	.reviews-top{
+		margin-bottom: 40px;
+	}
 }
 
 @media screen and (max-width: 900px){
@@ -742,6 +748,26 @@
 	}
 	.latest__item{
 		padding: 0 8px;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.speaker-wrap{
+		flex-wrap: wrap;
+	}
+	.speaker__info{
+		width: 100%;
+	}
+	.speaker-img {
+	    width: auto;
+	    min-width: inherit;
+	    margin-right: 0;
+	    margin-bottom: 30px;
+	}
+	.speaker-img__in{
+		&+div{
+			display: none!important;
+		}
 	}
 }
 
@@ -1026,6 +1052,7 @@
 	}
 	.subscription{
 		padding-bottom: 0;
+		padding-top: 0;
 		.container-fluid{
 			padding-left: 0;
 			padding-right: 0;
@@ -1203,8 +1230,48 @@
 	.speaker-list__info{
 	    font-size:14px;
 	}
+	.speaker__item {
+	    margin-bottom: 30px;
+	}
+	.reviews-top__item {
+	    width: 100%;
+	    margin-bottom: 30px;
+	    &:last-child{
+	    	margin-bottom: 0;
+	    }
+	}
+	.reviews-top__info{
+		padding-left: 0;
+	}
+	.reviews-top-video{
+		margin-bottom: 40px;
+	}
+	.more-reviews__wrap{
+		margin-right: 0;
+	}
+	.more-reviews__item {
+	    padding-right: 0;
+	    width: 100%;
+	}
 }
 
+@media screen and (max-width: 700px){
+	.contact__items {
+	    margin-right: 0;
+	    flex-wrap: wrap;
+	}
+	.contact__item{
+		padding-right: 0;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.contact__title {
+	    font-size: 18px;
+	}
+	.contact__img {
+	    margin-bottom: 15px;
+	}
+}
 
 @media screen and (max-width: 600px){
 	.workarea {
@@ -1261,7 +1328,8 @@
 			margin-right: 0;
 		}
 	}
-	#contacts-map {
+	#contacts-map,
+	.contacts-address__map{
 	    height: 200px;
 	}
 	.latest__title h2,
@@ -1473,6 +1541,43 @@
 	}
 	.speaker-list-horizontal__info {
 	    margin-left: 20px;
+	}
+	.speaker-slider {
+	    padding: 0 60px;
+	}
+	.speaker-slider .slick-dots{
+		left: 0;
+	}
+	.speaker-slider__item {
+	    padding-right: 0;
+	}
+	.speaker-slider{
+		.slick-arrow{
+			    margin-top: -15px;
+		}
+	}
+	.contact__img {
+	    width: 100%;
+	}
+	.reviews__top{
+		flex-wrap:wrap;
+		justify-content: center;
+	}
+	.reviews__icon{
+		margin-right: 0;
+	}
+	.reviews__item{
+		padding-right: 0;
+	}
+	.reviews-slider {
+	    padding: 18px 30px 0;
+	}
+	.reviews-top-slider{
+		padding: 0 35px;
+		box-shadow:none;
+	}
+	.reviews-top-slider .slick-dots{
+		left: 0;
 	}
 }
 @media screen and (max-width: 400px){

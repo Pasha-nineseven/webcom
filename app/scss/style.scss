@@ -1605,6 +1605,7 @@ padding: 35px 0 0;
 	    box-shadow: none;
 	    top: 69px;
 	    margin-top: 0;
+	    border:0!important;
 	}
 	.slick-prev {
 		left: 0;
@@ -4590,6 +4591,13 @@ position: relative;
     left: -33px;
     top: 15px;
 	z-index: 4;
+}
+
+.yandex-expert{
+	img{
+		display: block;
+		max-width: 100%;
+	}
 }
 
 //PAGES
