@@ -95,12 +95,29 @@ $(document).ready(function() {
     $('body').on('click','.js-offers-add-more__link', function(e){
         e.preventDefault();
         $(this).parents('.offers-add-more').find('.offers-add-more__info').fadeToggle(150);
+        $(this).toggleClass('active');
     });
     $(document).click(function (e){
         var div = $(".offers-add-more");
         if (!div.is(e.target)
             && div.has(e.target).length === 0) {
             $('.offers-add-more__info').fadeOut(150);
+            $('.offers-add-more__link').removeClass('active');
+        }
+    });
+
+    //who-add-TOGGLE
+    $('body').on('click','.js-who-add__link', function(e){
+        e.preventDefault();
+        $(this).parents('.who-add').find('.who-add__info').fadeToggle(150);
+        $(this).toggleClass('active');
+    });
+    $(document).click(function (e){
+        var div = $(".who-add");
+        if (!div.is(e.target)
+            && div.has(e.target).length === 0) {
+            $('.who-add__info').fadeOut(150);
+            $('.who-add__link').removeClass('active');
         }
     });
 
@@ -529,6 +546,23 @@ $(document).ready(function() {
             infinite: false,
             slidesToShow: 3,
             slidesToScroll: 1,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                  breakpoint: 767,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                  }
+                },
+                {
+                  breakpoint: 600,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                  }
+                },
+            ]
         });
     };
 
@@ -757,22 +791,22 @@ $(document).ready(function() {
             infinite: false,
             slidesToShow: 3,
             slidesToScroll: 1,
-            //  responsive: [
-            //     {
-            //       breakpoint: 768,
-            //       settings: {
-            //         slidesToShow: 3,
-            //         slidesToScroll: 1,
-            //       }
-            //     },
-            //     {
-            //       breakpoint: 600,
-            //       settings: {
-            //         slidesToShow: 2,
-            //         slidesToScroll: 1,
-            //       }
-            //     },
-            // ]
+             responsive: [
+                {
+                  breakpoint: 900,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                  }
+                },
+                {
+                  breakpoint: 600,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                  }
+                },
+            ]
         });
     };
 });

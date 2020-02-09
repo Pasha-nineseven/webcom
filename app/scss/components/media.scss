@@ -182,6 +182,24 @@
 	.page-header__in {
 	    align-items: center;
 	}
+	.interest {
+	    padding: 30px 310px 30px 20px;
+	}
+	.interest__icon{
+		right: 0px;
+	    width: 155px;
+	    img{
+	    	max-width: 100%;
+	    }
+	}
+	.offers-gen__list {
+	    justify-content: flex-start;
+	    flex-wrap: wrap;
+	}
+	.offers-gen__item {
+	    margin-right: 25px;
+	    margin-bottom: 20px;
+	}
 }
 @media screen and (max-width: 1150px){
 	.layout--page .page-top .container-fluid,
@@ -422,6 +440,48 @@
 	.about-note{
 		width: 60%;
 	}
+	// .methods__item .who__item:after {
+	//     top: 10px;
+	//     right: 0px;
+	// }
+	.methods__item .who__item--double .who__item--double__item:nth-child(2):after {
+	    top: -24px;
+	    right: 0px;
+	}
+	.card{
+		.container-fluid{
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	.card__icon {
+	    position: static;
+	    transform: none;
+	    order: 2;
+	}
+	.card__top {
+	    order: 1;
+	}
+	.card h4 {
+	    order: 3;
+	}
+	.card .individual__list {
+	    order: 4;
+	}
+	.teacher-slider__links {
+	    font-size: 13px;
+	    padding: 10px 16px;
+	}
+	.cost-rent-price span {
+	    font-size: 54px;
+	    line-height: 74px;
+	}
+	.cost-rent__more {
+	    padding: 25px 56px 60px 35px;
+	}
+	.cost-rent__info {
+	    padding: 16px 40px 32px 25px;
+	}
 }
 
 @media screen and (max-width: 1023px){
@@ -657,6 +717,143 @@
 	.reviews-top{
 		margin-bottom: 40px;
 	}
+	.methods__icon{
+		display: none;
+	}
+	.accordeon__link {
+	    font-size: 18px;
+	        padding: 20px 35px 20px 0px;
+	}
+	.methods .accordeon__item {
+	    padding: 0 20px;
+	}
+	.accordeon__link:after {
+	    top: 30px;
+	}
+	.methods__item .who__item:after,
+	.methods__item .who__item--double .who__item--double__item:after,
+	.methods__item .who__item--prev:before{
+		display: none!important;
+	}
+	.who-add{
+		display: none;
+	}
+	.methods__item .who__list {
+	    flex-wrap: wrap;
+	}
+	.who__item{
+		width: 50%;
+		&.who__item--double{
+			width: 100%;
+			display: flex;
+		}
+	}
+	.who__item--double__item:first-child {
+	    margin: 0;
+	   
+	}
+	.who__item--double__item{
+		 width: 50%;
+	}
+	.who__list--double {
+	    padding-top: 0;
+	}
+	.benefits__item {
+	    width: 50%;
+	    padding-right: 20px;
+	}
+	.benefits__list{
+		margin-right: -20px;
+	}
+	.methods__item--corporative .who__icon:after{
+		display: none;
+	}
+	.individual__item{
+		width: 50%;
+	}
+	.card .individual__list {
+	    margin-right: -20px;
+	}
+	.card .individual__item {
+	    padding-right: 20px;
+	}
+	.card-benefits .benefits__list{
+		flex-wrap:wrap;
+	}
+	.card-benefits .benefits__item{
+		width: 50%;
+	}
+	.our-benefits__item:nth-child(even) .our-benefits__info{
+		padding-top: 0;
+		padding-left: 15px;
+	}
+	.our-benefits__item:nth-child(odd) .our-benefits__info{
+		padding-right: 15px;
+	}
+	.our-projects__item {
+	    padding: 0 8px;
+	}
+	.our-projects__slider .slick-list {
+	    margin: 0 -8px;
+	}
+	.results__list {
+	    padding-right: 0;
+	    flex-wrap:wrap;
+	        justify-content: flex-start;
+	}
+	.results__item {
+	    margin-right: 45px;
+	    margin-bottom: 30px;
+	    &:last-child{
+	    	margin-right: 0;
+	    }
+	}
+	.results__number--large {
+	    margin-left: 0;
+	}
+	.results__number--hours {
+	    top: -24px;
+	}
+	.reviews-video__item {
+	    padding: 0 8px;
+	}
+	.reviews-video__slider .slick-list {
+	    margin: 0 -8px;
+	}
+	.offers-top__item {
+	    padding-right: 20px;
+	}
+	.offers-top{
+		margin-right: -20px;
+	}
+	.offers-top__inner{
+		padding: 20px;
+		    min-height: 400px;
+	}
+	.offers-add__list{
+		flex-wrap:wrap;
+		justify-content: flex-start;
+	}
+	.offers-add__item{
+		width: 33.333%;
+		margin-bottom: 20px;
+	}
+	.page-tour {
+	    padding: 40px 0;
+	}
+	.cost-rent-price span {
+	    font-size: 36px;
+	    line-height: 62px;
+	}
+	.cost-rent-price {
+	    font-size: 18px;
+	    line-height: 28px;
+	}
+	.cost-rent__title {
+	    font-size: 18px;
+	    line-height: 22px;
+	    margin-bottom: 20px;
+	}
 }
 
 @media screen and (max-width: 900px){
@@ -818,7 +1015,13 @@
 	.card-benefits h2,
 	.consultation--corp h2,
 	.consultation h2,
-	.requisites h2{
+	.requisites h2,
+	.our-projects h2,
+	.offers h2,
+	.offers-gen h2.h1,
+	.cost-rent h2,
+	.page-tour h2,
+	.page-tour h2{
 		font-size: 32px;
 		margin-bottom: 25px;
 	}
@@ -974,7 +1177,9 @@
 	}
 	.theme__in,
 	.page-content .consultation__inner,
-	.consultation__inner{
+	.consultation__inner,
+	.consultation--corp .consultation__inner,
+	.consultation--404 .consultation__inner{
 	    padding: 140px 20px 40px 20px;
 	}
 	.theme__img,
@@ -983,6 +1188,9 @@
 	    right: 50%;
 	    transform: translateX(50%);
 	    top: -45px;
+	}
+	.consultation--404 .consultation__icon {
+	    top: -30px;
 	}
 	.page-top__list {
 	    margin-right: -10px;
@@ -1253,6 +1461,124 @@
 	    padding-right: 0;
 	    width: 100%;
 	}
+	.course-top__icon {
+	    width: 320px;
+	    height: 200px;
+	    img{
+	    	max-width: 100%;
+	    }
+	}
+	.interest{
+		padding: 140px 20px 40px 20px;
+	}
+	.interest__icon{
+		right: 50%;
+	    transform: translateX(50%);
+	}
+	.card .individual__list{
+		margin-right: 0;
+	}
+	.card .individual__item {
+	    padding-right: 0;
+	    width: 100%;
+	    margin-bottom: 45px;
+	}
+	.page404 {
+	    flex-wrap: wrap;
+	}
+	.page404__main h1{
+		margin: 0;
+		font-size: 165px;
+	}
+	.page-top-labels__item {
+	    margin-right: 15px;
+	    margin-bottom: 15px;
+	    font-size: 14px;
+	    padding: 6px 10px;
+	}
+	.more-info {
+	    padding: 40px 0;
+	}
+	.our-benefits__item {
+	    margin-bottom: 30px;
+	    flex-wrap: wrap;
+	}
+	.our-benefits__img{
+		width: 100%;
+	}
+	.our-benefits__item:nth-child(even) .our-benefits__img{
+		text-align: left;	
+	}
+	.our-benefits__item:nth-child(odd) .our-benefits__img{
+		order: 1;
+	}
+	.our-benefits__item:nth-child(odd) .our-benefits__info {
+	    padding-right: 0;
+	    order: 2;
+	}
+	.our-benefits__item:nth-child(even) .our-benefits__info {
+	    padding-left: 0;
+	}
+	.our-benefits__info{
+		width: 100%;
+	}
+	.our-benefits__item:nth-child(odd) .our-benefits__info{
+		    justify-content: flex-start;
+	}
+	.our-benefits__item:nth-child(odd) .our-benefits__top{
+		max-width: 100%;
+	}
+	.our-benefits__item:nth-child(odd) .our-benefits__number {
+	    text-align: left;
+	}
+	.our-benefits__item:nth-child(odd) .our-benefits__number:before{
+		transform: translateX(-100px);
+    	left: -40px;
+    	right: auto;
+	}
+	.reviews__wrap{
+		margin-right: 0;
+	}
+	.reviews__item {
+	    width: 100%;
+	    padding-right: 0;
+	}
+	.offers-top__item {
+	    padding-right: 0;
+	    width: 100%;
+	    margin-bottom: 20px;
+	    &:last-child{
+	    	margin-bottom: 0;
+	    }
+	}
+	.offers-top {
+	    margin-right: 0;
+	    margin-bottom: 40px;
+	    flex-wrap: wrap;
+	}
+	.offers {
+	    padding: 40px 0;
+	}
+	.cost-rent-wrap {
+	    display: flex;
+	    flex-wrap: wrap;
+	}
+	.cost-rent__item{
+		width: 100%;
+	}
+	.cost-rent__info:after{
+		display: none;
+	}
+	.offers-add__item {
+	    width: 50%;
+	    padding-left: 30px;
+	}
+	.offers-add-more{
+		display: none;
+	}
+	.offers-gen__txt {
+	    margin-bottom: 40px;
+	}
 }
 
 @media screen and (max-width: 700px){
@@ -1270,6 +1596,18 @@
 	}
 	.contact__img {
 	    margin-bottom: 15px;
+	}
+	.about-top__wrap{
+		flex-wrap:wrap;
+	}
+	.about-top__info {
+	    width: 100%;
+	    padding-right: 0;
+	    margin-bottom: 20px;
+	}
+	.about-top__img {
+	    width: 100%;
+	    padding-left: 0;
 	}
 }
 
@@ -1342,7 +1680,13 @@
 	.card-benefits h2,
 	.consultation--corp h2,
 	.consultation h2,
-	.requisites h2 {
+	.requisites h2,
+	.our-projects h2,
+	.offers h2,
+	.offers-gen h2.h1,
+	.cost-rent h2,
+	.page-tour h2,
+	.page-tour h2{
 	    font-size: 24px;
 	    margin-bottom: 20px;
 	}
@@ -1578,6 +1922,91 @@
 	}
 	.reviews-top-slider .slick-dots{
 		left: 0;
+	}
+	.page-top__list {
+	    margin-right: 0;
+	}
+	.page-top__item {
+	    width: 100%;
+	    padding-right: 0;
+	}
+	.contract__top{
+		flex-wrap:wrap;
+	}
+	.contract__info {
+	    padding-right: 0;
+	    width: 100%;
+	    order: 2;
+	}
+	.contract-download {
+	    width: 100%;
+		margin-bottom: 20px;
+	    order: 1;
+	}
+	.methods {
+	    padding-top: 40px;
+	}
+	.who__item{
+		width: 100%;
+	}
+	.who__item--double__item{
+		 width: 100%;
+	}
+	.methods__item .who__item{
+		padding: 0;
+		flex-wrap:wrap;
+	}
+	.benefits__item,
+	.individual__item,
+	.card-benefits .benefits__item{
+	    width: 100%;
+	    padding-right: 0;
+	}
+	.page-top__buttons {
+	    padding: 40px 0;
+	    flex-wrap: wrap;
+	    .btn{
+			margin-bottom: 20px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+	    }
+	}
+	.benefits__txt {
+	    padding-left: 0;
+	}
+	.page404__main h1 {
+	    font-size: 165px;
+	}
+	.our-projects__slider{
+		padding: 0 40px;
+	}
+	.results__item {
+	    margin-right: 145px;
+	}
+	.reviews-video__slider{
+		padding: 0 40px;
+	}
+	.reviews-video .video-item{
+		margin-bottom: 0;
+		box-shadow:none;
+	}
+	.reviews-video__slider .slick-arrow {
+	    margin-top: -12px;
+	}
+	.offers-top__title {
+	    font-size: 20px;
+	    line-height: inherit;
+	}
+	.offers-top__inner{
+		min-height: auto;
+	}
+	.offers-add__item {
+	    width: 100%;
+	    margin-bottom: 40px;
+	}
+	.cost-rent-price .btn {
+	    font-size: 14px;
 	}
 }
 @media screen and (max-width: 400px){

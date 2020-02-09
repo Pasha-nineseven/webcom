@@ -154,6 +154,7 @@ body.fixed {
 			.container-fluid{
 				max-width: 1342px;
 				padding: 0 16px;
+				z-index: 2;
 			}
 		}
 	}
@@ -405,6 +406,8 @@ a.breadcumbs__item:after{
 	justify-content: center;
 	align-items: center;
 	width: 100%;
+	    left: 0;
+    padding-left: 0;
 	li{
 		line-height: 1!important;
 		padding: 0!important;
@@ -1254,6 +1257,7 @@ padding: 35px 0 0;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+	overflow: hidden;
     &:before {
 	    content: "";
 	    display: block;
@@ -2168,6 +2172,9 @@ padding: 35px 0 0;
 	right: -35px;
 	top: 50%;
 	transform:translateY(-50%);
+	img{
+		max-width: 100%;
+	}
 }
 
 .card-benefits{
@@ -4565,9 +4572,7 @@ position: relative;
 
 .offers-add-more__info{
     display: none;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#DCFBFF));
-    background: linear-gradient(180deg, #FFFFFF 0%, #DCFBFF 100%);
-    -webkit-box-shadow: 0px 3px 14px rgba(131, 186, 193, 0.5);
+    background: #fff;
     box-shadow: 0px 3px 14px rgba(131, 186, 193, 0.5);
     padding: 15px;
     position: absolute;
@@ -4584,6 +4589,11 @@ position: relative;
 	width: 40px;
 	height: 41px;
 	background: url(../img/svg/info.svg) no-repeat;
+	background-size: 40px 41px;
+	&.active{
+		background: url(../img/svg/info-close.svg) 0 1px no-repeat;
+		background-size: 40px 41px;
+	}
 }
 
 .offers-add-more{
@@ -4599,6 +4609,41 @@ position: relative;
 		max-width: 100%;
 	}
 }
+
+.who-add{
+	    position: absolute;
+    z-index: 4;
+}
+.who-add__link{
+	display: inline-block;
+    width: 40px;
+    height: 41px;
+    background: url(../img/svg/info.svg) no-repeat;
+    background-size: 40px 41px;
+        position: relative;
+    z-index: 3;
+    &.active{
+		background: url(../img/svg/info-close.svg) 0 1px no-repeat;
+		background-size: 40px 41px;
+    }
+}
+
+.who-add__info{
+	display: none;
+    background: #fff;
+    box-shadow: 0px 3px 14px rgba(131, 186, 193, 0.5);
+    padding: 15px;
+    position: absolute;
+    left: 100%;
+    transform: translateX(-50%);
+    top: 100%;
+    min-width: 200px;
+    font-size: 16px;
+    line-height: 22px;
+    min-width: 275px;
+    transform: translate(-18px, -25px);
+}
+
 
 //PAGES
 @import "pages/speaker";
