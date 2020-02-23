@@ -10,26 +10,10 @@ $(document).ready(function() {
     else header.removeClass('fixed');
 
     //COURSES-PANEL
-        // Create the measurement node
-        // var scrollDiv = document.createElement("div");
-        // scrollDiv.className = "scrollbar-measure";
-        //console.log(ifHasScroll);
     $('body').on('click','.js-courses-link', function(e){
         e.preventDefault();
-        //document.body.appendChild(scrollDiv);
-        // Get the scrollbar width
-        // var scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
-        //$('.courses-panel__bg').addClass('is-active').animate({opacity: 1}, 200);
         $('.courses-panel').slideToggle(150);
         $(this).toggleClass('active');
-        //scroll-detect
-        // var ifHasScroll = $('body').hasVerticalScrollBar();
-        // if (ifHasScroll) {
-        //     $('body').addClass('fixed');
-        //     $('body').css('padding-right',scrollbarWidth);
-        //     $('.page-header').css('padding-right',scrollbarWidth);
-        //     $('.course-nav').css('padding-right',scrollbarWidth);
-        // }
     });
     $(document).click(function (e){
         var div = $(".courses-link");
@@ -39,19 +23,7 @@ $(document).ready(function() {
             $('.courses-panel').slideUp(150);
         }
     });
-    // $('body').on('click','.js-courses-panel__bg', function(e){
-    //     document.body.removeChild(scrollDiv);
-    //     setTimeout(function (){
-    //         $('body').removeAttr("style");
-    //         $('.page-header').removeAttr("style");
-    //         $('.course-nav').removeAttr("style");
-    //         $( 'body' ).removeClass('fixed');
-    //     }, 400);
-    //     $('.courses-panel').removeClass('is-active');
-        
-    //     $('.courses-panel__bg').removeClass('is-active').animate({opacity: 0}, 200);
-    // });
-
+    
     //MOBILE-MENU
     $('body').on('click','.js-menu-mobile-btn', function(e){
         e.preventDefault();
@@ -305,46 +277,58 @@ $(document).ready(function() {
             infinite: false,
             slidesToShow: 3,
             slidesToScroll: 1,
-            // responsive: [
-            //     {
-            //       breakpoint: 850,
-            //       settings: {
-            //         slidesToShow: 5,
-            //         slidesToScroll: 1,
-            //       }
-            //     },
-            //     {
-            //       breakpoint: 700,
-            //       settings: {
-            //         slidesToShow: 4,
-            //         slidesToScroll: 1,
-            //       }
-            //     },
-            //     {
-            //       breakpoint: 600,
-            //       settings: {
-            //         slidesToShow: 3,
-            //         slidesToScroll: 1,
-            //       }
-            //     },
-            //     {
-            //       breakpoint: 500,
-            //       settings: {
-            //         slidesToShow: 2,
-            //         slidesToScroll: 1,
-            //       }
-            //     },
-            // ]
+            responsive: [
+                {
+                  breakpoint: 900,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                  }
+                },
+                {
+                  breakpoint: 600,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    adaptiveHeight:true,
+                  }
+                },
+            ]
         });
     };
 
 
+
+    var $gallery_mobile = $('.course-cabinet-slider-mobile');
+
+    $gallery_mobile.slick({
+        speed: 250,
+        swipe: true,
+        swipeToSlide: true,
+        touchThreshold: 10,
+        arrows:true,
+        dots:true,
+        useTransform:true,
+        accessibility: false,
+        infinite: false,
+        fade:true,
+        // slidesToShow: 1,
+        // slidesToScroll: 1,
+    });
 
     //ACCORDEON
     $("body").on("click", ".accordeon__link", function(e){
         e.preventDefault();
         $(this).parents('.accordeon__item').toggleClass('active');
         $(this).next('.accordeon__info').slideToggle();
+
+
+        
+        setTimeout(function() {
+            $gallery_mobile.slick('setPosition');
+        }, 150);
+
+        
     });
 
 
@@ -370,36 +354,35 @@ $(document).ready(function() {
             infinite: false,
             slidesToShow: 8,
             slidesToScroll: 1,
-            // responsive: [
-            //     {
-            //       breakpoint: 850,
-            //       settings: {
-            //         slidesToShow: 5,
-            //         slidesToScroll: 1,
-            //       }
-            //     },
-            //     {
-            //       breakpoint: 700,
-            //       settings: {
-            //         slidesToShow: 4,
-            //         slidesToScroll: 1,
-            //       }
-            //     },
-            //     {
-            //       breakpoint: 600,
-            //       settings: {
-            //         slidesToShow: 3,
-            //         slidesToScroll: 1,
-            //       }
-            //     },
-            //     {
-            //       breakpoint: 500,
-            //       settings: {
-            //         slidesToShow: 2,
-            //         slidesToScroll: 1,
-            //       }
-            //     },
-            // ]
+            responsive: [
+                {
+                  breakpoint: 950,
+                  settings: {
+                    slidesToShow: 7,
+                    slidesToScroll: 1,
+                    dots:true,
+                    arrows:false,
+                  }
+                },
+                {
+                  breakpoint: 800,
+                  settings: {
+                    slidesToShow: 6,
+                    slidesToScroll: 1,
+                    dots:true,
+                    arrows:false,
+                  }
+                },
+                {
+                  breakpoint:700,
+                  settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    dots:true,
+                    arrows:false,
+                  }
+                },
+            ]
         });
     };
 
@@ -487,8 +470,15 @@ $(document).ready(function() {
             accessibility: false,
             infinite: false,
             fade:true,
-            // slidesToShow: 1,
-            // slidesToScroll: 1,
+            responsive: [
+                {
+                  breakpoint: 600,
+                  settings: {
+                    arrows:false,
+                    dots:true,
+                  }
+                },
+            ]
         });
     };
 
@@ -809,6 +799,12 @@ $(document).ready(function() {
             ]
         });
     };
+
+
+
+    slider_course_top__items();
+    who_sliderInit();
+    course__docs__list_sliderInit();
 });
 
 
@@ -822,7 +818,9 @@ $(window).scroll(function(){
 });
 
 $(window).resize(function () {
-
+    slider_course_top__items();
+    who_sliderInit();
+    course__docs__list_sliderInit();
 });
 
 // $(window).load(function(){
@@ -830,6 +828,90 @@ $(window).resize(function () {
 // });
 
 // functions
+function course__docs__list_sliderInit(){
+    if ($('.course-docs__list').length>0) {
+        var $who = $('.course-docs__list');
+        if($(window).width() < 900) {
+            $who.not('.slick-initialized').slick({
+                infinite: true,
+                dots: false,
+                arrows:true,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                adaptiveHeight: false,
+                responsive: [
+                    {
+                         breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        }
+                    },
+                ]
+            });
+        } else{
+            if($who.hasClass('slick-initialized')) {
+                $who.slick("unslick");
+            }
+        }
+    }
+}
+
+function who_sliderInit(){
+    if ($('.layout--course').length>0) {
+        var $who = $('.who__list');
+        if($(window).width() < 800) {
+            $who.not('.slick-initialized').slick({
+                infinite: true,
+                dots: false,
+                arrows:true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                adaptiveHeight: false,
+                responsive: [
+                {
+                      breakpoint: 750,
+                      settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                      }
+                    },
+                    {
+                      breakpoint: 600,
+                      settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                      }
+                    },
+                ]
+            });
+        } else{
+            if($who.hasClass('slick-initialized')) {
+                $who.slick("unslick");
+            }
+        }
+    }
+}
+
+function slider_course_top__items() {
+    var $soc_a = $('.course-top__items');
+    if($(window).width() < 600) {
+        $soc_a.not('.slick-initialized').slick({
+            infinite: true,
+            dots: false,
+            arrows:true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            adaptiveHeight: false,
+        });
+    } else{
+        if($soc_a.hasClass('slick-initialized')) {
+            $soc_a.slick("unslick");
+        }
+    }
+}
+
+
 function initializeContactsMap() {
     if ($('#contacts-map').length>0) {
 
