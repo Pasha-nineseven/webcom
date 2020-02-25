@@ -804,7 +804,36 @@ $(document).ready(function() {
 
     slider_course_top__items();
     who_sliderInit();
+    why_sliderInit();
     course__docs__list_sliderInit();
+
+
+
+
+    //CHECK-amount
+    if ($('#use_amount').length>0) {
+        var startArray = [];
+        $("[data-amount]").each(function(i){
+            startArray.push($(this).text());
+        });
+        $('#use_amount').on('click', function () {
+            $("[data-amount]").each(function(i,item) {
+                var amount = $(this).data('amount'),
+                    txt = $(this).text(),
+                    disountResult = (txt * amount * 0.01); 
+                if ( $('#use_amount').is(':checked') ) {
+                    $(this).text(txt - disountResult);
+                } else {
+                    $(this).text(startArray[i]);
+                }
+            });
+        })
+    }
+
+
+        
+    
+    
 });
 
 
@@ -820,6 +849,7 @@ $(window).scroll(function(){
 $(window).resize(function () {
     slider_course_top__items();
     who_sliderInit();
+    why_sliderInit();
     course__docs__list_sliderInit();
 });
 
@@ -860,6 +890,41 @@ function course__docs__list_sliderInit(){
 function who_sliderInit(){
     if ($('.layout--course').length>0) {
         var $who = $('.who__list');
+        if($(window).width() < 800) {
+            $who.not('.slick-initialized').slick({
+                infinite: true,
+                dots: false,
+                arrows:true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                adaptiveHeight: false,
+                responsive: [
+                {
+                      breakpoint: 750,
+                      settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                      }
+                    },
+                    {
+                      breakpoint: 600,
+                      settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                      }
+                    },
+                ]
+            });
+        } else{
+            if($who.hasClass('slick-initialized')) {
+                $who.slick("unslick");
+            }
+        }
+    }
+}
+function why_sliderInit(){
+    if ($('.why__list').length>0) {
+        var $who = $('.why__list');
         if($(window).width() < 800) {
             $who.not('.slick-initialized').slick({
                 infinite: true,
