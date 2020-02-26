@@ -830,6 +830,35 @@ $(document).ready(function() {
         })
     }
 
+    //CHECK-amount-mobile
+    if ($('#use_amount_mobile1').length>0) {
+        var txt1 = +$('#amount1').text(),
+            amount = $('#amount1').data('amount-mobile_1');
+        $('#use_amount_mobile1').on('click', function () {
+
+            if ( $('#use_amount_mobile1').is(':checked') ) {
+                var disountResult = (txt1 * amount * 0.01); 
+                $('#amount1').text(txt1 - disountResult);
+            } else {
+               $('#amount1').text(txt1);
+            }
+     
+        })
+    }
+    if ($('#use_amount_mobile2').length>0) {
+        var txt2 = +$('#amount2').text(),
+            amount = $('#amount2').data('amount-mobile_2');
+        $('#use_amount_mobile2').on('click', function () {
+
+            if ( $('#use_amount_mobile2').is(':checked') ) {
+                var disountResult = (txt2 * amount * 0.01); 
+                $('#amount2').text(txt2 - disountResult);
+            } else {
+               $('#amount2').text(txt2);
+            }
+     
+        })
+    }
 
         
     

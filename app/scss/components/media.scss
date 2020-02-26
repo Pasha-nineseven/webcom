@@ -2388,9 +2388,16 @@
 	.page-top__list {
 	    margin-right: 0;
 	}
-	.page-top__item {
-	    width: 100%;
-	    padding-right: 0;
+	// .page-top__item {
+	//     width: 100%;
+	//     padding-right: 0;
+	// }
+	.page-top__icon {
+	    height: 85px;
+	    padding-left: 20px;
+	}
+	.page-top__txt{
+		padding-left: 0;
 	}
 	.contract__top{
 		flex-wrap:wrap;
@@ -2774,6 +2781,9 @@
 	.questions-main__txt{
 		font-size: 14px;
 		padding-left: 0;
+	}
+	.results__top {
+	    margin-bottom: 30px;
 	}
 }
 @media screen and (max-width: 400px){

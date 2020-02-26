@@ -1483,9 +1483,24 @@ a.get-bonus-add__item{
 	margin-right: 18px;
     /* padding-top: 17px; */
     position: relative;
-    top: 18px;
+    top: -5px;
 	img{
 		display: block;
+	}
+	.reviews__rating{
+		position: static;
+	}
+	.stars{
+		margin-right: 0;
+	}
+	.stars__item {
+	    width: 25px;
+	    height: 25px;
+	    margin-right: 4px;
+	    background-size: contain!important;
+	    &:last-child{
+	    	margin-right: 0;
+	    }
 	}
 }
 
@@ -1502,6 +1517,8 @@ a.get-bonus-add__item{
 .about-wrap{
 	display: flex;
 	    padding-top: 12px;
+	    position: relative;
+	    z-index: 1;
 }
 
 .about-slider-wrap{

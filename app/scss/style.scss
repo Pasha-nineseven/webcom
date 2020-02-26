@@ -1498,9 +1498,17 @@ padding: 35px 0 0;
 	}
 }
 
-.stars__item--full{
+.stars__item{
 	background: url(../img/svg/star.svg) no-repeat;
 }
+
+.stars__item--full{
+	background: url(../img/svg/star-full.svg) no-repeat;
+}
+.stars__item--half{
+	background: url(../img/svg/star-half.svg) no-repeat;
+}
+
 
 .reviews__msg{
     line-height: 1.35;
