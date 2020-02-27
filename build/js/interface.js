@@ -831,6 +831,20 @@ $(document).ready(function() {
     }
 
     //CHECK-amount-mobile
+    if ($('#use_amount_mobile0').length>0) {
+        var txt1 = +$('#amount0').text(),
+            amount = $('#amount0').data('amount-mobile_0');
+        $('#use_amount_mobile0').on('click', function () {
+
+            if ( $('#use_amount_mobile0').is(':checked') ) {
+                var disountResult = (txt1 * amount * 0.01); 
+                $('#amount0').text(txt1 - disountResult);
+            } else {
+               $('#amount0').text(txt1);
+            }
+     
+        })
+    }
     if ($('#use_amount_mobile1').length>0) {
         var txt1 = +$('#amount1').text(),
             amount = $('#amount1').data('amount-mobile_1');
