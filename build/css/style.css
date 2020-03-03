@@ -6690,7 +6690,7 @@ a.breadcumbs__item:after {
 
 .speakers {
   background: #E5E5E5;
-  padding: 60px 0 40px;
+  padding: 60px 0 40px !important;
   position: relative; }
   .speakers:before {
     content: "";
