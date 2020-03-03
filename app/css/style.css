@@ -8381,7 +8381,8 @@ a.breadcumbs__item:after {
   height: 328px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  display: block; }
 
 .layout--course {
   padding-top: 0; }
