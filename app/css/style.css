@@ -8731,9 +8731,10 @@ a.breadcumbs__item:after {
     max-width: 100%; }
 
 .training__img--mobile {
-  display: none; }
+  display: none;
+  text-align: center; }
   .training__img--mobile img {
-    display: block;
+    display: inline-block;
     max-width: 100%; }
 
 .why {
