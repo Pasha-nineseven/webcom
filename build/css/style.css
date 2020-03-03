@@ -8304,6 +8304,10 @@ a.breadcumbs__item:after {
       -ms-transform: translate(-18px, -25px);
           transform: translate(-18px, -25px); }
 
+.article p img {
+  max-width: 100%;
+  height: auto !important; }
+
 .speaker {
   padding-bottom: 40px; }
 

@@ -4653,6 +4653,14 @@ position: relative;
     transform: translate(-18px, -25px);
 }
 
+.article{
+	p{
+		img{
+			max-width: 100%;
+    		height: auto!important;
+		}
+	}
+}
 
 //PAGES
 @import "pages/speaker";
