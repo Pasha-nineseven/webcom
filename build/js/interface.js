@@ -832,26 +832,28 @@ $(document).ready(function() {
 
     //CHECK-amount-mobile
     if ($('#use_amount_mobile0').length>0) {
-        var txt1 = +$('#amount0').text(),
-            amount = $('#amount0').data('amount-mobile_0');
+        var txt0 = +$('#amount0').text(),
+            amount0 = $('#amount0').data('amount-mobile_0');
+            
         $('#use_amount_mobile0').on('click', function () {
 
             if ( $('#use_amount_mobile0').is(':checked') ) {
-                var disountResult = (txt1 * amount * 0.01); 
-                $('#amount0').text(txt1 - disountResult);
+                
+                var disountResult = (txt0 * amount0 * 0.01); 
+                $('#amount0').text(txt0 - disountResult);
             } else {
-               $('#amount0').text(txt1);
+               $('#amount0').text(txt0);
             }
      
         })
     }
     if ($('#use_amount_mobile1').length>0) {
         var txt1 = +$('#amount1').text(),
-            amount = $('#amount1').data('amount-mobile_1');
+            amount1 = $('#amount1').data('amount-mobile_1');
         $('#use_amount_mobile1').on('click', function () {
 
             if ( $('#use_amount_mobile1').is(':checked') ) {
-                var disountResult = (txt1 * amount * 0.01); 
+                var disountResult = (txt1 * amount1 * 0.01); 
                 $('#amount1').text(txt1 - disountResult);
             } else {
                $('#amount1').text(txt1);
@@ -861,11 +863,11 @@ $(document).ready(function() {
     }
     if ($('#use_amount_mobile2').length>0) {
         var txt2 = +$('#amount2').text(),
-            amount = $('#amount2').data('amount-mobile_2');
+            amount2 = $('#amount2').data('amount-mobile_2');
         $('#use_amount_mobile2').on('click', function () {
 
             if ( $('#use_amount_mobile2').is(':checked') ) {
-                var disountResult = (txt2 * amount * 0.01); 
+                var disountResult = (txt2 * amount2 * 0.01); 
                 $('#amount2').text(txt2 - disountResult);
             } else {
                $('#amount2').text(txt2);
@@ -1019,36 +1021,6 @@ function slider_course_top__items() {
     }
 }
 
-
-function initializeContactsMap() {
-    if ($('#contacts-map').length>0) {
-
-        var myMap = new ymaps.Map("contacts-map", {
-            center:[53.899888,27.566757],
-            zoom: 13,
-            controls: []
-        }, {
-            suppressMapOpenBlock: true
-        });  
-                
-        var myPlacemark = new ymaps.Placemark([53.899888,27.566757],{
-                // balloonContentBody: 'Адрес',
-            },{
-            iconLayout: 'default#image',
-            iconImageHref: "img/content/label.png", 
-            iconImageSize: [76,103],
-            iconImageOffset: [-53, -98]
-        }); 
-
-
-        myMap.controls.add(new ymaps.control.ZoomControl({options: { position: { right: 10, top: 50 }}}));
-        myMap.behaviors.disable('scrollZoom');
-
-        myMap.geoObjects.add(myPlacemark);
-    }
-}
-
-
 function timer(f) {
     var date = new Date(f);
     var f_time = Date.parse(date);
@@ -1121,6 +1093,7 @@ function timer(f) {
 })(jQuery);
 
 // links pages
+/*
 $('body').append(
 	'<div style="position: fixed; z-index: 1005; bottom: 0; right: 0; background: #fff; border: solid 1px #828286; width: 200px;"> \
 		<a href="javascript:void(0);" style="float: right;background:#ccc; color:#000; padding: 5px 10px; text-decoration: none; font-size: 16px" onclick="$(this).parent().hide()">Close X</a> \
@@ -1150,3 +1123,4 @@ $('body').append(
         <li><a href="arenda.html">Arenda</a></li> \
 	</ol> \
 </div>');
+*/
