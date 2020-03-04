@@ -342,8 +342,9 @@
 }
 .training__img--mobile{
 	display: none;
+	text-align: center;
 	img{
-		display: block;
+		display: inline-block;
     	max-width: 100%;
 	}
 }

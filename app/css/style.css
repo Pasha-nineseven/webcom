@@ -6690,7 +6690,7 @@ a.breadcumbs__item:after {
 
 .speakers {
   background: #E5E5E5;
-  padding: 60px 0 40px;
+  padding: 60px 0 40px !important;
   position: relative; }
   .speakers:before {
     content: "";
@@ -8304,6 +8304,10 @@ a.breadcumbs__item:after {
       -ms-transform: translate(-18px, -25px);
           transform: translate(-18px, -25px); }
 
+.article p img {
+  max-width: 100%;
+  height: auto !important; }
+
 .speaker {
   padding-bottom: 40px; }
 
@@ -8377,7 +8381,8 @@ a.breadcumbs__item:after {
   height: 328px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  display: block; }
 
 .layout--course {
   padding-top: 0; }
@@ -8731,9 +8736,10 @@ a.breadcumbs__item:after {
     max-width: 100%; }
 
 .training__img--mobile {
-  display: none; }
+  display: none;
+  text-align: center; }
   .training__img--mobile img {
-    display: block;
+    display: inline-block;
     max-width: 100%; }
 
 .why {

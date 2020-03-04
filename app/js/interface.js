@@ -107,7 +107,7 @@ $(document).ready(function() {
             dots:true,
             useTransform:true,
             accessibility: false,
-            infinite: false,
+            infinite: true,
             slidesToShow: 4,
             slidesToScroll: 1,
             responsive: [
@@ -238,10 +238,9 @@ $(document).ready(function() {
             dots:true,
             useTransform:true,
             accessibility: false,
-            infinite: false,
+            infinite: true,
             fade:true,
-            // slidesToShow: 1,
-            // slidesToScroll: 1,
+            infinite:true,
         });
 
         //CABINET-SLIDER-TOGGLE
@@ -274,7 +273,7 @@ $(document).ready(function() {
             dots:false,
             useTransform:true,
             accessibility: false,
-            infinite: false,
+            infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,
             responsive: [
@@ -310,7 +309,7 @@ $(document).ready(function() {
         dots:true,
         useTransform:true,
         accessibility: false,
-        infinite: false,
+        infinite: true,
         fade:true,
         // slidesToShow: 1,
         // slidesToScroll: 1,
@@ -351,7 +350,7 @@ $(document).ready(function() {
             dots:false,
             useTransform:true,
             accessibility: false,
-            infinite: false,
+            infinite: true,
             slidesToShow: 8,
             slidesToScroll: 1,
             responsive: [
@@ -408,7 +407,7 @@ $(document).ready(function() {
             dots:false,
             useTransform:true,
             accessibility: false,
-            infinite: false,
+            infinite: true,
             fade:true,
             responsive: [
                 {
@@ -440,7 +439,7 @@ $(document).ready(function() {
             dots:false,
             useTransform:true,
             accessibility: false,
-            infinite: false,
+            infinite: true,
             fade:true,
             responsive: [
                 {
@@ -468,7 +467,7 @@ $(document).ready(function() {
             dots:true,
             useTransform:true,
             accessibility: false,
-            infinite: false,
+            infinite: true,
             fade:true,
             responsive: [
                 {
@@ -513,7 +512,7 @@ $(document).ready(function() {
             dots:true,
             useTransform:true,
             accessibility: false,
-            infinite: false,
+            infinite: true,
             fade:true,
             // slidesToShow: 1,
             // slidesToScroll: 1,
@@ -533,7 +532,7 @@ $(document).ready(function() {
             dots:false,
             useTransform:true,
             accessibility: false,
-            infinite: false,
+            infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,
             slidesToScroll: 1,
@@ -570,7 +569,7 @@ $(document).ready(function() {
             dots:false,
             useTransform:true,
             accessibility: false,
-            infinite: false,
+            infinite: true,
             slidesToShow: 2,
             slidesToScroll: 1,
              responsive: [
@@ -619,7 +618,7 @@ $(document).ready(function() {
             dots:false,
             useTransform:true,
             accessibility: false,
-            infinite: false,
+            infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,
              responsive: [
@@ -670,7 +669,7 @@ $(document).ready(function() {
             dots:false,
             useTransform:true,
             accessibility: false,
-            infinite: false,
+            infinite: true,
             slidesToShow: 4,
             slidesToScroll: 1,
              responsive: [
@@ -735,7 +734,7 @@ $(document).ready(function() {
             dots:false,
             useTransform:true,
             accessibility: false,
-            infinite: false,
+            infinite: true,
             slidesToShow: 4,
             slidesToScroll: 1,
             responsive: [
@@ -778,7 +777,7 @@ $(document).ready(function() {
             dots:false,
             useTransform:true,
             accessibility: false,
-            infinite: false,
+            infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,
              responsive: [
@@ -831,46 +830,22 @@ $(document).ready(function() {
     }
 
     //CHECK-amount-mobile
-    if ($('#use_amount_mobile0').length>0) {
-        var txt1 = +$('#amount0').text(),
-            amount = $('#amount0').data('amount-mobile_0');
-        $('#use_amount_mobile0').on('click', function () {
-
-            if ( $('#use_amount_mobile0').is(':checked') ) {
-                var disountResult = (txt1 * amount * 0.01); 
-                $('#amount0').text(txt1 - disountResult);
-            } else {
-               $('#amount0').text(txt1);
+    if ($('.cost-table--mobile').length>0) {
+        $('.cost-mobile-item input[type="checkbox"]').on('click', function () {
+            if ( $(this).is(':checked') ) {
+                $(this).parents('.cost-mobile-item').find("[data-amount-mobile]").each(function(i,item) {
+                    amount_mob = +$(this).data('amount-mobile');
+                    txt_mob = +$(this).text();
+                    disountResult_mob = (txt_mob * amount_mob * 0.01); 
+                });
+                $(this).parents('.cost-mobile-item').find("[data-amount-mobile]").text(txt_mob - disountResult_mob);   
             }
-     
-        })
-    }
-    if ($('#use_amount_mobile1').length>0) {
-        var txt1 = +$('#amount1').text(),
-            amount = $('#amount1').data('amount-mobile_1');
-        $('#use_amount_mobile1').on('click', function () {
-
-            if ( $('#use_amount_mobile1').is(':checked') ) {
-                var disountResult = (txt1 * amount * 0.01); 
-                $('#amount1').text(txt1 - disountResult);
-            } else {
-               $('#amount1').text(txt1);
-            }
-     
-        })
-    }
-    if ($('#use_amount_mobile2').length>0) {
-        var txt2 = +$('#amount2').text(),
-            amount = $('#amount2').data('amount-mobile_2');
-        $('#use_amount_mobile2').on('click', function () {
-
-            if ( $('#use_amount_mobile2').is(':checked') ) {
-                var disountResult = (txt2 * amount * 0.01); 
-                $('#amount2').text(txt2 - disountResult);
-            } else {
-               $('#amount2').text(txt2);
-            }
-     
+            else {
+                $(this).parents('.cost-mobile-item').find("[data-amount-mobile]").each(function(i,item) {
+                    sum_mob = $(this).data('sum');
+                });
+                $(this).parents('.cost-mobile-item').find("[data-amount-mobile]").text(sum_mob);
+            } 
         })
     }
 

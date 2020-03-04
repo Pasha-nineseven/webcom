@@ -2909,7 +2909,7 @@ padding: 35px 0 0;
 
 .speakers{
 	background: #E5E5E5;
-	padding: 60px 0 40px;
+	padding: 60px 0 40px!important;
 	position: relative;
 	&:before{
 		content: "";
@@ -4653,6 +4653,14 @@ position: relative;
     transform: translate(-18px, -25px);
 }
 
+.article{
+	p{
+		img{
+			max-width: 100%;
+    		height: auto!important;
+		}
+	}
+}
 
 //PAGES
 @import "pages/speaker";
