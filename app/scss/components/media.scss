@@ -2045,6 +2045,25 @@
 	.cost-table__price span {
 	    font-size: 20px;
 	}
+	.popup-title {
+	    font-size: 24px;
+	    line-height: 26px;
+	    margin-bottom: 20px;
+	}
+	.popup-add {
+	    font-size: 20px;
+	    line-height: 22px;
+	    margin-bottom: 20px;
+	}
+	.error-msg {
+	    margin: 5px 0;
+	}
+	.popup .input-wrap {
+	    margin-bottom: 15px;
+	}
+	.popup .submit-wrap{
+		margin-bottom: 20px;
+	}
 }
 
 @media screen and (max-width: 700px){
@@ -2784,6 +2803,13 @@
 	}
 	.results__top {
 	    margin-bottom: 30px;
+	}
+	.popup {
+	    padding: 45px 20px 20px 20px;
+	}
+	.fancybox-slide--html .fancybox-close-small {
+	    right: 20px;
+	    top: 20px;
 	}
 }
 @media screen and (max-width: 400px){

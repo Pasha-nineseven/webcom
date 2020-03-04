@@ -4662,6 +4662,225 @@ position: relative;
 	}
 }
 
+.fancybox-content{
+	padding: 0;
+}
+.popup{
+	//max-width: 580px;
+	font-size: 16px;
+	padding: 49px 72px 49px 84px;
+	background: linear-gradient(245.72deg, #DCFBFF 0%, #FFFFFF 100%);
+	border-radius: 19px;
+	input[type="text"],
+	input[type="email"],
+	input[type="password"],
+	input[type="phone"]{
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		color: #000;
+		background: #FFFFFF;
+		border: 2px solid #BCE9F8;
+		padding: 10px 16px;
+	}
+	.input-wrap{
+		margin-bottom: 34px;
+	}
+	.input-label{
+		margin-bottom: 10px;
+	}
+	select{
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		color: #000;
+		background: #FFFFFF;
+		border: 2px solid #BCE9F8;
+		padding: 10px 16px;
+	}
+	textarea{
+		background: #FFFFFF;
+		border: 2px solid #BCE9F8;
+		padding: 10px 16px;
+		width: 100%;
+		resize:vertical;
+		min-height: 174px;
+	}
+	.submit-wrap{
+	    text-align: center;
+	    margin-bottom: 28px;
+	    padding-top: 20px;
+	}
+	.btn{
+		font-weight: normal;
+		padding: 13px 46px;
+	}
+	input[type="checkbox"]:not(:checked),
+	input[type="checkbox"]:checked{
+		position: absolute;
+		left: -9999px;
+	}
+	input[type="checkbox"]:not(:checked) + label,
+	input[type="checkbox"]:checked + label{
+		position: relative;
+		cursor: pointer;
+		padding-left: 30px;
+		line-height: 20px;
+		display: inline-block;
+		font-size: 16px;
+	}
+
+	input[type="checkbox"]:not(:checked) + label:before,
+	input[type="checkbox"]:checked + label:before{
+		content: '';
+		position: absolute;
+		left: 0px;
+		top: -1px;
+		height: 20px;
+		width: 20px;
+		border: 2px solid #0A9DDC;
+		cursor: pointer;
+		z-index: 5;
+	}
+	input[type="checkbox"]:checked+ label:before{
+		// background: #BBEE2A;
+		// border: 2px solid #BBEE2A;
+	}
+	input[type="checkbox"]:not(:checked) + label:after,
+	input[type="checkbox"]:checked + label:after {
+		content: '';
+		background: url('../img/svg/check.svg') center no-repeat;
+		width: 23px;
+		height: 19px;
+		display: inline-block;
+		position: absolute;
+		top: 0px;
+		left: 1px;
+		z-index: 10;
+	}
+	input[type="checkbox"]:not(:checked) + label:after {
+	 	opacity: 0;
+	}
+	input[type="checkbox"]:checked + label:after {
+	    opacity: 1;
+	}
+	input[type="radio"]:not(:checked),
+	input[type="radio"]:checked{
+		position: absolute;
+		left: -9999px;
+	}
+	input[type="radio"]:not(:checked) + label,
+	input[type="radio"]:checked + label{
+		position: relative;
+		cursor: pointer;
+		padding-left: 33px;
+		line-height: 21px;
+		display: inline-block;
+	}
+
+	input[type="radio"]:not(:checked) + label:before,
+	input[type="radio"]:checked + label:before{
+		content: '';
+		position: absolute;
+		left: 0;
+		top: -1px;
+		width: 21px;
+		height: 21px;
+		border: 2px solid #0A9DDC;
+		background: #fff;
+		border-radius: 50%;
+		cursor: pointer;
+		z-index: 3;
+	}
+	input[type="radio"]:not(:checked) + label:after,
+	input[type="radio"]:checked + label:after{
+		content: '';
+		width: 9px;
+		height: 9px;
+
+		background: #FF7700;
+		display: inline-block;
+		/* border: 1px solid #00a6e4; */
+		position: absolute;
+		border-radius: 50%;
+		top: 5px;
+		left: 6px;
+		z-index: 4;
+		opacity: 0;
+	}
+	input[type="radio"]:checked + label:after {
+		opacity: 1;
+	}
+}
+.input-wrap--error{
+	input[type="text"],
+	input[type="email"],
+	input[type="password"],
+	input[type="phone"]{
+		border: 2px solid #FF6B00;
+	}
+}
+.fancybox-slide--html .fancybox-close-small{
+    width: 22px;
+    height: 22px;
+    background: url(../img/svg/close.svg) no-repeat;
+    right: 30px;
+    top: 30px;
+    background-size: contain;
+    svg{
+    	display: none;
+    }
+}
+
+.error-msg{
+color: #FF6B00;
+    margin: 13px 0;
+
+}
+
+.radio-item{
+	margin-bottom: 5px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.input-wrap--phone{
+
+}
+.input-wrap--phone input::-webkit-input-placeholder {color:#000;transition:all 0.3s ease;}
+.input-wrap--phone input::-moz-placeholder          {color:#000;transition:all 0.3s ease;}
+.input-wrap--phone input:-moz-placeholder           {color:#000;transition:all 0.3s ease;}
+.input-wrap--phone input:-ms-input-placeholder      {color:#000;transition:all 0.3s ease;}
+
+
+
+.input-wrap--phone input:focus::-webkit-input-placeholder {color: transparent}
+.input-wrap--phone input:focus::-moz-placeholder          {color: transparent}
+.input-wrap--phone input:focus:-moz-placeholder           {color: transparent}
+.input-wrap--phone input:focus:-ms-input-placeholder      {color: transparent}
+
+.popup-title{
+	font-size: 36px;
+	line-height: 49px;
+	margin-bottom: 33px;
+	font-weight: 800;
+	text-align: center;
+}
+.popup-add{
+	font-size: 24px;
+	line-height: 32px;
+	margin-bottom: 30px;
+	text-align: center;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.hidden{
+	display: none;
+}
+
 //PAGES
 @import "pages/speaker";
 

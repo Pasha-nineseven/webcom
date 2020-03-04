@@ -137,16 +137,16 @@ $(document).ready(function() {
     };
 
     //POPUP-INLINE
-    // $(".js-popup-inline").fancybox({
-    //     speed : 330,
-    //     transitionEffect: "slide", 
-    //     animationEffect: "zoom-in-out", 
-    //     infobar: false,
-    //     clickOutside : 'close',
-    //     buttons: [
-    //         "close"
-    //     ],
-    // });
+    $(".js-popup-inline").fancybox({
+        speed : 330,
+        // transitionEffect: "slide", 
+        // animationEffect: "zoom-in-out", 
+        infobar: false,
+        clickOutside : 'close',
+        buttons: [
+            "close"
+        ],
+    });
     // $("body").on("click", ".js-popup-close", function(e){
     //     e.preventDefault();
     //     parent.jQuery.fancybox.getInstance().close();
@@ -1123,5 +1123,6 @@ $('body').append(
         <li><a href="index.html">Index</a></li> \
         <li><a href="about.html">About</a></li> \
         <li><a href="arenda.html">Arenda</a></li> \
+        <li><a href="form.html">Form</a></li> \
 	</ol> \
 </div>');
