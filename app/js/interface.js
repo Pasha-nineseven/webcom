@@ -995,35 +995,6 @@ function slider_course_top__items() {
 }
 
 
-function initializeContactsMap() {
-    if ($('#contacts-map').length>0) {
-
-        var myMap = new ymaps.Map("contacts-map", {
-            center:[53.899888,27.566757],
-            zoom: 13,
-            controls: []
-        }, {
-            suppressMapOpenBlock: true
-        });  
-                
-        var myPlacemark = new ymaps.Placemark([53.899888,27.566757],{
-                // balloonContentBody: 'Адрес',
-            },{
-            iconLayout: 'default#image',
-            iconImageHref: "img/content/label.png", 
-            iconImageSize: [76,103],
-            iconImageOffset: [-53, -98]
-        }); 
-
-
-        myMap.controls.add(new ymaps.control.ZoomControl({options: { position: { right: 10, top: 50 }}}));
-        myMap.behaviors.disable('scrollZoom');
-
-        myMap.geoObjects.add(myPlacemark);
-    }
-}
-
-
 function timer(f) {
     var date = new Date(f);
     var f_time = Date.parse(date);
@@ -1096,6 +1067,7 @@ function timer(f) {
 })(jQuery);
 
 // links pages
+/*
 $('body').append(
 	'<div style="position: fixed; z-index: 1005; bottom: 0; right: 0; background: #fff; border: solid 1px #828286; width: 200px;"> \
 		<a href="javascript:void(0);" style="float: right;background:#ccc; color:#000; padding: 5px 10px; text-decoration: none; font-size: 16px" onclick="$(this).parent().hide()">Close X</a> \
@@ -1126,3 +1098,4 @@ $('body').append(
         <li><a href="form.html">Form</a></li> \
 	</ol> \
 </div>');
+*/
