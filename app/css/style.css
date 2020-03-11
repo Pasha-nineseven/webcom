@@ -5514,8 +5514,8 @@ a.breadcumbs__item:after {
   .reviews-slider.slick-initialized {
     display: block; }
   .reviews-slider .reviews__icon {
-    -webkit-box-shadow: none;
-            box-shadow: none; }
+    -webkit-box-shadow: 4px 7px 16px -6px rgba(60, 60, 60, 0.6);
+            box-shadow: 4px 7px 16px -6px rgba(60, 60, 60, 0.6); }
   .reviews-slider .slick-arrow {
     width: 22px;
     height: 40px;
@@ -5531,6 +5531,15 @@ a.breadcumbs__item:after {
   .reviews-slider .slick-next {
     right: 0;
     background: url(../img/svg/next.svg) center no-repeat; }
+  .reviews-slider .slick-list:after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 0; }
 
 .methods {
   padding-bottom: 98px;

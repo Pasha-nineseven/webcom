@@ -1608,7 +1608,7 @@ padding: 35px 0 0;
 		display: block;
 	}
 	.reviews__icon{
-		box-shadow: none;
+		    box-shadow: 4px 7px 16px -6px rgba(60, 60, 60, 0.6);
 	}
 	.slick-arrow {
 	    width: 22px;
@@ -1626,6 +1626,18 @@ padding: 35px 0 0;
 	.slick-next {
 		right: 0;
 	    background: url(../img/svg/next.svg) center no-repeat;
+	}
+	.slick-list{
+		&:after{
+			content: "";
+			display: inline-block;
+			width: 10px;
+			height: 100%;
+			background: #fff;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
 	}
 }
 

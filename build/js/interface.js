@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	flexibility(document.documentElement);
 
-	ymaps.ready(initializeContactsMap);
+	//ymaps.ready(initializeContactsMap);
 
     var header = $('.page-header'),
     scroll = $(window).scrollTop();
@@ -993,6 +993,7 @@ function slider_course_top__items() {
         }
     }
 }
+
 
 function timer(f) {
     var date = new Date(f);
