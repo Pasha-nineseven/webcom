@@ -58,6 +58,9 @@
         }
         .logo{
             margin-top: 2px;
+            &:before{
+                background: url(../img/svg/webcom_logo_footer.svg) center no-repeat; 
+            }
         }
     }
 }
@@ -74,6 +77,17 @@
 	width: 273px;
 	height: 50px;
 	background: url(../img/svg/logo.svg) center no-repeat; 
+    position: relative;
+    &:before{
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url(../img/svg/logo-in.svg) center no-repeat; 
+    }
 }
 
 .page-header__in{
