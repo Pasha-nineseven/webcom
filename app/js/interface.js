@@ -368,8 +368,8 @@ $(document).ready(function() {
                   settings: {
                     slidesToShow: 6,
                     slidesToScroll: 1,
-                    dots:true,
-                    arrows:false,
+                    dots:false,
+                    arrows:true,
                   }
                 },
                 {
@@ -377,8 +377,17 @@ $(document).ready(function() {
                   settings: {
                     slidesToShow: 4,
                     slidesToScroll: 1,
-                    dots:true,
-                    arrows:false,
+                    dots:false,
+                    arrows:true,
+                  }
+                },
+                {
+                  breakpoint:600,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    dots:false,
+                    arrows:true,
                   }
                 },
             ]
@@ -690,13 +699,6 @@ $(document).ready(function() {
                 {
                   breakpoint: 600,
                   settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                  }
-                },
-                {
-                  breakpoint: 500,
-                  settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                   }
@@ -805,6 +807,11 @@ $(document).ready(function() {
     who_sliderInit();
     why_sliderInit();
     course__docs__list_sliderInit();
+    slider_offers_init();
+    slider_gen_offers_init();
+    slider_benefits_init();
+    slider_questions_init();
+    slider_questions_main_init();
 
 
 
@@ -869,6 +876,11 @@ $(window).resize(function () {
     who_sliderInit();
     why_sliderInit();
     course__docs__list_sliderInit();
+    slider_offers_init();
+    slider_gen_offers_init();
+    slider_benefits_init();
+    slider_questions_init();
+    slider_questions_main_init();
 });
 
 // $(window).load(function(){
@@ -990,6 +1002,95 @@ function slider_course_top__items() {
     } else{
         if($soc_a.hasClass('slick-initialized')) {
             $soc_a.slick("unslick");
+        }
+    }
+}
+
+function slider_offers_init() {
+    var $offers = $('.offers-add__list');
+    if($(window).width() < 768) {
+        $offers.not('.slick-initialized').slick({
+            infinite: true,
+            dots: false,
+            arrows:true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            adaptiveHeight: false,
+        });
+    } else{
+        if($offers.hasClass('slick-initialized')) {
+            $offers.slick("unslick");
+        }
+    }
+}
+function slider_benefits_init() {
+    var $benefits = $('.our-benefits-in');
+    if($(window).width() < 768) {
+        $benefits.not('.slick-initialized').slick({
+            infinite: true,
+            dots: false,
+            arrows:true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            adaptiveHeight: true,
+        });
+    } else{
+        if($benefits.hasClass('slick-initialized')) {
+            $benefits.slick("unslick");
+        }
+    }
+}
+
+function slider_gen_offers_init() {
+    var $gen_offers = $('.offers-gen__list');
+    if($(window).width() < 768) {
+        $gen_offers.not('.slick-initialized').slick({
+            infinite: true,
+            dots: false,
+            arrows:true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            adaptiveHeight: false,
+        });
+    } else{
+        if($gen_offers.hasClass('slick-initialized')) {
+            $gen_offers.slick("unslick");
+        }
+    }
+}
+
+
+function slider_questions_init() {
+    var $questions = $('.questions-top__list');
+    if($(window).width() < 768) {
+        $questions.not('.slick-initialized').slick({
+            infinite: true,
+            dots: false,
+            arrows:true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            adaptiveHeight: false,
+        });
+    } else{
+        if($questions.hasClass('slick-initialized')) {
+            $questions.slick("unslick");
+        }
+    }
+}
+function slider_questions_main_init() {
+    var $questions = $('.questions-main__list');
+    if($(window).width() < 768) {
+        $questions.not('.slick-initialized').slick({
+            infinite: true,
+            dots: false,
+            arrows:true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            adaptiveHeight: false,
+        });
+    } else{
+        if($questions.hasClass('slick-initialized')) {
+            $questions.slick("unslick");
         }
     }
 }

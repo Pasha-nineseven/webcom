@@ -18,6 +18,9 @@
 	.phone-link-toggle{
 		background: rgba(255, 255, 255, 0.1);
 	}
+	.page-footer{
+		padding-bottom: 70px;
+	}
 }
 
 .course-top{
@@ -1097,12 +1100,15 @@
 		box-shadow:none;
 		border-radius: 0;
 		margin-top: -20px;
+		border:0!important;
 	}
 	.slick-prev{
 		left: 0;
+		    background: url(../img/svg/prev-min.svg) center no-repeat;
 	}
 	.slick-next{
 		right: 0;
+		background: url(../img/svg/next-min.svg) center no-repeat;
 	}
 }
 .jobs-slider__item{
