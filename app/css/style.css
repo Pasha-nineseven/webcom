@@ -9236,7 +9236,7 @@ a.breadcumbs__item:after {
   height: 276px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   margin-bottom: 32px;
   -webkit-box-shadow: 0px 10px 23px #B8BDBD;
           box-shadow: 0px 10px 23px #B8BDBD;
