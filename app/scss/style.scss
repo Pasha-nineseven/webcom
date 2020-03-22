@@ -71,6 +71,7 @@ body.fixed {
   	flex: 1 0 auto;
   	background: #F4F5F5;
   	position: relative;
+  	overflow: hidden;
   	    // overflow-x: hidden;
 }
 .layout--white-sqheme{
@@ -1092,6 +1093,8 @@ a.breadcumbs__item:after{
 .consultation{
 	line-height: 1.2;
 	padding: 70px 0 100px;
+	    position: relative;
+    z-index: 2;
 	h2{
 		color: #FF7700;
 		margin: 0;
@@ -4894,6 +4897,12 @@ color: #FF6B00;
 
 .hidden{
 	display: none;
+}
+
+.cert-wrapper{
+	img{
+		max-width: 100%;
+	}
 }
 
 //PAGES

@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	flexibility(document.documentElement);
 
-	ymaps.ready(initializeContactsMap);
+	//ymaps.ready(initializeContactsMap);
 
     var header = $('.page-header'),
     scroll = $(window).scrollTop();
