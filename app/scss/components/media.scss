@@ -1060,12 +1060,7 @@
 	.about-slider__item{
 		flex-wrap: wrap;
 	}
-	.about-slider__rev{
-		margin-top: 20px;
-	}
-	.about-slider__arr{
-		display: none;
-	}
+
 	.courses-panel .timetable-slider__item {
 	    width: 230px;
 	}
@@ -1080,6 +1075,12 @@
 		    padding: 3px 8px;
 		    font-size: 14px;
 		}
+	}
+	.about-slider__arr{
+		display: none;
+	}
+	.about-slider__rev{
+		margin-top: 20px;
 	}
 	.about-add {
 	    width: 100%;
@@ -1888,12 +1889,67 @@
 	.cost-rent__item{
 		width: 100%;
 	}
+
 	.cost-rent__info:after{
 		display: none;
 	}
-	.offers-add__item {
-	    width: 50%;
-	    padding-left: 30px;
+	.offers-add__item,
+	.offers-gen__item{
+	    width: 100%;
+	    min-width: 100%;
+	    padding-left: 0;
+	    margin-bottom: 30px;
+	        display: flex;
+    	align-items: center;
+    	margin-right: 0;
+	}
+	.offers-gen__item{
+		min-height: 90px;
+		padding-top: 0;
+	}
+	.offers-add__img:before{
+		top: -10px;
+	    left: 0px;
+	    width: 100px;
+	    height: 100px;
+	}
+	.offers-gen__img:before{
+		top: 0;
+	    left: 0px;
+	    width: 100px;
+	    height: 100px;
+	}
+	.offers-gen__info{
+		br{
+			display: none;
+		}
+	}
+	.offers-gen:last-child .offers-gen__img:before {
+	    top: 0;
+	}
+	.offers-gen:last-child .offers-gen__img {
+	    margin-bottom: 0;
+	}
+	.offers-add__img,
+	.offers-gen__img{
+		height: auto;
+	    width: 100px;
+	    min-width: 100px;
+	    margin-right: 20px;
+	}
+	.offers-gen__img {
+	    text-align: center;
+	    margin-bottom: 0;
+	        min-height: 90px;
+    line-height: 90px;
+    vertical-align: middle;
+	}
+	.offers-gen__img img {
+	    display: inline-block;
+	    vertical-align: middle;
+	}
+	.offers-add__txt{
+		max-width: 100%;
 	}
 	.offers-add-more{
 		display: none;
@@ -2098,29 +2154,6 @@
 	.offers-gen {
 	    min-height: auto;
 	}
-	.offers-add__list{
-		&.slick-initialized{
-			display: block;
-			padding: 0 80px;
-		}
-		.offers-add__txt {
-    		max-width: 100%;
-    	}
-    	.offers-add__img {
-		    padding-left: 0;
-		}
-		.offers-add__item{
-			padding-left: 0;
-			    text-align: center;
-		}
-		.offers-add__img img {
-		    display: inline-block;
-		}
-		.offers-add__img:before {
-		    left: 50%;
-		    transform: translateX(-50%);
-		}
-	}
 	.offers-gen__list{
 		&.slick-initialized{
 			display: block;
@@ -2256,6 +2289,92 @@
 				max-height: 100%;
 			}
 		}
+	}
+	.about-slider__item{
+		padding-right: 0;
+	}
+	.about-slider__rev{
+		margin-top: 40px;
+	}
+	.about-slider__arr {
+	    display: block;
+	    right: auto;
+	    left: 30px;
+	    top: -35px;
+	    transform: rotate(90deg);
+	    border-width: 0px 35px 35px 0;
+	    &:before{
+	    	width: 35px;
+	    }
+	    &:after{
+	    	    width: 47px;
+	    	    transform: rotate(45deg);
+	    }
+	}
+	.about-slider__person {
+	    display: flex;
+	}
+	.about-slider__img {
+	    margin-bottom: 0;
+	    margin-right: 20px;
+	}
+	.about-slider,
+	.about-youtube-slider{
+	    padding: 0 50px;
+	}
+	.about-pagingInfo,
+	.about-youtube-pagingInfo{
+		display: none;
+	}
+	.about-slider .slick-arrow{
+		top: 50px;
+	}
+	.about-youtube-slider .slick-arrow{
+		top: 100px;
+	}
+	.about-slider .slick-next,
+	.about-youtube-slider .slick-next{
+		right: 0;
+	}
+	.about-slider .slick-prev,
+	.about-youtube-slider .slick-prev{
+		right: auto;
+		left: 0;
+	}
+	.all-reviews, .all-youtube-video{
+		text-align: center;
+	}
+
+	.contacts__howTo {
+	    display: inline-block;
+	}
+	.about-slider-wrap{
+		margin-bottom: 30px;
+	}
+	.phone-link-toggle{
+		background: transparent!important; 
+		width: 20px;
+	    height: 21px;
+	    margin-top: 4px;
+	    &:before{
+	    	left: 0;
+	    	top: 0;
+	    	background: url(../img/svg/mobile.svg) no-repeat!important;
+	    }
+	    &:after{
+	    	display: none!important;
+	    }
+	}
+	.phone-list__title{
+		display: none;
+	}
+	.phone-list{
+	    padding: 15px;
+	    width: 200px;
+	    margin-top: 10px;
+	}
+	.phone-call{
+		margin-left: 0;
 	}
 }
 
@@ -3181,6 +3300,8 @@
 	.course-top__icon{
 		display: none;
 	}
+	
+	
 }
 @media screen and (max-width: 500px){
 	.videolibrary__item:before {

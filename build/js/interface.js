@@ -420,7 +420,7 @@ $(document).ready(function() {
             fade:true,
             responsive: [
                 {
-                  breakpoint: 600,
+                  breakpoint: 768,
                   settings: {
                     adaptiveHeight:true,
                   }
@@ -452,7 +452,7 @@ $(document).ready(function() {
             fade:true,
             responsive: [
                 {
-                  breakpoint: 600,
+                  breakpoint: 768,
                   settings: {
                     adaptiveHeight:true,
                   }
@@ -807,8 +807,8 @@ $(document).ready(function() {
     who_sliderInit();
     why_sliderInit();
     course__docs__list_sliderInit();
-    slider_offers_init();
-    slider_gen_offers_init();
+    //slider_offers_init();
+    //slider_gen_offers_init();
     slider_benefits_init();
     slider_questions_init();
     slider_questions_main_init();
@@ -876,8 +876,8 @@ $(window).resize(function () {
     who_sliderInit();
     why_sliderInit();
     course__docs__list_sliderInit();
-    slider_offers_init();
-    slider_gen_offers_init();
+    //slider_offers_init();
+   // slider_gen_offers_init();
     slider_benefits_init();
     slider_questions_init();
     slider_questions_main_init();
