@@ -8541,6 +8541,9 @@ a.breadcumbs__item:after {
 .cert-wrapper img {
   max-width: 100%; }
 
+.items-sort + .question {
+  padding-top: 0; }
+
 .speaker {
   padding-bottom: 40px; }
 
@@ -9692,6 +9695,8 @@ a.breadcumbs__item:after {
     padding-top: 0; }
     .jobs + .subscription + .question {
       padding-top: 0; }
+  .jobs + .items-sort .subscription {
+    padding-top: 20px; }
 
 .jobs-slider {
   display: none;

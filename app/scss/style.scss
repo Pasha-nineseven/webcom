@@ -4906,6 +4906,12 @@ color: #FF6B00;
 	}
 }
 
+.items-sort{
+	&+.question{
+		padding-top: 0;
+	}
+}
+
 //PAGES
 @import "pages/speaker";
 
