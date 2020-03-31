@@ -2351,12 +2351,16 @@
 	.about-slider-wrap{
 		margin-bottom: 30px;
 	}
-	.phone-link-toggle{
+	.phone-link-toggle,
+	.page-header.fixed .phone-link-toggle{
 		background: transparent!important; 
 		width: 20px;
 	    height: 21px;
 	    margin-top: 4px;
+	    border: 0;
 	    &:before{
+	    	width: 20px;
+    		height: 21px;
 	    	left: 0;
 	    	top: 0;
 	    	background: url(../img/svg/mobile.svg) no-repeat!important;

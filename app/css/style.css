@@ -3411,7 +3411,7 @@ textarea, input {
     .page-header.fixed .logo {
       margin-top: 2px; }
       .page-header.fixed .logo:before {
-        background: url(../img/svg/webcom_logo_footer.svg) center no-repeat;
+        background: url(../img/svg/webcom_logo_f.svg) center no-repeat;
         background-size: contain; }
 
 .layout--page .phone-link-toggle {
@@ -3847,12 +3847,10 @@ textarea, input {
     font-size: 12px; }
   .mobile-menu .timetable-slider__inner {
     padding: 16px; }
-  .mobile-menu .timetable-slider__img {
-    top: 0; }
-    .mobile-menu .timetable-slider__img img {
-      display: block;
-      max-width: 100%;
-      max-height: 100%; }
+  .mobile-menu .timetable-slider__img img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%; }
 
 .mobile-menu__top {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -4981,7 +4979,8 @@ a.breadcumbs__item:after {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    position: relative; }
+    position: relative;
+    max-width: 145px; }
     .timetable-days.timetable-days--work .timetable-days__top span {
       margin-right: 0; }
     .timetable-days.timetable-days--work .timetable-days__top:before {
@@ -8543,6 +8542,13 @@ a.breadcumbs__item:after {
 
 .items-sort + .question {
   padding-top: 0; }
+
+.mobile-menu .timetable-slider__img {
+  top: auto;
+  bottom: 0; }
+
+.mobile-menu .timetable-slider__item {
+  overflow: hidden; }
 
 .speaker {
   padding-bottom: 40px; }
@@ -12692,16 +12698,22 @@ a.get-bonus-add__item {
     display: inline-block; }
   .about-slider-wrap {
     margin-bottom: 30px; }
-  .phone-link-toggle {
+  .phone-link-toggle,
+  .page-header.fixed .phone-link-toggle {
     background: transparent !important;
     width: 20px;
     height: 21px;
-    margin-top: 4px; }
-    .phone-link-toggle:before {
+    margin-top: 4px;
+    border: 0; }
+    .phone-link-toggle:before,
+    .page-header.fixed .phone-link-toggle:before {
+      width: 20px;
+      height: 21px;
       left: 0;
       top: 0;
       background: url(../img/svg/mobile.svg) no-repeat !important; }
-    .phone-link-toggle:after {
+    .phone-link-toggle:after,
+    .page-header.fixed .phone-link-toggle:after {
       display: none !important; }
   .phone-list__title {
     display: none; }

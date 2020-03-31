@@ -59,7 +59,7 @@
         .logo{
             margin-top: 2px;
             &:before{
-                background: url(../img/svg/webcom_logo_footer.svg) center no-repeat; 
+                background: url(../img/svg/webcom_logo_f.svg) center no-repeat; 
                 background-size: contain;
             }
         }
@@ -576,7 +576,6 @@
         padding: 16px;
     }
     .timetable-slider__img {
-        top: 0;
         img{
             display: block;
             max-width: 100%;
