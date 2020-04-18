@@ -8550,6 +8550,44 @@ a.breadcumbs__item:after {
 .mobile-menu .timetable-slider__item {
   overflow: hidden; }
 
+.cert-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-bottom: 30px;
+  margin-right: -20px; }
+  .cert-list.m-horizontal .cert-item {
+    height: 100px; }
+  .cert-list.m-vertical .cert-item {
+    width: 25%;
+    height: 185px; }
+
+.cert-item {
+  width: 33.333%;
+  padding-right: 20px;
+  margin-bottom: 20px; }
+  .cert-item:last-child {
+    margin-right: 0; }
+
+.cert-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.cert-inner {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
 .speaker {
   padding-bottom: 40px; }
 
@@ -10953,7 +10991,9 @@ a.get-bonus-add__item {
   .why-video__person {
     padding-left: 20px; }
   .get-bonus__top {
-    font-size: 28px; } }
+    font-size: 28px; }
+  .cert-list.m-vertical .cert-item {
+    height: 145px; } }
 
 @media screen and (max-width: 1150px) {
   .layout--page .page-top .container-fluid,
@@ -13469,7 +13509,11 @@ a.get-bonus-add__item {
   .our-benefits-in.slick-initialized .our-benefits__info {
     padding: 0; }
   .course-top__icon {
-    display: none; } }
+    display: none; }
+  .cert-list.m-horizontal .cert-item {
+    width: 50%; }
+  .cert-list.m-vertical .cert-item {
+    width: 33.333%; } }
 
 @media screen and (max-width: 500px) {
   .videolibrary__item:before {
@@ -13483,4 +13527,6 @@ a.get-bonus-add__item {
   .course-docs__img {
     height: 150px; }
   .course-docs__list .slick-arrow {
-    top: 95px; } }
+    top: 95px; }
+  .cert-list.m-vertical .cert-item {
+    width: 50%; } }

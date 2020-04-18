@@ -227,6 +227,9 @@
 	.get-bonus__top {
 	    font-size: 28px;
 	}
+	.cert-list.m-vertical .cert-item {
+	    height: 145px;
+	}
 }
 @media screen and (max-width: 1150px){
 	.layout--page .page-top .container-fluid,
@@ -3304,7 +3307,12 @@
 	.course-top__icon{
 		display: none;
 	}
-	
+	.cert-list.m-horizontal .cert-item {
+	    width: 50%;
+	}
+	.cert-list.m-vertical .cert-item {
+	    width: 33.333%;
+	}
 	
 }
 @media screen and (max-width: 500px){
@@ -3324,5 +3332,8 @@
 	}
 	.course-docs__list .slick-arrow {
 	    top: 95px;
+	}
+	.cert-list.m-vertical .cert-item {
+	    width: 50%;
 	}
 }
