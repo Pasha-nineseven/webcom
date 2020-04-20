@@ -699,7 +699,9 @@
 	    font-size: 16px;
 	}
 	.workarea ul li:before,
-	.workarea ul.dotted li:before{
+	.workarea ul.dotted li:before,
+	.speaker-panel ul li:before,
+	.speaker-panel ul.dotted li:before{
 	    top: 9px;
 	}
 	.phone-list, .cabinet-list,.courses-panel{
@@ -1020,6 +1022,13 @@
 	.layout--page{
 		overflow: hidden;
 	}
+	.speaker-panel{
+		width: 400px;
+		right: -400px;
+	}
+	.speaker-panel__img {
+	    height: 450px;
+	}
 }
 
 @media screen and (max-width: 900px){
@@ -1279,7 +1288,7 @@
 }
 
 @media screen and (max-width: 767px){
-	.workarea {
+	.workarea,.speaker-panel{
 	    line-height: 1.2;
 	    h1{
 	    	font-size: 40px
@@ -2425,7 +2434,7 @@
 }
 
 @media screen and (max-width: 600px){
-	.workarea {
+	.workarea,.speaker-panel{
 	    h1{
 	    	font-size: 28px
 	    }
@@ -3313,7 +3322,33 @@
 	.cert-list.m-vertical .cert-item {
 	    width: 33.333%;
 	}
-	
+	.speaker-panel__title {
+	    font-size: 22px;
+	}
+	.speaker-panel-close {
+	    width: 40px;
+	    height: 40px;
+	    background-size: cover;
+	    left: -45px;
+	    top: 15px;
+	}
+	.speaker-panel {
+	    width: 260px;
+	    right: -260px;
+	}
+	.speaker-panel__img {
+	    height: 300px;
+	}
+	.speaker-panel__info {
+	    padding: 0 10px 0;
+	}
+	.speaker-panel__position {
+	    margin-bottom: 15px;
+	}
+	.speaker-panel__add {
+	    line-height: 1.2;
+	    margin-bottom: 20px;
+	}
 }
 @media screen and (max-width: 500px){
 	.videolibrary__item:before {

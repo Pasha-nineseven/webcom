@@ -3,6 +3,32 @@ $(document).ready(function() {
 
 	//ymaps.ready(initializeContactsMap);
 
+    //TOP SUBMENU
+    $("body").on("click", ".js-speaker-toggle", function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $('.speaker-panel').toggleClass('active');
+        $('.speaker-panel__bg').fadeToggle();
+        $('body').toggleClass('fixed');
+
+        var teacher = $(this).data('teacher');
+        $(".speaker-panel__item").addClass('dnone');
+        $("#teacher"+teacher).removeClass('dnone');
+    });
+    $('body').on('click','.speaker-panel__bg', function(e){
+        e.preventDefault();
+        $('.speaker-panel').removeClass('active');
+        $(this).fadeOut();
+        $('body').removeClass('fixed');
+    });
+    $('body').on('click','.js-speaker-panel-close', function(e){
+        e.preventDefault();
+        $('.speaker-panel').removeClass('active');
+        $('.speaker-panel__bg').fadeOut();
+        $('body').removeClass('fixed');
+    });
+
+
     var header = $('.page-header'),
     scroll = $(window).scrollTop();
 
