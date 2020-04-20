@@ -10233,7 +10233,8 @@ a.get-bonus-add__item {
   -webkit-box-shadow: 0px 20px 22px -15px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 20px 22px -15px rgba(0, 0, 0, 0.1);
   position: relative;
-  margin-top: 67px; }
+  margin-top: 67px;
+  min-height: 240px; }
 
 .about-slider__arr {
   width: 0;
@@ -11801,7 +11802,8 @@ body.fixed {
   .about-slider__arr {
     display: none; }
   .about-slider__rev {
-    margin-top: 20px; }
+    margin-top: 20px;
+    min-height: auto; }
   .about-add {
     width: 100%;
     padding-right: 0;
