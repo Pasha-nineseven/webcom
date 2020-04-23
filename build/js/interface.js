@@ -1166,19 +1166,21 @@ function timer(f) {
         }
         //дни
         var d = Math.floor(diff / 24);
-        // console.log(d);
-        // if (d <= 1) {
-        //     $(".days_1").addClass('disable');
-        // }else{
-        //     $(".days_1").removeClass('disable');
-        // }
+        //console.log(d);
         if(d < 10) {
-            $(".days_1").html(0);
+            $(".days_1").remove();
             $(".days_2").html(d);
-             $(".days_1").addClass('disable');
-        }else {
+            $(".days_3").remove();
+            $(".days_1").addClass('disable');
+        }else if(d > 99){
+            $(".days_1").html(Math.floor(d / 100));
+            $(".days_2").html(Math.floor((d % 100)/10));
+            $(".days_3").html(d % 10);
+        }
+        else {
             $(".days_1").html(Math.floor(d / 10));
             $(".days_2").html(d % 10);
+            $(".days_3").remove();
         }
         setTimeout(timer_go, left);
     }
