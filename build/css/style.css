@@ -3921,72 +3921,74 @@ textarea, input {
       position: absolute;
       top: 50%; }
 
-.workarea {
+.workarea, .speaker-panel {
   line-height: 1.8; }
-  .workarea h1 {
+  .workarea h1, .speaker-panel h1 {
     margin: 0;
     margin-bottom: 25px;
     font-weight: 800;
     font-size: 48px;
     line-height: 1.2; }
-  .workarea h2 {
+  .workarea h2, .speaker-panel h2 {
     margin: 0;
     margin-bottom: 25px;
     font-weight: 800;
     font-size: 40px;
     line-height: 1.2; }
-    .workarea h2.h1 {
+    .workarea h2.h1, .speaker-panel h2.h1 {
       font-size: 48px; }
-  .workarea h3 {
+  .workarea h3, .speaker-panel h3 {
     margin: 0;
     margin-bottom: 25px;
     font-weight: 800;
     font-size: 30px;
     line-height: 1.2; }
-  .workarea h4 {
+  .workarea h4, .speaker-panel h4 {
     margin: 0;
     margin-bottom: 25px;
     font-weight: 800;
     font-size: 24px;
     line-height: 1.2; }
-  .workarea h5 {
+  .workarea h5, .speaker-panel h5 {
     margin: 0;
     margin-bottom: 20px;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.2; }
-  .workarea h6 {
+  .workarea h6, .speaker-panel h6 {
     margin: 0;
     margin-bottom: 20px;
     font-weight: 800;
     font-size: 16px;
     line-height: 1.2; }
-  .workarea p {
+  .workarea p, .speaker-panel p {
     margin: 0;
     margin-bottom: 20px; }
-  .workarea video {
+  .workarea video, .speaker-panel video {
     max-width: 100%;
     height: auto;
     object-fit: cover;
     display: block; }
   .workarea input[type="text"],
   .workarea input[type="email"],
-  .workarea input[type="password"] {
+  .workarea input[type="password"], .speaker-panel input[type="text"],
+  .speaker-panel input[type="email"],
+  .speaker-panel input[type="password"] {
     width: 100%;
     display: inline-block;
     vertical-align: middle;
     color: #000; }
-  .workarea ul {
+  .workarea ul, .speaker-panel ul {
     margin: 0;
     margin-bottom: 30px;
     padding: 0; }
-    .workarea ul li {
+    .workarea ul li, .speaker-panel ul li {
       list-style-type: none;
       padding-left: 33px;
       position: relative;
       margin-bottom: 19px;
       line-height: 1.4; }
-      .workarea ul li:before {
+      .workarea ul li:before, .speaker-panel ul li:before {
         content: "";
         position: absolute;
         left: 1px;
@@ -3994,22 +3996,24 @@ textarea, input {
         background: #000000;
         width: 12px;
         height: 3px; }
-      .workarea ul li:last-child {
+      .workarea ul li:last-child, .speaker-panel ul li:last-child {
         margin-bottom: 0; }
-    .workarea ul.dotted li:before {
+    .workarea ul.dotted li:before, .speaker-panel ul.dotted li:before {
       border-radius: 50%;
       width: 5px;
       height: 5px;
       left: 8px;
       top: 11px; }
-  .workarea strong {
+  .workarea strong, .speaker-panel strong {
     font-weight: 900; }
   .workarea input[type="checkbox"]:not(:checked),
-  .workarea input[type="checkbox"]:checked {
+  .workarea input[type="checkbox"]:checked, .speaker-panel input[type="checkbox"]:not(:checked),
+  .speaker-panel input[type="checkbox"]:checked {
     position: absolute;
     left: -9999px; }
   .workarea input[type="checkbox"]:not(:checked) + label,
-  .workarea input[type="checkbox"]:checked + label {
+  .workarea input[type="checkbox"]:checked + label, .speaker-panel input[type="checkbox"]:not(:checked) + label,
+  .speaker-panel input[type="checkbox"]:checked + label {
     position: relative;
     cursor: pointer;
     padding-left: 30px;
@@ -4017,7 +4021,8 @@ textarea, input {
     display: inline-block;
     font-size: 16px; }
   .workarea input[type="checkbox"]:not(:checked) + label:before,
-  .workarea input[type="checkbox"]:checked + label:before {
+  .workarea input[type="checkbox"]:checked + label:before, .speaker-panel input[type="checkbox"]:not(:checked) + label:before,
+  .speaker-panel input[type="checkbox"]:checked + label:before {
     content: '';
     position: absolute;
     left: 0px;
@@ -4028,7 +4033,8 @@ textarea, input {
     cursor: pointer;
     z-index: 5; }
   .workarea input[type="checkbox"]:not(:checked) + label:after,
-  .workarea input[type="checkbox"]:checked + label:after {
+  .workarea input[type="checkbox"]:checked + label:after, .speaker-panel input[type="checkbox"]:not(:checked) + label:after,
+  .speaker-panel input[type="checkbox"]:checked + label:after {
     content: '';
     background: url("../img/svg/check.svg") center no-repeat;
     width: 23px;
@@ -4038,11 +4044,11 @@ textarea, input {
     top: -2px;
     left: 1px;
     z-index: 10; }
-  .workarea input[type="checkbox"]:not(:checked) + label:after {
+  .workarea input[type="checkbox"]:not(:checked) + label:after, .speaker-panel input[type="checkbox"]:not(:checked) + label:after {
     opacity: 0; }
-  .workarea input[type="checkbox"]:checked + label:after {
+  .workarea input[type="checkbox"]:checked + label:after, .speaker-panel input[type="checkbox"]:checked + label:after {
     opacity: 1; }
-  .workarea blockquote {
+  .workarea blockquote, .speaker-panel blockquote {
     display: block;
     font-size: 24px;
     font-weight: 800;
@@ -4051,7 +4057,7 @@ textarea, input {
     margin-bottom: 20px;
     position: relative;
     padding-bottom: 28px; }
-    .workarea blockquote:after {
+    .workarea blockquote:after, .speaker-panel blockquote:after {
       content: "";
       display: block;
       width: -webkit-calc(100% - 60px);
@@ -4061,7 +4067,7 @@ textarea, input {
       position: absolute;
       bottom: 0;
       left: 0; }
-    .workarea blockquote:before {
+    .workarea blockquote:before, .speaker-panel blockquote:before {
       content: "";
       display: block;
       background: url(../img/content/bl-aft.png) no-repeat;
@@ -4070,18 +4076,18 @@ textarea, input {
       position: absolute;
       bottom: -24px;
       right: 0; }
-  .workarea table {
+  .workarea table, .speaker-panel table {
     width: 100%;
     min-width: 576px;
     margin-bottom: 30px;
     table-layout: fixed; }
-  .workarea th {
+  .workarea th, .speaker-panel th {
     font-weight: 800;
     text-align: left;
     border-right: 2px solid #fff;
     background: #F4F5F5;
     padding: 4px 25px; }
-  .workarea td {
+  .workarea td, .speaker-panel td {
     border-bottom: 2px solid #F4F5F5;
     padding: 9px 25px; }
 
@@ -8550,6 +8556,44 @@ a.breadcumbs__item:after {
 .mobile-menu .timetable-slider__item {
   overflow: hidden; }
 
+.cert-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-bottom: 30px;
+  margin-right: -20px; }
+  .cert-list.m-horizontal .cert-item {
+    height: 100px; }
+  .cert-list.m-vertical .cert-item {
+    width: 25%;
+    height: 185px; }
+
+.cert-item {
+  width: 33.333%;
+  padding-right: 20px;
+  margin-bottom: 20px; }
+  .cert-item:last-child {
+    margin-right: 0; }
+
+.cert-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.cert-inner {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
 .speaker {
   padding-bottom: 40px; }
 
@@ -10189,7 +10233,8 @@ a.get-bonus-add__item {
   -webkit-box-shadow: 0px 20px 22px -15px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 20px 22px -15px rgba(0, 0, 0, 0.1);
   position: relative;
-  margin-top: 67px; }
+  margin-top: 67px;
+  min-height: 240px; }
 
 .about-slider__arr {
   width: 0;
@@ -10784,6 +10829,119 @@ a.get-bonus-add__item {
   margin-bottom: 24px;
   font-size: 16px; }
 
+.speaker-panel {
+  z-index: 19;
+  background-color: #fff;
+  position: fixed;
+  right: -593px;
+  top: 0;
+  bottom: 0;
+  min-height: 100vh;
+  width: 593px;
+  -webkit-transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1); }
+  .speaker-panel.active {
+    right: 0; }
+    .speaker-panel.active .speaker-panel-close {
+      opacity: 1;
+      pointer-events: all;
+      visibility: visible;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+  .speaker-panel ul li:before {
+    background: #FF7700; }
+
+.speaker-panel-wrp {
+  max-height: 100vh;
+  overflow: auto;
+  padding-bottom: 40px; }
+
+.speaker-panel__bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 16;
+  background: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  display: none; }
+
+body.fixed {
+  overflow: hidden; }
+
+.speaker-panel-close {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: url(../img/svg/close-panel.svg) center no-repeat;
+  position: absolute;
+  left: -92px;
+  top: 31px;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.speaker-panel__img {
+  height: 593px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: relative;
+  width: 100%;
+  z-index: 1; }
+  .speaker-panel__img:after {
+    content: "";
+    display: block;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(36.98%, rgba(255, 255, 255, 0.3)), to(#FFFFFF));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 36.98%, #FFFFFF 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+
+.speaker-panel__title {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 8px; }
+
+.speaker-panel__position {
+  font-size: 16px;
+  line-height: 22px;
+  color: #3C3C3C;
+  opacity: 0.6;
+  margin-bottom: 24px; }
+
+.speaker-panel__add {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 40px; }
+
+.speaker-panel__info {
+  padding: 0 33px 40px 33px;
+  position: relative;
+  z-index: 3;
+  margin-top: -170px; }
+
+.speaker-link-more {
+  display: inline-block;
+  position: relative;
+  padding-right: 20px;
+  color: #0A9DDC; }
+  .speaker-link-more:after {
+    content: "";
+    position: absolute;
+    right: -3px;
+    top: -2px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../img/svg/target.svg) no-repeat; }
+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   body {
     padding-right: 0 !important; }
@@ -10953,7 +11111,9 @@ a.get-bonus-add__item {
   .why-video__person {
     padding-left: 20px; }
   .get-bonus__top {
-    font-size: 28px; } }
+    font-size: 28px; }
+  .cert-list.m-vertical .cert-item {
+    height: 145px; } }
 
 @media screen and (max-width: 1150px) {
   .layout--page .page-top .container-fluid,
@@ -11332,7 +11492,9 @@ a.get-bonus-add__item {
     margin-bottom: 20px;
     font-size: 16px; }
   .workarea ul li:before,
-  .workarea ul.dotted li:before {
+  .workarea ul.dotted li:before,
+  .speaker-panel ul li:before,
+  .speaker-panel ul.dotted li:before {
     top: 9px; }
   .phone-list, .cabinet-list, .courses-panel {
     width: 302px; }
@@ -11590,7 +11752,12 @@ a.get-bonus-add__item {
   .course-cabinet-wrap-mobile {
     display: block; }
   .layout--page {
-    overflow: hidden; } }
+    overflow: hidden; }
+  .speaker-panel {
+    width: 400px;
+    right: -400px; }
+  .speaker-panel__img {
+    height: 450px; } }
 
 @media screen and (max-width: 900px) {
   .top-nav,
@@ -11635,7 +11802,8 @@ a.get-bonus-add__item {
   .about-slider__arr {
     display: none; }
   .about-slider__rev {
-    margin-top: 20px; }
+    margin-top: 20px;
+    min-height: auto; }
   .about-add {
     width: 100%;
     padding-right: 0;
@@ -11782,21 +11950,21 @@ a.get-bonus-add__item {
     padding-top: 0; } }
 
 @media screen and (max-width: 767px) {
-  .workarea {
+  .workarea, .speaker-panel {
     line-height: 1.2; }
-    .workarea h1 {
+    .workarea h1, .speaker-panel h1 {
       font-size: 40px; }
-    .workarea h2 {
+    .workarea h2, .speaker-panel h2 {
       font-size: 32px; }
-    .workarea h3 {
+    .workarea h3, .speaker-panel h3 {
       font-size: 28px; }
-    .workarea table {
+    .workarea table, .speaker-panel table {
       font-size: 16px; }
-    .workarea th {
+    .workarea th, .speaker-panel th {
       padding: 4px 10px; }
-    .workarea td {
+    .workarea td, .speaker-panel td {
       padding: 4px 10px; }
-    .workarea blockquote {
+    .workarea blockquote, .speaker-panel blockquote {
       font-size: 20px;
       padding-bottom: 10px; }
   .letter__title {
@@ -12757,17 +12925,17 @@ a.get-bonus-add__item {
     margin-bottom: 20px; } }
 
 @media screen and (max-width: 600px) {
-  .workarea h1 {
+  .workarea h1, .speaker-panel h1 {
     font-size: 28px; }
-  .workarea h2 {
+  .workarea h2, .speaker-panel h2 {
     font-size: 24px; }
-  .workarea h3 {
+  .workarea h3, .speaker-panel h3 {
     font-size: 22px; }
-  .workarea h4 {
+  .workarea h4, .speaker-panel h4 {
     font-size: 20px; }
-  .workarea table {
+  .workarea table, .speaker-panel table {
     font-size: 14px; }
-  .workarea blockquote {
+  .workarea blockquote, .speaker-panel blockquote {
     font-size: 14px; }
   .letter__title {
     font-size: 24px; }
@@ -13469,7 +13637,31 @@ a.get-bonus-add__item {
   .our-benefits-in.slick-initialized .our-benefits__info {
     padding: 0; }
   .course-top__icon {
-    display: none; } }
+    display: none; }
+  .cert-list.m-horizontal .cert-item {
+    width: 50%; }
+  .cert-list.m-vertical .cert-item {
+    width: 33.333%; }
+  .speaker-panel__title {
+    font-size: 22px; }
+  .speaker-panel-close {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    left: -45px;
+    top: 15px; }
+  .speaker-panel {
+    width: 260px;
+    right: -260px; }
+  .speaker-panel__img {
+    height: 300px; }
+  .speaker-panel__info {
+    padding: 0 10px 0; }
+  .speaker-panel__position {
+    margin-bottom: 15px; }
+  .speaker-panel__add {
+    line-height: 1.2;
+    margin-bottom: 20px; } }
 
 @media screen and (max-width: 500px) {
   .videolibrary__item:before {
@@ -13483,4 +13675,6 @@ a.get-bonus-add__item {
   .course-docs__img {
     height: 150px; }
   .course-docs__list .slick-arrow {
-    top: 95px; } }
+    top: 95px; }
+  .cert-list.m-vertical .cert-item {
+    width: 50%; } }
