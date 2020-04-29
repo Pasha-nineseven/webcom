@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
 	flexibility(document.documentElement);
 
 	//ymaps.ready(initializeContactsMap);
