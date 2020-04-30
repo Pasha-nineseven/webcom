@@ -53,8 +53,12 @@
 	font-size: 24px;
 	font-weight: 800;
 	margin-bottom: 13px;
+	color: #7a7a7a;
 	&+.contacts__phone{
 		margin-bottom: 32px;
+	}
+	a{
+		color: #7a7a7a;
 	}
 }
 .contacts__add{
