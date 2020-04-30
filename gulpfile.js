@@ -8,6 +8,7 @@ var gulp = 			require('gulp');
     del =           require('del');
     imagemin =      require('gulp-imagemin');
     pngquant =      require('imagemin-pngquant');
+    imageminMozjpeg =      require('imagemin-mozjpeg');
     cache =         require('gulp-cache');
     autoprefixer =  require('gulp-autoprefixer');
     fileinclude =   require('gulp-file-include');
@@ -89,9 +90,13 @@ gulp.task('img', function(){
     return gulp.src('app/img/**/*')
     .pipe(cache(imagemin({
         interlaced:true,
-        progrssive: true,
+        progressive: true,
+        optimizationLevel: 5,
         svgoPlugins: [{removeViewBox: false}],
-        use: [pngquant()]
+        use: [pngquant()],
+        use: [
+            imageminMozjpeg()
+        ]
     })))
     .pipe(gulp.dest('build/img'))
 });
