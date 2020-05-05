@@ -8594,6 +8594,10 @@ a.breadcumbs__item:after {
   height: 100%;
   position: relative; }
 
+.popup .subscription-form .btn-submit {
+  top: auto;
+  bottom: 0; }
+
 .speaker {
   padding-bottom: 40px; }
 
@@ -11760,7 +11764,9 @@ body.fixed {
     width: 400px;
     right: -400px; }
   .speaker-panel__img {
-    height: 450px; } }
+    height: 450px; }
+  .popup .subscription-form .btn-submit {
+    padding: 12px 18px 13px; } }
 
 @media screen and (max-width: 900px) {
   .top-nav,
