@@ -4966,6 +4966,12 @@ color: #FF6B00;
 	position: relative;
 }
 
+.popup .subscription-form .btn-submit{
+	top:auto;
+	bottom: 0;
+}
+
+
 //PAGES
 @import "pages/speaker";
 
