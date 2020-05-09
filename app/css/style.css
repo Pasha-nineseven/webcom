@@ -13670,7 +13670,9 @@ body.fixed {
     margin-bottom: 15px; }
   .speaker-panel__add {
     line-height: 1.2;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .marketing__img {
+    display: none; } }
 
 @media screen and (max-width: 500px) {
   .videolibrary__item:before {
