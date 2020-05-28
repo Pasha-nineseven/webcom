@@ -8598,6 +8598,88 @@ a.breadcumbs__item:after {
   top: auto;
   bottom: 0; }
 
+.speaker-list-vertical {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-right: -30px; }
+
+.speaker-list-vertical__item {
+  padding-right: 30px;
+  width: 50%; }
+  .speaker-list-vertical__item:hover .speaker-list-vertical-img__inner {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1); }
+  .speaker-list-vertical__item .teacher-slider__links {
+    bottom: 20px;
+    padding: 10px 30px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .speaker-list-vertical__item .teacher__more {
+    margin-right: 33px; }
+
+.speaker-list-vertical__inner {
+  width: 100%;
+  height: 100%; }
+
+.speaker-list-vertical-img {
+  width: 100%;
+  height: 480px;
+  position: relative;
+  overflow: hidden;
+  display: block; }
+
+.speaker-list-vertical-img__inner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease; }
+
+.speaker-list-vertical-info {
+  padding: 0 15px;
+  height: 100%; }
+
+.speaker-list-vertical-info__inner {
+  background: #fff;
+  padding: 34px 30px 77px;
+  position: relative;
+  height: -webkit-calc(100% - 480px);
+  height: calc(100% - 480px); }
+
+.speaker-list-vertical__title {
+  font-size: 24px;
+  line-height: 24px;
+  color: #3C3C3C;
+  margin-bottom: 15px;
+  display: block;
+  font-weight: 600; }
+  .speaker-list-vertical__title:hover {
+    color: #0A9DDC; }
+
+.speaker-list-vertical__txt {
+  font-size: 16px;
+  line-height: 22px;
+  color: #3C3C3C;
+  opacity: 0.6; }
+
+.speaker-list-vertical-img-wrap {
+  -webkit-box-shadow: 0px 7px 48px #D0D0D0;
+          box-shadow: 0px 7px 48px #D0D0D0;
+  position: relative;
+  z-index: 1; }
+
 .speaker {
   padding-bottom: 40px; }
 
@@ -10732,11 +10814,11 @@ a.get-bonus-add__item {
   font-size: 24px;
   font-weight: 800;
   margin-bottom: 13px;
-  color: #7a7a7a; }
+  color: #3C3C3C; }
   .contacts__phone + .contacts__phone {
     margin-bottom: 32px; }
   .contacts__phone a {
-    color: #7a7a7a; }
+    color: #3C3C3C; }
 
 .contacts__add {
   margin-bottom: 33px;
@@ -11766,7 +11848,23 @@ body.fixed {
   .speaker-panel__img {
     height: 450px; }
   .popup .subscription-form .btn-submit {
-    padding: 12px 18px 13px; } }
+    padding: 12px 18px 13px; }
+  .speaker-list-vertical {
+    margin-right: -15px; }
+  .speaker-list-vertical__item {
+    padding-right: 15px; }
+  .speaker-list-vertical-info__inner {
+    padding: 20px 20px 70px; }
+  .speaker-list-vertical__item .teacher-slider__links {
+    bottom: 15px;
+    padding: 10px 20px; }
+  .speaker-list-vertical__item .teacher__more {
+    margin-right: 10px; }
+  .speaker-list-vertical-img {
+    height: 350px; }
+  .speaker-list-vertical-info__inner {
+    height: -webkit-calc(100% - 350px);
+    height: calc(100% - 350px); } }
 
 @media screen and (max-width: 900px) {
   .top-nav,
@@ -12899,7 +12997,13 @@ body.fixed {
     width: 200px;
     margin-top: 10px; }
   .phone-call {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .speaker-list-vertical__txt {
+    font-size: 14px;
+    line-height: 18px; }
+  .speaker-list-vertical__title {
+    font-size: 18px;
+    line-height: 20px; } }
 
 @media screen and (max-width: 700px) {
   .contact__items {
@@ -12931,7 +13035,23 @@ body.fixed {
   .cost-table--desktop {
     display: none; }
   .cost h2 {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .speaker-list-vertical {
+    margin-right: 0; }
+  .speaker-list-vertical__item {
+    padding-right: 0;
+    width: 100%;
+    margin-bottom: 30px; }
+    .speaker-list-vertical__item:last-child {
+      margin-bottom: 0; }
+  .speaker-list-vertical-info__inner {
+    padding: 20px; }
+  .speaker-list-vertical__item .teacher-slider__links {
+    bottom: auto;
+    padding: 20px 0 0 0px;
+    position: static; }
+  .speaker-list-vertical-info {
+    height: auto; } }
 
 @media screen and (max-width: 600px) {
   .workarea h1, .speaker-panel h1 {
@@ -13670,7 +13790,11 @@ body.fixed {
     margin-bottom: 15px; }
   .speaker-panel__add {
     line-height: 1.2;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .marketing__img {
+    display: none; }
+  .speaker-list-vertical-img {
+    height: 248px; } }
 
 @media screen and (max-width: 500px) {
   .videolibrary__item:before {

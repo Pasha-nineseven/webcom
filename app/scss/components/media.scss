@@ -1032,7 +1032,28 @@
 	.popup .subscription-form .btn-submit{
 		padding: 12px 18px 13px;
 	}
-
+	.speaker-list-vertical{
+		margin-right: -15px;
+	}
+	.speaker-list-vertical__item {
+	    padding-right: 15px;
+	}
+	.speaker-list-vertical-info__inner {
+	    padding: 20px 20px 70px;
+	}
+	.speaker-list-vertical__item .teacher-slider__links {
+	    bottom: 15px;
+	    padding: 10px 20px;
+	}
+	.speaker-list-vertical__item .teacher__more {
+	    margin-right: 10px;
+	}
+	.speaker-list-vertical-img {
+	    height: 350px;
+	}
+	.speaker-list-vertical-info__inner {
+	    height: calc(100% - 350px);
+	}
 }
 
 @media screen and (max-width: 900px){
@@ -2397,6 +2418,14 @@
 	.phone-call{
 		margin-left: 0;
 	}
+	.speaker-list-vertical__txt {
+	    font-size: 14px;
+	    line-height: 18px;
+	}
+	.speaker-list-vertical__title {
+	    font-size: 18px;
+	    line-height: 20px;
+	}
 }
 
 @media screen and (max-width: 700px){
@@ -2435,6 +2464,28 @@
 	}
 	.cost h2{
 		margin-bottom: 20px;
+	}
+	.speaker-list-vertical {
+	    margin-right: 0;
+	}
+	.speaker-list-vertical__item {
+	    padding-right: 0;
+	    width: 100%;
+	    margin-bottom: 30px;
+	    &:last-child{
+	    	margin-bottom: 0;
+	    }
+	}
+	.speaker-list-vertical-info__inner{
+		padding: 20px; 
+	}
+	.speaker-list-vertical__item .teacher-slider__links {
+	    bottom: auto;
+	    padding: 20px 0 0 0px;
+	    position: static;
+	}
+	.speaker-list-vertical-info {
+	    height: auto;
 	}
 }
 
@@ -3353,6 +3404,12 @@
 	.speaker-panel__add {
 	    line-height: 1.2;
 	    margin-bottom: 20px;
+	}
+	.marketing__img{
+		display: none;
+	}
+	.speaker-list-vertical-img {
+	    height: 248px;
 	}
 }
 @media screen and (max-width: 500px){
