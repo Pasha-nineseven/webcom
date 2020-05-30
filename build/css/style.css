@@ -8533,8 +8533,8 @@ a.breadcumbs__item:after {
   text-align: center; }
 
 .popup-add {
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 22px;
   margin-bottom: 30px;
   text-align: center; }
   .popup-add:last-child {
@@ -8817,6 +8817,141 @@ a.breadcumbs__item:after {
   100% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg); } }
+
+.popup--material {
+  width: 865px;
+  overflow: visible;
+  padding-bottom: 20px; }
+  .popup--material .popup-title {
+    margin-bottom: 22px; }
+  .popup--material .submit-wrap {
+    padding-top: 0; }
+
+.material-form {
+  max-width: 425px;
+  margin: 0 auto; }
+  .material-form .btn {
+    padding: 13px 66px; }
+
+.emoji {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px; }
+  .emoji img {
+    display: block; }
+
+.material-img {
+  position: absolute;
+  right: -55px;
+  bottom: 100px; }
+  .material-img img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block; }
+
+.material-add {
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 400; }
+
+.popup--thanks {
+  width: 865px;
+  padding: 49px 175px 50px 50px;
+  overflow: visible; }
+  .popup--thanks .popup-title {
+    text-align: left;
+    margin-bottom: 0; }
+  .popup--thanks .popup-add {
+    text-align: left;
+    padding-top: 10px; }
+
+.popup-thanks {
+  position: absolute;
+  right: -20px;
+  bottom: -70px; }
+  .popup-thanks img {
+    display: block;
+    max-width: 100%; }
+
+.buttons-composite {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .buttons-composite .btn {
+    margin-right: 15px;
+    width: -webkit-calc(50% - 15px);
+    width: calc(50% - 15px);
+    padding: 13px 5px; }
+
+.btn-add {
+  color: #3C3C3C;
+  font-size: 16px;
+  display: inline-block;
+  width: 50%;
+  background: #DCFBFF;
+  border: 2px solid #BCE9F8;
+  border-radius: 8px;
+  padding: 11px 5px; }
+
+.popup--morpheus {
+  background: #000000;
+  color: #fff;
+  padding-bottom: 0;
+  width: 865px; }
+
+.morpheus-img {
+  max-width: 625px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  position: relative; }
+  .morpheus-img img {
+    max-width: 100%; }
+  .morpheus-img .buttons-composite {
+    position: absolute;
+    bottom: 65px;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .morpheus-img .buttons-composite .btn {
+      width: auto;
+      padding: 13px 33px; }
+    .morpheus-img .buttons-composite .btn-add {
+      width: auto;
+      padding: 11px 33px; }
+
+.popup--sorry {
+  background: #000000 url(../img/content/sorry-bg.png) center top no-repeat;
+  color: #fff;
+  padding-bottom: 15px;
+  width: 865px; }
+  .popup--sorry .popup-add {
+    margin-bottom: 150px;
+    font-size: 20px; }
+
+.popup-msg-close {
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  opacity: 0.5;
+  text-align: center; }
 
 .speaker {
   padding-bottom: 40px; }
@@ -12002,7 +12137,9 @@ body.fixed {
     height: 350px; }
   .speaker-list-vertical-info__inner {
     height: -webkit-calc(100% - 350px);
-    height: calc(100% - 350px); } }
+    height: calc(100% - 350px); }
+  .fancybox-slide--html {
+    overflow-x: hidden; } }
 
 @media screen and (max-width: 900px) {
   .top-nav,
@@ -12925,8 +13062,11 @@ body.fixed {
     line-height: 26px;
     margin-bottom: 20px; }
   .popup-add {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 22px;
+    margin-bottom: 20px; }
+  .material-add {
+    font-size: 20px;
     margin-bottom: 20px; }
   .error-msg {
     margin: 5px 0; }
@@ -13143,7 +13283,54 @@ body.fixed {
     font-size: 18px;
     line-height: 20px; }
   .course-top-cover {
-    display: none; } }
+    display: none; }
+  .popup--material {
+    width: 100%;
+    padding-bottom: 70px !important;
+    margin-bottom: 40px; }
+  .material-img {
+    position: absolute;
+    right: 50%;
+    bottom: -70px;
+    -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+            transform: translateX(50%);
+    width: 165px;
+    height: 125px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .popup--thanks {
+    width: 100%;
+    padding: 50px 20px 90px 20px !important; }
+  .popup--thanks .popup-title,
+  .popup--thanks .popup-add {
+    text-align: center; }
+  .popup-thanks {
+    position: absolute;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+            transform: translateX(50%);
+    bottom: -60px;
+    width: 140px; }
+  .emoji {
+    display: block;
+    margin-left: 0;
+    text-align: center;
+    margin-top: 10px; }
+    .emoji img {
+      display: inline-block; }
+  .popup--morpheus {
+    width: 100%;
+    padding: 49px 30px 0 30px; }
+  .morpheus-img {
+    max-width: 100%; } }
 
 @media screen and (max-width: 700px) {
   .contact__items {
@@ -13934,7 +14121,31 @@ body.fixed {
   .marketing__img {
     display: none; }
   .speaker-list-vertical-img {
-    height: 248px; } }
+    height: 248px; }
+  .material-add {
+    font-size: 16px;
+    font-weight: bold; }
+  .buttons-composite {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .buttons-composite .btn {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px; }
+  .btn-add {
+    width: 100%; }
+  .morpheus-img .buttons-composite .btn,
+  .morpheus-img .buttons-composite .btn-add {
+    width: 100%;
+    text-align: center; }
+  .morpheus-img .buttons-composite {
+    position: absolute;
+    bottom: 40px; }
+  .popup--sorry {
+    width: 100%; }
+  .popup--sorry .popup-add {
+    font-size: 16px; } }
 
 @media screen and (max-width: 500px) {
   .videolibrary__item:before {
