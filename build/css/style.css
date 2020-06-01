@@ -8869,8 +8869,8 @@ a.breadcumbs__item:after {
 
 .popup-thanks {
   position: absolute;
-  right: -20px;
-  bottom: -70px; }
+  right: -35px;
+  bottom: -75px; }
   .popup-thanks img {
     display: block;
     max-width: 100%; }
@@ -14125,23 +14125,21 @@ body.fixed {
   .material-add {
     font-size: 16px;
     font-weight: bold; }
-  .buttons-composite {
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-  .buttons-composite .btn {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 20px; }
-  .btn-add {
-    width: 100%; }
-  .morpheus-img .buttons-composite .btn,
+  .morpheus-img .buttons-composite .btn {
+    text-align: center;
+    width: -webkit-calc(50% - 10px);
+    width: calc(50% - 10px);
+    padding: 8px 5px;
+    margin-right: 10px;
+    font-size: 12px; }
   .morpheus-img .buttons-composite .btn-add {
-    width: 100%;
-    text-align: center; }
+    width: 50%;
+    padding: 6px 5px;
+    text-align: center;
+    font-size: 12px; }
   .morpheus-img .buttons-composite {
     position: absolute;
-    bottom: 40px; }
+    bottom: 35px; }
   .popup--sorry {
     width: 100%; }
   .popup--sorry .popup-add {
