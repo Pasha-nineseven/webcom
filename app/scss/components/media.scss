@@ -2438,16 +2438,17 @@
 	}
 	.popup--material{
 		width: 100%;
-		    padding-bottom: 70px !important;
+		    padding-bottom: 95px !important;
     	margin-bottom: 40px;
 	}
-	.material-img {
+	.material-img,
+	.popup-thanks{
 	    position: absolute;
 	    right: 50%;
-	    bottom: -70px;
-	    transform: translateX(50%);
-	    width: 165px;
-	    height: 125px;
+	    bottom: 0;
+	    transform: translate(50%,50%) scale(0.8);
+	    // width: 165px;
+	    // height: 125px;
 	    display: flex;
 	    justify-content: center;
 	}
@@ -2459,13 +2460,13 @@
 	.popup--thanks .popup-add{
 	    text-align: center;
 	}
-	.popup-thanks {
-	    position: absolute;
-	    right: 50%;
-	    transform: translateX(50%);
-	    bottom: -60px;
-	    width: 140px;
-	}
+	// .popup-thanks {
+	//     position: absolute;
+	//     right: 50%;
+	//     transform: translateX(50%);
+	//     bottom: -60px;
+	//     width: 140px;
+	// }
 	.emoji {
 	    display: block;
 	    margin-left: 0;

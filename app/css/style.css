@@ -13283,17 +13283,16 @@ body.fixed {
     display: none; }
   .popup--material {
     width: 100%;
-    padding-bottom: 70px !important;
+    padding-bottom: 95px !important;
     margin-bottom: 40px; }
-  .material-img {
+  .material-img,
+  .popup-thanks {
     position: absolute;
     right: 50%;
-    bottom: -70px;
-    -webkit-transform: translateX(50%);
-        -ms-transform: translateX(50%);
-            transform: translateX(50%);
-    width: 165px;
-    height: 125px;
+    bottom: 0;
+    -webkit-transform: translate(50%, 50%) scale(0.8);
+        -ms-transform: translate(50%, 50%) scale(0.8);
+            transform: translate(50%, 50%) scale(0.8);
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -13308,14 +13307,6 @@ body.fixed {
   .popup--thanks .popup-title,
   .popup--thanks .popup-add {
     text-align: center; }
-  .popup-thanks {
-    position: absolute;
-    right: 50%;
-    -webkit-transform: translateX(50%);
-        -ms-transform: translateX(50%);
-            transform: translateX(50%);
-    bottom: -60px;
-    width: 140px; }
   .emoji {
     display: block;
     margin-left: 0;
