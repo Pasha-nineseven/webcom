@@ -5090,15 +5090,12 @@ color: #FF6B00;
 	}
 	&.m-el2{
 		.wiggle-anim{
+			transform: rotate(-20deg);
 			animation: inimate__two 5s infinite;
-			animation-delay: 2.5s;
+			animation-delay: 3s;
 		}
 	}
 }
-
-// .wiggle-anim{
-// 	animation-delay: 4s;
-// }
 
 @keyframes slideInFromBottom{
   	0% {
@@ -5153,10 +5150,9 @@ color: #FF6B00;
 }
 
 @keyframes inimate__two {
- 	0% { transform: rotate(0deg); }
- 	25% { transform: rotate(-20deg); }
- 	75% { transform: rotate(20deg); }
-	100% { transform: rotate(0deg); }
+ 	0% { transform: rotate(-20deg); }
+ 	50% { transform: rotate(20deg); }
+	100% { transform: rotate(-20deg); }
 }
 
 

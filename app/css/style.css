@@ -8720,10 +8720,13 @@ a.breadcumbs__item:after {
     -webkit-animation-delay: 2.5s;
             animation-delay: 2.5s; }
   .animated-el.m-el2 .wiggle-anim {
+    -webkit-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+            transform: rotate(-20deg);
     -webkit-animation: inimate__two 5s infinite;
             animation: inimate__two 5s infinite;
-    -webkit-animation-delay: 2.5s;
-            animation-delay: 2.5s; }
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s; }
 
 @-webkit-keyframes slideInFromBottom {
   0% {
@@ -8792,31 +8795,25 @@ a.breadcumbs__item:after {
 
 @-webkit-keyframes inimate__two {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
-  25% {
     -webkit-transform: rotate(-20deg);
             transform: rotate(-20deg); }
-  75% {
+  50% {
     -webkit-transform: rotate(20deg);
             transform: rotate(20deg); }
   100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); } }
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg); } }
 
 @keyframes inimate__two {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
-  25% {
     -webkit-transform: rotate(-20deg);
             transform: rotate(-20deg); }
-  75% {
+  50% {
     -webkit-transform: rotate(20deg);
             transform: rotate(20deg); }
   100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); } }
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg); } }
 
 .popup--material {
   width: 865px;
