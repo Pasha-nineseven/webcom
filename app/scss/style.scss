@@ -4888,8 +4888,8 @@ color: #FF6B00;
 	text-align: center;
 }
 .popup-add{
-	font-size: 24px;
-	line-height: 32px;
+	font-size: 16px;
+	line-height: 22px;
 	margin-bottom: 30px;
 	text-align: center;
 	&:last-child{
@@ -5008,7 +5008,7 @@ color: #FF6B00;
 .speaker-list-vertical-img__inner{
 	background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
     position: absolute;
     top: 0;
     left: 0;
@@ -5049,6 +5049,250 @@ color: #FF6B00;
 	box-shadow: 0px 7px 48px #D0D0D0;
 	position: relative;
     z-index: 1;
+}
+
+.course-top-cover{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 655px;
+	overflow: hidden;
+}
+.course-top-cover__bg{
+	animation-duration: 0.9s;
+    animation-fill-mode: both;
+    animation-name: slideInFromBottom;
+	img{
+		max-width: 100%;
+		height: auto;
+		display: block;
+	}
+}
+
+.animated-el{
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+	animation-duration: 0.4s;
+	-webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    animation-name: bummer;
+
+	&.m-el1{
+    	.wiggle-anim{
+    		animation: inimate__one 5s infinite;
+    		transform-origin: 100%;
+    		animation-delay: 2.5s;
+    	}
+	}
+	&.m-el2{
+		.wiggle-anim{
+			transform: rotate(-20deg);
+			animation: inimate__two 5s infinite;
+			animation-delay: 3s;
+		}
+	}
+}
+
+@keyframes slideInFromBottom{
+  	0% {
+    	transform: translateY(100%);
+    	opacity: 0;
+  	}
+  	50% {
+		opacity: 0;
+  	}
+  	100% {
+    	transform: translateY(0);
+    	opacity: 1;
+  	}
+}
+
+@-webkit-keyframes bummer {
+	0% {
+        -webkit-transform: scale(0); 
+        opacity: 0;
+    }
+    60% {
+        -webkit-transform: scale(1.2); 
+        opacity: 0.8;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1; 
+    }
+}
+
+@keyframes bummer {
+	0% {
+        transform: scale(0);
+        opacity: 0; 
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 0.8; 
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1; 
+    }
+}
+
+
+
+@keyframes inimate__one {
+	0% { transform: rotate(0); }
+	50% { transform: rotate(30deg); }
+	
+}
+
+@keyframes inimate__two {
+ 	0% { transform: rotate(-20deg); }
+ 	50% { transform: rotate(20deg); }
+	100% { transform: rotate(-20deg); }
+}
+
+
+.popup--material{
+	width: 865px;
+	overflow: visible;
+	padding-bottom: 20px;
+	.popup-title {
+	    margin-bottom: 22px;
+	}
+	.submit-wrap{
+		padding-top: 0;
+	}
+}
+.material-form{
+	max-width: 425px;
+	margin: 0 auto;
+	.btn{
+    	padding: 13px 66px;
+	}
+}
+.emoji{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+	img{
+		display: block;
+	}
+}
+.material-img{
+	position: absolute;
+	right: -55px;
+	bottom: 100px;
+	img{
+		max-width: 100%;
+		max-height: 100%;
+		display: block;
+	}
+}
+.material-add{
+	font-size: 20px;
+	line-height: 1.2;
+	margin-bottom: 30px;
+	text-align: center;
+	font-weight: 400;
+}
+.popup--thanks{
+	width: 865px;
+	padding: 49px 175px 50px 50px;
+	overflow: visible;
+	.popup-title{
+		text-align: left;
+		margin-bottom: 0;
+	}
+	.popup-add{
+		text-align: left;
+		padding-top: 10px;
+	}
+}
+.popup-thanks{
+	position: absolute;
+    right: -35px;
+    bottom: -75px;
+
+	img{
+		display: block;
+		max-width: 100%;
+	}
+}
+.buttons-composite{
+	display: flex;
+	align-items:center;
+	.btn{
+		margin-right: 15px;
+		width: calc(50% - 15px);
+		padding: 13px 5px;
+	}
+}
+.btn-add{
+	color: #3C3C3C;
+	font-size: 16px;
+	display: inline-block;
+	width: 50%;
+	background: #DCFBFF;
+	border: 2px solid #BCE9F8;
+	border-radius: 8px;
+	padding: 11px 5px;
+}
+
+
+
+.popup--morpheus{
+	background: #000000;
+	color: #fff;
+	padding-bottom: 0;
+	width: 865px;
+}
+.morpheus-img{
+	max-width: 625px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+	img{
+		max-width: 100%;
+	}
+	.buttons-composite{
+		position: absolute;
+		bottom: 65px;
+		z-index: 1;
+		left: 0;
+		width: 100%;
+		justify-content: space-between;
+		.btn{
+			width: auto;
+			padding: 13px 33px;
+		}
+		.btn-add{
+			width: auto;
+			padding: 11px 33px;
+		}
+	}
+}
+
+.popup--sorry{
+	background: #000000 url(../img/content/sorry-bg.png) center top no-repeat;
+	color: #fff;
+	padding-bottom: 15px;
+	width: 865px;
+	.popup-add{
+		margin-bottom: 150px;
+		font-size: 20px;
+	}
+}
+.popup-msg-close{
+	font-size: 16px;
+	line-height: 22px;
+	color: #FFFFFF;
+	opacity: 0.5;
+	text-align: center;
 }
 
 //PAGES

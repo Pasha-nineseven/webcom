@@ -279,6 +279,12 @@
 						<li>операторскую работу;</li>
 						<li>монтаж видео.</li>
 					</ul>
+
+					<a href="#popup" class="btn js-popup-inline" data-fancybox="">Попап 1</a>
+
+					<a href="#popup-mat" class="btn js-popup-inline" data-fancybox="">Попап 2</a>
+
+					<a href="#popup-morpheus" class="btn js-popup-inline" data-fancybox="">Попап 3</a>
 				<!--end CONTENT-PART -->
 				</div>
 			</main>
@@ -423,6 +429,131 @@
 				</div>
 			</div>
 		</footer>
+
+		<div id="popup" class="popup popup--material hidden">
+			<div class="popup-in">
+				<div class="popup-title">
+					Мы заметили, что вы<br> отвлеклись<span class="emoji">
+						<img src="img/content/emojy1.png" alt=""></span>
+				</div>
+				<div class="popup-add">
+					Вам нужно больше времени? Мы не торопим.<br>
+					А пока вы принимаете решение, можете почитать полезный материал от<br> Академии 
+					
+				</div>
+				<div class="material-add">
+					Оставьте вашу электронную почту — мы всё вам пришлем!
+				</div>
+				<div class="material-form">
+					<form action="#" method="post">
+						<div class="input-wrap">
+							<div class="input-label">Ваше имя</div>
+							<input type="text" placeholder=" ">
+						</div>
+						<div class="input-wrap">
+							<div class="input-label">Электронная почта для материалов Академии</div>
+							<input type="email" placeholder=" ">
+						</div>
+						<div class="submit-wrap">
+						<!-- 	<input type="submit" value="Отправить" class="btn"> -->
+						<a href="#popup-thanks" class="btn js-popup-inline" data-fancybox="">Отправить</a>
+						</div>
+					</form>
+				</div>
+				<div class="material-img">
+					<img src="img/content/material.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div id="popup-thanks" class="popup popup--thanks hidden">
+			<div class="popup-in">
+				<div class="popup-title">
+					Спасибо! Наш бонус не заставит себя долго ждать :)
+				</div>
+			</div>
+			<div class="popup-thanks">
+				<img src="img/content/thanks.png" alt="">
+			</div>
+		</div>
+
+
+
+		<div id="popup-mat" class="popup popup--material hidden">
+			<div class="popup-in">
+				<div class="popup-title">
+					Хотите больше<br> интересных материалов?<span class="emoji">
+						<img src="img/content/emojy2.png" alt=""></span>
+				</div>
+				<div class="popup-add">
+					Подпишитесь на нашу рассылку — раз в месяц мы будем присылать вам<br> подборку полезных статей и видеороликов
+				</div>
+				<div class="material-form">
+					<form action="#" method="post">
+						<div class="input-wrap">
+							<div class="input-label">Ваше имя</div>
+							<input type="text" placeholder=" ">
+						</div>
+						<div class="input-wrap">
+							<div class="input-label">Электронная почта для материала Академии</div>
+							<input type="email" placeholder=" ">
+						</div>
+						<div class="submit-wrap">
+						<!-- 	<input type="submit" value="Отправить" class="btn"> -->
+						<div class="buttons-composite">
+							<a href="#popup-thanks2" class="btn js-popup-inline" data-fancybox="">Подписаться</a>
+							<a href="#" class="btn-add">Уже есть подписка</a>
+						</div>
+						</div>
+					</form>
+				</div>
+				<div class="material-img">
+					<img src="img/content/material2.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div id="popup-thanks2" class="popup popup--thanks hidden">
+			<div class="popup-in">
+				<div class="popup-title">
+					Ура! Вы успешно подписались
+				</div>
+				<div class="popup-add">Скоро мы пришлем вам первое письмо :)</div>
+			</div>
+			<div class="popup-thanks">
+				<img src="img/content/thanks2.png" alt="">
+			</div>
+		</div>
+
+
+		<div id="popup-morpheus" class="popup popup--morpheus hidden">
+			<div class="popup-in">
+				<div class="popup-title">
+					Добро пожаловать в реальный<br> мир digital!
+				</div>
+				<div class="popup-add">
+					У вас есть два пути: ничего не менять<br> или пройти обучение и выйти на новый уровень
+				</div>
+				<div class="morpheus-img">
+					<img src="img/content/morph.png" alt="">
+					<div class="buttons-composite">
+						<a href="#" class="btn">Записаться на курс</a>
+						<a href="#sorry" class="btn-add js-popup-inline" data-fancybox="">Ничего не менять</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="sorry" class="popup popup--sorry hidden">
+			<div class="popup-in">
+				<div class="popup-title">
+					Жаль…
+				</div>
+				<div class="popup-add">
+					Но мы будем вас ждать. Возвращайтесь, когда будете готовы<br> к изменениям
+				</div>
+				<div class="popup-msg-close">
+					Это окно закроется автоматически через <span>9</span> с.
+				</div>
+			</div>
+		</div>
 			
 		
 		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
