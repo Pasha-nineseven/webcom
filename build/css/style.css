@@ -8693,7 +8693,15 @@ a.breadcumbs__item:after {
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   -webkit-animation-name: slideInFromBottom;
-          animation-name: slideInFromBottom; }
+          animation-name: slideInFromBottom;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
   .course-top-cover__bg img {
     max-width: 100%;
     height: auto;

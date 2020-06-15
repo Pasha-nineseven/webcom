@@ -5062,6 +5062,8 @@ color: #FF6B00;
 	animation-duration: 0.9s;
     animation-fill-mode: both;
     animation-name: slideInFromBottom;
+    display: flex;
+    justify-content: flex-end;
 	img{
 		max-width: 100%;
 		height: auto;
