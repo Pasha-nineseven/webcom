@@ -2633,6 +2633,12 @@ padding: 35px 0 0;
 		    padding: 13px 62px;
     font-size: 18px;
 	}
+	&.m-gradient{
+		&:before,
+		&:after{
+			display: none;
+		}
+	}
 }
 .marketing__inner{
 	max-width: 665px;

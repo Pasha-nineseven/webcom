@@ -6431,6 +6431,8 @@ a.breadcumbs__item:after {
   .marketing .btn {
     padding: 13px 62px;
     font-size: 18px; }
+  .marketing.m-gradient:before, .marketing.m-gradient:after {
+    display: none; }
 
 .marketing__inner {
   max-width: 665px;
