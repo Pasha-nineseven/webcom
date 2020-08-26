@@ -3488,11 +3488,6 @@
 		text-align: center;
 		font-size: 12px;
 	}
-	// .morpheus-img .buttons-composite .btn,
-	// .morpheus-img .buttons-composite .btn-add{
-	//     width: 100%;
-	//     text-align: center;
-	// }
 	.morpheus-img .buttons-composite {
 	    position: absolute;
 	    bottom: 35px;
@@ -3502,6 +3497,10 @@
 	}
 	.popup--sorry .popup-add {
 	    font-size: 16px;
+	}
+	.footer-rate .about-note__rate {
+	    margin-top: 10px;
+	    top: 0;
 	}
 }
 @media screen and (max-width: 500px){

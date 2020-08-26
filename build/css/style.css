@@ -9053,6 +9053,10 @@ a.breadcumbs__item:after {
     background: rgba(255, 255, 255, 0.1); }
   .layout--course + .page-footer {
     padding-bottom: 70px; }
+  .layout--course .breadcumbs__item {
+    color: #fff; }
+  .layout--course span.breadcumbs__item {
+    color: #F4F5F5; }
 
 .course-top {
   padding-top: 188px;
@@ -11056,7 +11060,8 @@ a.get-bonus-add__item {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
-            justify-content: flex-start; }
+            justify-content: flex-start;
+    margin-bottom: 20px; }
   .page-footer .socials__item {
     margin-right: 19px;
     width: 32px;
@@ -11197,6 +11202,23 @@ a.get-bonus-add__item {
 .all-right {
   margin-bottom: 24px;
   font-size: 16px; }
+
+.rate-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.footer-rate .about-note__number {
+  font-size: 36px; }
+
+.footer-rate .about-note__rate {
+  margin-top: 15px; }
+
+.about-note__rate .stars__item {
+  margin-right: 1px; }
+  .about-note__rate .stars__item:last-child {
+    margin-right: 0; }
 
 .speaker-panel {
   z-index: 19;
@@ -14141,7 +14163,10 @@ body.fixed {
   .popup--sorry {
     width: 100%; }
   .popup--sorry .popup-add {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .footer-rate .about-note__rate {
+    margin-top: 10px;
+    top: 0; } }
 
 @media screen and (max-width: 500px) {
   .videolibrary__item:before {

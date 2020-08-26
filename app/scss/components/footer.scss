@@ -4,6 +4,7 @@
 	overflow: hidden;
 	.socials {
 	    justify-content: flex-start;
+	    margin-bottom: 20px;
 	}
 	.socials__item{
 		margin-right: 19px;
@@ -170,4 +171,24 @@
 .all-right{
 	margin-bottom: 24px;
 	font-size: 16px;
+}
+
+.rate-wrapper{
+	display: flex;
+}
+.footer-rate{
+	.about-note__number {
+	    font-size: 36px;
+	}
+	.about-note__rate {
+	    margin-top: 15px;
+	}
+}
+.about-note__rate{
+	.stars__item{
+		margin-right: 1px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
 }
