@@ -1574,6 +1574,10 @@
 		border-bottom: 1px solid #D5DCDC;
     	margin-bottom: 24px;
     	    justify-content: space-between;
+    	    padding-bottom: 20px;
+	}
+	.rate-wrapper {
+	    margin-top: -5px;
 	}
 	.page-footer__links {
 	    order: 3;
@@ -2764,7 +2768,7 @@
 	}
 	.about-note__rate {
 	    margin-right: 0;
-	    top: 10px;
+	    top: 12px;
 	}
 	.way__title,
 	.way__add,
@@ -3499,8 +3503,11 @@
 	    font-size: 16px;
 	}
 	.footer-rate .about-note__rate {
-	    margin-top: 10px;
+	    margin-top: 11px!important;
 	    top: 0;
+	}
+	.rate-wrapper {
+	    margin-top: -10px;
 	}
 }
 @media screen and (max-width: 500px){
@@ -3508,6 +3515,9 @@
 	    width: 110px;
 	    height: 110px;
 	    top: 10px;
+	}
+	.rate-wrapper {
+	    margin-top: 0;
 	}
 }
 
