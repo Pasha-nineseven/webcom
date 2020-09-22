@@ -1,15 +1,22 @@
+@font-face {
+    font-family: 'libre_franklinregular';
+    src: url('../fonts/librefranklin/librefranklin.eot');
+    src: url('../fonts/librefranklin/librefranklin.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/librefranklin/librefranklin.woff2') format('woff2'),
+         url('../fonts/librefranklin/librefranklin.woff') format('woff'),
+         url('../fonts/librefranklin/librefranklin.ttf') format('truetype'),
+         url('../fonts/librefranklin/librefranklin.svg#libre_franklinregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 // Core variables and mixins
-
 @import "components/vars";
-
 @import "bootstrap/normalize";
 @import "bootstrap/grid";
-
 @import "components/body";
-
-
 @import "components/header";
-
 @import "components/workarea";
 
 

@@ -3,6 +3,25 @@ $(document).ready(function() {
 
 	//ymaps.ready(initializeContactsMap);
 
+    //LOGO
+    $('body').on('click','.logo__btn', function(e){
+        e.preventDefault();
+        $('.b-header__menu-overlay').toggleClass('js-active');
+        $('.logo__btn').toggleClass('js-active');
+        $('.logo-list').slideToggle(300);
+    });
+    $('body').on('click','.b-header__menu-overlay', function(e){
+        e.preventDefault();
+        $(this).removeClass('js-active');
+        $('.logo-list').slideUp(300);
+        $('.logo__btn').removeClass('js-active');
+    });
+    $('body').on('click','.b-logo__submenu-btn', function(e){
+        e.preventDefault();
+        $(this).toggleClass('js-active');
+        $('.logo-sublist').slideToggle(300);
+    });
+
     //TOP SUBMENU
     $("body").on("click", ".js-speaker-toggle", function(e){
         e.preventDefault();
