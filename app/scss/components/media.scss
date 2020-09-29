@@ -2535,6 +2535,18 @@
 	.b-logo__submenu-btn {
 	    top: 5px;
 	}
+	.m-hidden{
+		display: none;
+	}
+	.d-hidden{
+		display: block;
+	}
+	.all-right{
+		&.d-hidden{
+			order: 5;
+    		padding-top: 10px;
+		}
+	}
 }
 
 @media screen and (max-width: 700px){

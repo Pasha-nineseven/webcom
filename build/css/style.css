@@ -9118,6 +9118,13 @@ a.breadcumbs__item:after {
   opacity: 0.5;
   text-align: center; }
 
+.d-hidden {
+  display: none; }
+
+.all-right img {
+  max-width: 100%;
+  height: auto; }
+
 .speaker {
   padding-bottom: 40px; }
 
@@ -13544,7 +13551,17 @@ body.fixed {
     top: 2.5px;
     font-size: 14px; }
   .b-logo__submenu-btn {
-    top: 5px; } }
+    top: 5px; }
+  .m-hidden {
+    display: none; }
+  .d-hidden {
+    display: block; }
+  .all-right.d-hidden {
+    -webkit-box-ordinal-group: 6;
+    -webkit-order: 5;
+        -ms-flex-order: 5;
+            order: 5;
+    padding-top: 10px; } }
 
 @media screen and (max-width: 700px) {
   .contact__items {

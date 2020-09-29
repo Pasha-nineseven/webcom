@@ -5310,6 +5310,16 @@ color: #FF6B00;
 	text-align: center;
 }
 
+.d-hidden{
+	display: none;
+}
+.all-right{
+	img{
+		max-width: 100%;
+		height: auto;
+	}
+}
+
 //PAGES
 @import "pages/speaker";
 
