@@ -7,14 +7,14 @@ $(document).ready(function() {
     $('body').on('click','.logo__btn', function(e){
         e.preventDefault();
         $('.b-header__menu-overlay').toggleClass('js-active');
-        $('.logo__btn').toggleClass('js-active');
+        $('.logo').toggleClass('js-active');
         $('.logo-list').slideToggle(300);
     });
     $('body').on('click','.b-header__menu-overlay', function(e){
         e.preventDefault();
         $(this).removeClass('js-active');
         $('.logo-list').slideUp(300);
-        $('.logo__btn').removeClass('js-active');
+        $('.logo').removeClass('js-active');
     });
     $('body').on('click','.b-logo__submenu-btn', function(e){
         e.preventDefault();
