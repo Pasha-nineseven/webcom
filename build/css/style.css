@@ -11970,7 +11970,8 @@ body.fixed {
   .logo-sublist {
     margin: 6px 0 6px 14px; }
   .logo-sublist__item {
-    padding: 5px 10px 5px 23px; } }
+    padding: 5px 10px 5px 25px;
+    width: 225px; } }
 
 @media screen and (max-width: 1023px) {
   body {
