@@ -5267,8 +5267,10 @@ color: #FF6B00;
 }
 .morpheus-img{
 	max-width: 625px;
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
+    display: inline-block;
+    text-align: center;
     margin: 0 auto;
     position: relative;
 	img{

@@ -9090,14 +9090,8 @@ a.breadcumbs__item:after {
 
 .morpheus-img {
   max-width: 625px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: inline-block;
+  text-align: center;
   margin: 0 auto;
   position: relative; }
   .morpheus-img img {
