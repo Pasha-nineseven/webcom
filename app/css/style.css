@@ -9087,6 +9087,8 @@ a.breadcumbs__item:after {
   color: #fff;
   padding-bottom: 0;
   width: 865px; }
+  .popup--morpheus .popup-in {
+    text-align: center; }
 
 .morpheus-img {
   max-width: 625px;
